@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxoMix — Müziği Katmanlarına Ayır</title>
+  <meta name="description" content="VoxoMix ile şarkıları vokal, davul, bas ve enstrüman katmanlarına ayır. Profesyonel müzisyenler ve müzik tutkunları için tasarlandı.">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    VoxoMix
+  </a>
+  <div class="nav-links">
+    <a href="#features" data-i18n="nav.features">Özellikler</a>
+    <a href="#download" data-i18n="nav.download">İndir</a>
+    <a href="#plans" data-i18n="nav.plans">Planlar</a>
+    <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
+  </div>
+  <a href="#download" class="nav-cta desktop-cta" data-i18n="nav.cta">Ücretsiz Dene</a>
+  <button class="hamburger" id="hamburger" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#features" data-i18n="nav.features">Özellikler</a>
+  <a href="#download" data-i18n="nav.download">İndir</a>
+  <a href="#plans" data-i18n="nav.plans">Planlar</a>
+  <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
+  <a href="#download" class="nav-cta" style="text-align:center;margin-top:8px;" data-i18n="nav.cta">Ücretsiz Dene</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <div class="hero-badge" data-i18n="hero.badge">🎵 Masaüstü Müzik Stüdyosu</div>
+    <h1 data-i18n-html="hero.h1">Müziği <span>Katmanlarına</span><br>Ayır, Keşfet, Öğren</h1>
+    <p data-i18n="hero.p">Herhangi bir şarkıyı vokal, davul, bas, gitar ve daha fazlasına ayır. Müzisyenler için tasarlanmış güçlü AI destekli araç.</p>
+    <div class="hero-btns">
+      <a href="#plans" class="btn-primary" data-i18n="hero.btn1">Ücretsiz Başla</a>
+      <a href="#features" class="btn-secondary" data-i18n="hero.btn2">Nasıl Çalışır?</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<div style="max-width:900px;margin:0 auto;padding:0 24px 80px;">
+  <img src="assets/promo-banner.png" alt="VoxoMix - Separate Music Into Stems" style="width:100%;border-radius:20px;box-shadow:0 24px 80px rgba(108,92,231,0.25);">
+</div>
+
+<!-- FEATURES -->
+<div id="features">
+<div class="section">
+  <div class="section-label" data-i18n="section.features.label">Özellikler</div>
+  <h2 data-i18n="section.features.h2">Müziği Yeni Bir Gözle Gör</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      </div>
+      <h3 data-i18n="feat1.title">AI Stem Ayrıştırma</h3>
+      <p data-i18n="feat1.desc">Yapay zeka ile herhangi bir şarkıyı vokal, davul, bas, gitar ve piyano katmanlarına ayır.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <h3 data-i18n="feat2.title">Gerçek Zamanlı Pitch Shift</h3>
+      <p data-i18n="feat2.desc">Şarkıyı istediğin tona çek. Orijinal tempo korunur, sadece perde değişir.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+      </div>
+      <h3 data-i18n="feat3.title">Şarkı Sözleri & Akoru</h3>
+      <p data-i18n="feat3.desc">AI ile otomatik şarkı sözü transkripsiyonu ve akor tespiti. Pratik yaparken kayıplar.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </div>
+      <h3 data-i18n="feat4.title">Metronom & Yapı Analizi</h3>
+      <p data-i18n="feat4.desc">BPM tespiti, metronom ve şarkı yapısı barı ile parçayı tam olarak anla.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </div>
+      <h3 data-i18n="feat5.title">Kayıpsız WAV Dışa Aktarım</h3>
+      <p data-i18n="feat5.desc">İşlenmiş katmanları yüksek kaliteli WAV formatında bilgisayarına indir.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h3 data-i18n="feat6.title">Masaüstü Uygulama</h3>
+      <p data-i18n="feat6.desc">Mac ve Windows için yerel uygulama. İnternet gerekmez, veriler bilgisayarında kalır.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- APP SCREENSHOT -->
+<div style="max-width:900px;margin:0 auto;padding:0 24px 80px;">
+  <div style="text-align:center;margin-bottom:32px;">
+    <div class="section-label" data-i18n="app.label">Uygulama</div>
+    <h2 style="font-size:clamp(24px,4vw,40px);font-weight:800;" data-i18n="app.h2">Gerçek Stüdyo Deneyimi</h2>
+  </div>
+  <img src="assets/app-screenshot.png" alt="VoxoMix Uygulama Ekranı" style="width:100%;border-radius:20px;box-shadow:0 24px 80px rgba(0,0,0,0.5);border:1px solid #2a2938;">
+</div>
+
+<!-- HOW IT WORKS -->
+<div id="how-it-works">
+<div class="section">
+  <div class="section-label" data-i18n="how.label">Nasıl Çalışır</div>
+  <h2 data-i18n="how.h2">3 Adımda Hazır</h2>
+  <div class="how-grid">
+    <div class="how-step">
+      <div class="how-number">1</div>
+      <div class="how-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+      </div>
+      <h3 data-i18n="how.step1.title">Şarkını Yükle</h3>
+      <p data-i18n="how.step1.desc">MP3, WAV veya herhangi bir ses dosyasını sürükle bırak ya da dosya seçiciyle aç.</p>
+    </div>
+    <div class="how-connector"></div>
+    <div class="how-step">
+      <div class="how-number">2</div>
+      <div class="how-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M16.24 7.76a6 6 0 010 8.49M4.93 4.93a10 10 0 000 14.14M7.76 7.76a6 6 0 000 8.49"/></svg>
+      </div>
+      <h3 data-i18n="how.step2.title">AI İşleme</h3>
+      <p data-i18n="how.step2.desc">Yapay zeka şarkını analiz eder, vokal, davul, bas ve enstrüman katmanlarına ayırır.</p>
+    </div>
+    <div class="how-connector"></div>
+    <div class="how-step">
+      <div class="how-number">3</div>
+      <div class="how-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </div>
+      <h3 data-i18n="how.step3.title">İndir ve Kullan</h3>
+      <p data-i18n="how.step3.desc">Her katmanı ayrı ayrı dinle, sesi aç-kapat veya WAV olarak bilgisayarına indir.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- DOWNLOAD -->
+<div id="download">
+<div class="section" style="padding-bottom:60px;">
+  <div class="section-label" data-i18n="download.label">İndirin</div>
+  <h2 data-i18n="download.h2">Ücretsiz İndirin</h2>
+  <p style="text-align:center;color:var(--muted);font-size:16px;margin-top:-36px;margin-bottom:48px;" data-i18n="download.sub">Mac ve Windows için yerel uygulama. Kurulum gerektirmez.</p>
+  <div class="download-grid">
+    <a href="assets/downloads/VoxoMix-mac-arm64.dmg" class="download-card" download>
+      <div class="download-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      </div>
+      <div class="download-info">
+        <div class="download-title" data-i18n="download.mac">macOS (Apple Silicon)</div>
+        <div class="download-sub" data-i18n="download.mac-sub">M1, M2, M3, M4, M5 • .dmg</div>
+      </div>
+      <div class="download-arrow">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </div>
+    </a>
+    <a href="assets/downloads/VoxoMix-setup.exe" class="download-card" download>
+      <div class="download-icon">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+      </div>
+      <div class="download-info">
+        <div class="download-title" data-i18n="download.win">Windows</div>
+        <div class="download-sub" data-i18n="download.win-sub">Windows 10/11 • .exe</div>
+      </div>
+      <div class="download-arrow">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </div>
+    </a>
+  </div>
+  <p style="text-align:center;font-size:12px;color:#555;margin-top:24px;" data-i18n="download.version">v0.1.0 • Ücretsiz • İndirmek için kayıt gerekmez</p>
+</div>
+</div>
+
+<!-- PLANS -->
+<div id="plans">
+<div class="section">
+  <div class="section-label" data-i18n="plans.label">Fiyatlandırma</div>
+  <h2 data-i18n="plans.h2">Sana Uygun Planı Seç</h2>
+  <div class="plans-toggle">
+    <button class="active" id="btn-monthly" onclick="setBilling('monthly')" data-i18n-toggle-monthly="Aylık|Monthly">Aylık</button>
+    <button id="btn-yearly" onclick="setBilling('yearly')" data-i18n-toggle-yearly="Yıllık — %30 İndirim|Yearly — 30% Off">Yıllık — %30 İndirim</button>
+  </div>
+  <div class="plan-billing-note" id="billing-note" style="display:none" data-i18n-note-tr="Yıllık faturalanır — aylık eşdeğer fiyat gösterilmektedir." data-i18n-note-en="Billed annually — monthly equivalent shown."></div>
+  <div class="plans-grid">
+    <div class="plan-card">
+      <div class="plan-name" data-i18n="plan.free.name">Ücretsiz</div>
+      <div class="plan-price">$0</div>
+      <div class="plan-period" data-i18n="plan.free.period">sonsuza kadar ücretsiz</div>
+      <ul class="plan-features">
+        <li data-i18n="plan.free.f1">Aylık 2 şarkı</li>
+        <li data-i18n="plan.free.f2">5 dakika maksimum süre</li>
+        <li data-i18n="plan.free.f3">4 kanal (Temel)</li>
+        <li data-i18n="plan.free.f4">MP3 dışa aktarım</li>
+      </ul>
+      <a href="#" class="plan-btn secondary" data-i18n="plan.free.btn">Ücretsiz Başla</a>
+    </div>
+    <div class="plan-card featured">
+      <div class="plan-badge-tag popular" data-i18n="badge.popular">En Popüler</div>
+      <div class="plan-name" data-i18n="plan.basic.name">Basic</div>
+      <div class="plan-price" id="price-basic">$8<span>.99</span></div>
+      <div class="plan-period" id="period-basic" data-i18n="plan.basic.period">/ ay</div>
+      <ul class="plan-features">
+        <li data-i18n="plan.basic.f1">Aylık 20 şarkı</li>
+        <li data-i18n="plan.basic.f2">20 dakika maksimum süre</li>
+        <li data-i18n="plan.basic.f3">6+ kanal (Gelişmiş)</li>
+        <li data-i18n="plan.basic.f4">Yüksek Kalite MP3</li>
+        <li data-i18n="plan.basic.f5">Pitch, Speed, Akor</li>
+      </ul>
+      <a href="#" class="plan-btn" data-i18n="plan.basic.btn">Yükselt</a>
+    </div>
+    <div class="plan-card">
+      <div class="plan-badge-tag pro-tag">Pro</div>
+      <div class="plan-name" data-i18n="plan.pro.name">Pro</div>
+      <div class="plan-price" id="price-pro">$14<span>.99</span></div>
+      <div class="plan-period" id="period-pro" data-i18n="plan.pro.period">/ ay</div>
+      <ul class="plan-features">
+        <li data-i18n="plan.pro.f1">Sınırsız şarkı</li>
+        <li data-i18n="plan.pro.f2">Sınır yok</li>
+        <li data-i18n="plan.pro.f3">Tüm kanallar</li>
+        <li data-i18n="plan.pro.f4">Kayıpsız WAV dışa aktarım</li>
+        <li data-i18n="plan.pro.f5">Şarkı Sözü & PDF indirme</li>
+        <li data-i18n="plan.pro.f6">En yüksek öncelik</li>
+      </ul>
+      <a href="#" class="plan-btn" data-i18n="plan.pro.btn">Yükselt</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div id="faq">
+<div class="section">
+  <div class="section-label" data-i18n="faq.label">SSS</div>
+  <h2 data-i18n="faq.h2">Sıkça Sorulan Sorular</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span data-i18n="faq.q1">İnternet bağlantısı olmadan çalışır mı?</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer"><p data-i18n="faq.a1">Giriş yapıp lisansınızı doğruladıktan sonra uygulama tamamen çevrimdışı çalışır. İnternet yalnızca ilk giriş ve lisans doğrulaması için gereklidir.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span data-i18n="faq.q2">Hangi ses formatları destekleniyor?</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer"><p data-i18n="faq.a2">MP3, WAV, FLAC, AAC ve M4A formatları desteklenmektedir. Çıktı olarak WAV (kayıpsız) ve MP3 formatlarında dışa aktarım yapabilirsiniz.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span data-i18n="faq.q3">Aboneliği istediğim zaman iptal edebilir miyim?</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer"><p data-i18n="faq.a3">Evet, istediğiniz zaman iptal edebilirsiniz. İptal işleminden sonra mevcut dönemin sonuna kadar uygulamayı kullanmaya devam edebilirsiniz.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span data-i18n="faq.q4">Stem ayrıştırma ne kadar sürer?</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer"><p data-i18n="faq.a4">Ortalama bir şarkı (3-4 dakika) için Apple Silicon Mac'lerde 1-3 dakika, Windows bilgisayarlarda 3-6 dakika sürmektedir. İşlem tamamen yerel bilgisayarınızda gerçekleşir.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span data-i18n="faq.q5">Ödeme bilgilerim güvende mi?</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-answer"><p data-i18n="faq.a5">Tüm ödemeler iyzico altyapısı üzerinden 256-bit SSL şifreleme ile gerçekleştirilir. Kart bilgileriniz hiçbir zaman sunucularımızda saklanmaz.</p></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p data-i18n="footer.tagline">Müzisyenler ve müzik tutkunları için AI destekli masaüstü stem ayrıştırma uygulaması.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Ürün</h4>
+        <a href="#features" data-i18n="footer.features">Özellikler</a>
+        <a href="#plans" data-i18n="footer.pricing">Fiyatlandırma</a>
+        <a href="hakkimizda.html" data-i18n="footer.about">Hakkımızda</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Yasal</h4>
+        <a href="gizlilik.html" data-i18n="footer.privacy">Gizlilik Sözleşmesi</a>
+        <a href="teslimat-iade.html" data-i18n="footer.delivery">Teslimat ve İade</a>
+        <a href="mesafeli-satis.html" data-i18n="footer.distance">Mesafeli Satış Sözleşmesi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. Tüm hakları saklıdır.</p>
+      <div class="payment-logos">
+        <span style="font-size:12px;color:#888;" data-i18n="footer.secure">Güvenli ödeme:</span>
+        <span class="payment-logo visa">VISA</span>
+        <span class="payment-logo mc"><svg width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect width="38" height="24" rx="4" fill="#1a1a2e"/><circle cx="15" cy="12" r="7" fill="#EB001B"/><circle cx="23" cy="12" r="7" fill="#F79E1B"/><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#FF5F00"/></svg></span>
+        <span class="payment-logo iyzico">iyzico</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/i18n.js?v=3"></script>
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = answer.classList.contains('open');
+    document.querySelectorAll('.faq-answer.open').forEach(a => { a.classList.remove('open'); a.previousElementSibling.classList.remove('open'); });
+    if (!isOpen) { answer.classList.add('open'); btn.classList.add('open'); }
+  }
+</script>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+    });
+  });
+</script>
+</body>
+</html>
