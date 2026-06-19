@@ -96,6 +96,7 @@ const translations = {
 
     'badge.popular': 'En Popüler',
 
+    'footer.contact': 'İletişim',
     'footer.product': 'Ürün',
     'footer.features': 'Özellikler',
     'footer.pricing': 'Fiyatlandırma',
@@ -186,6 +187,7 @@ const translations = {
 
     'badge.popular': 'Most Popular',
 
+    'footer.contact': 'Contact',
     'footer.product': 'Product',
     'footer.features': 'Features',
     'footer.pricing': 'Pricing',
