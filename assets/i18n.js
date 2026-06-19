@@ -6,7 +6,7 @@ const translations = {
     'nav.about': 'Hakkımızda',
     'nav.cta': 'Ücretsiz Dene',
 
-    'hero.badge': '🎵 Masaüstü Müzik Stüdyosu',
+    'hero.badge': 'Masaüstü Müzik Stüdyosu',
     'hero.h1': 'Müziği <span>Katmanlarına</span><br>Ayır, Akorları Keşfet, Öğren',
     'hero.p': 'Herhangi bir şarkıyı vokal, davul, bas, gitar ve daha fazlasına ayır. Müzisyenler için tasarlanmış güçlü AI destekli araç.',
     'hero.btn1': 'Ücretsiz Başla',
@@ -119,7 +119,7 @@ const translations = {
     'nav.about': 'About',
     'nav.cta': 'Try Free',
 
-    'hero.badge': '🎵 Desktop Music Studio',
+    'hero.badge': 'Desktop Music Studio',
     'hero.h1': 'Separate, Explore &<br>Learn Music <span>Layers</span>',
     'hero.p': 'Separate any song into vocals, drums, bass, guitar and more. A powerful AI-powered tool designed for musicians.',
     'hero.btn1': 'Start Free',
