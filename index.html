@@ -219,7 +219,7 @@
         <li data-i18n="plan.basic.f4">Yüksek Kalite MP3</li>
         <li data-i18n="plan.basic.f5">Pitch, Speed, Akor</li>
       </ul>
-      <a href="#" class="plan-btn" data-i18n="plan.basic.btn">Yükselt</a>
+      <a href="#download" class="plan-btn upgrade-redirect-btn" data-i18n="plan.basic.btn">Yükselt</a>
     </div>
     <div class="plan-card">
       <div class="plan-badge-tag pro-tag">Pro</div>
@@ -234,7 +234,7 @@
         <li data-i18n="plan.pro.f5">Şarkı Sözü & PDF indirme</li>
         <li data-i18n="plan.pro.f6">En yüksek öncelik</li>
       </ul>
-      <a href="#" class="plan-btn" data-i18n="plan.pro.btn">Yükselt</a>
+      <a href="#download" class="plan-btn upgrade-redirect-btn" data-i18n="plan.pro.btn">Yükselt</a>
     </div>
   </div>
 </div>
@@ -347,6 +347,19 @@
       mobileMenu.classList.remove('open');
     });
   });
+</script>
+<script>
+  (function () {
+    const lang = (navigator.language || 'tr').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+    const msg = lang === 'tr'
+      ? 'Planını yükseltmek için VoxoMix uygulamasını indir, giriş yap ve yükseltmeyi uygulama içinden tamamla.'
+      : 'To upgrade your plan, download the VoxoMix app, sign in, and complete the upgrade inside the app.';
+    document.querySelectorAll('.upgrade-redirect-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        window.alert(msg);
+      });
+    });
+  })();
 </script>
 </body>
 </html>

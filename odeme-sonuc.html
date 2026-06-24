@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ödeme Sonucu — VoxoMix</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+  </a>
+</nav>
+
+<div class="section" style="padding-top:120px; text-align:center; min-height:50vh;">
+  <div id="result-icon" style="font-size:64px; margin-bottom:24px;"></div>
+  <h1 id="result-title" style="margin-bottom:16px;"></h1>
+  <p id="result-desc" style="color:#9a9aa6; max-width:480px; margin:0 auto;"></p>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get('status');
+  const plan = params.get('plan');
+  const iconEl = document.getElementById('result-icon');
+  const titleEl = document.getElementById('result-title');
+  const descEl = document.getElementById('result-desc');
+
+  if (status === 'success') {
+    iconEl.textContent = '✅';
+    titleEl.textContent = 'Ödeme başarılı!';
+    descEl.textContent = (plan ? 'Planınız ' + plan.toUpperCase() + ' olarak güncellendi. ' : '') + 'VoxoMix uygulamasına dönüp tekrar açtığınızda yeni planınız aktif olacak.';
+  } else if (status === 'failed') {
+    iconEl.textContent = '⚠️';
+    titleEl.textContent = 'Ödeme tamamlanamadı';
+    descEl.textContent = 'Kartınızdan çekim yapılmadı. Lütfen uygulamadan tekrar deneyin.';
+  } else {
+    iconEl.textContent = '⚠️';
+    titleEl.textContent = 'Bir sorun oluştu';
+    descEl.textContent = 'Ödeme durumu doğrulanamadı. Lütfen destek ile iletişime geçin: info@voxomix.com';
+  }
+</script>
+
+</body>
+</html>
