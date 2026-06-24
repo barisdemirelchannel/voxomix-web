@@ -48,7 +48,7 @@ const translations = {
     'plan.basic.f2': '20 dakika maksimum süre',
     'plan.basic.f3': '6+ kanal (Gelişmiş)',
     'plan.basic.f4': 'Yüksek Kalite MP3',
-    'plan.basic.f5': 'Pitch, Speed, Akor',
+    'plan.basic.f5': 'Pitch, Speed',
     'plan.basic.btn': 'Yükselt',
 
     'plan.pro.name': 'Pro',
@@ -161,7 +161,7 @@ const translations = {
     'plan.basic.f2': '20 minutes max',
     'plan.basic.f3': '6+ channels (Advanced)',
     'plan.basic.f4': 'High Quality MP3',
-    'plan.basic.f5': 'Pitch, Speed, Chords',
+    'plan.basic.f5': 'Pitch, Speed',
     'plan.basic.btn': 'Upgrade',
 
     'plan.pro.name': 'Pro',
