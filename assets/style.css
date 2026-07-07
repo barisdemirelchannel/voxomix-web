@@ -51,6 +51,15 @@ nav {
 }
 .nav-cta:hover { opacity: 0.9; color: #fff; }
 
+.nav-lang {
+  color: var(--muted); font-size: 13px; font-weight: 700;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--border);
+  padding: 6px 10px; border-radius: 8px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nav-lang:hover { color: var(--text); border-color: var(--accent); }
+
 /* HERO */
 .hero {
   min-height: 80vh;
@@ -83,6 +92,21 @@ nav {
 }
 
 .hero-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+.hero-trust {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 10px 22px;
+  margin-top: 28px;
+}
+.hero-trust span {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--muted);
+  white-space: nowrap;
+}
+.hero-trust span::before {
+  content: "✓";
+  color: #00b894; font-weight: 800;
+}
 
 .btn-primary {
   background: var(--accent);
@@ -257,6 +281,24 @@ nav {
 
 .download-arrow { color: var(--muted); flex-shrink: 0; }
 .download-card:hover .download-arrow { color: var(--accent); }
+
+.download-card.disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+.download-card.disabled:hover {
+  border-color: var(--border);
+  background: var(--surface);
+}
+.download-badge {
+  flex-shrink: 0;
+  font-size: 11px; font-weight: 700;
+  color: var(--accent);
+  background: rgba(108,92,231,0.12);
+  border-radius: 999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
 
 /* ABOUT */
 .about-content {

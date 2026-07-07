@@ -6,11 +6,15 @@ const translations = {
     'nav.about': 'Hakkımızda',
     'nav.cta': 'Ücretsiz Dene',
 
-    'hero.badge': 'Masaüstü Müzik Stüdyosu',
-    'hero.h1': 'Müziği <span>Katmanlarına</span><br>Ayır, Akorları Keşfet, Öğren',
-    'hero.p': 'Herhangi bir şarkıyı vokal, davul, bas, gitar ve daha fazlasına ayır. Müzisyenler için tasarlanmış güçlü AI destekli araç.',
-    'hero.btn1': 'Ücretsiz Başla',
+    'hero.badge': 'Mac için Hepsi Bir Arada AI Müzik Stüdyosu',
+    'hero.h1': 'Bir Şarkının <span>Her Katmanı</span>,<br>Tek Uygulamada',
+    'hero.p': 'Vokal ve enstrümanlara ayır; akoru, BPM\'i ve tonaliteyi gör; tonunu değiştir; sözü çıkar — hepsi Mac\'inde, çevrimdışı ve sıra beklemeden.',
+    'hero.btn1': 'Ücretsiz İndir',
     'hero.btn2': 'Nasıl Çalışır?',
+    'hero.trust1': 'Kayıt gerekmez',
+    'hero.trust2': 'Kredi kartı istenmez',
+    'hero.trust3': 'Çevrimdışı çalışır',
+    'hero.trust4': 'Apple onaylı',
 
     'section.features.label': 'Özellikler',
     'section.features.h2': 'Müziği Yeni Bir Gözle Gör',
@@ -73,7 +77,8 @@ const translations = {
     'download.mac-intel-sub': 'Intel Core • .dmg',
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
-    'download.version': 'v0.1.0 • Ücretsiz • İndirmek için kayıt gerekmez',
+    'download.win-badge': 'Yakında',
+    'download.version': 'v1.1.6 • Ücretsiz • İndirmek için kayıt gerekmez',
 
     'how.label': 'Nasıl Çalışır',
     'how.h2': '3 Adımda Hazır',
@@ -122,11 +127,15 @@ const translations = {
     'nav.about': 'About',
     'nav.cta': 'Try Free',
 
-    'hero.badge': 'Desktop Music Studio',
-    'hero.h1': 'Separate, Explore &<br>Learn Music <span>Layers</span>',
-    'hero.p': 'Separate any song into vocals, drums, bass, guitar and more. A powerful AI-powered tool designed for musicians.',
-    'hero.btn1': 'Start Free',
+    'hero.badge': 'All-in-One AI Music Studio for Mac',
+    'hero.h1': 'Every <span>Layer</span> of a Song,<br>in One App',
+    'hero.p': 'Split into vocals & instruments; see chords, BPM and key; change the pitch; get the lyrics — all on your Mac, offline, with no queue.',
+    'hero.btn1': 'Download Free',
     'hero.btn2': 'How It Works?',
+    'hero.trust1': 'No signup',
+    'hero.trust2': 'No credit card',
+    'hero.trust3': 'Works offline',
+    'hero.trust4': 'Apple notarized',
 
     'section.features.label': 'Features',
     'section.features.h2': 'See Music in a New Light',
@@ -189,7 +198,8 @@ const translations = {
     'download.mac-intel-sub': 'Intel Core • .dmg',
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
-    'download.version': 'v0.1.0 • Free • No signup required',
+    'download.win-badge': 'Coming soon',
+    'download.version': 'v1.1.6 • Free • No signup required',
 
     'badge.popular': 'Most Popular',
 
@@ -211,8 +221,14 @@ const translations = {
   }
 };
 
+// Language is determined by URL path so each URL is single-language and
+// independently indexable: /en/... => English, everything else => Turkish.
+function voxomixLang() {
+  return location.pathname.replace(/^\/+/, '').toLowerCase().startsWith('en') ? 'en' : 'tr';
+}
+
 (function () {
-  const lang = (navigator.language || navigator.userLanguage || 'tr').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+  const lang = voxomixLang();
   const t = translations[lang];
 
   document.documentElement.lang = lang;
@@ -242,14 +258,14 @@ const translations = {
 
 // Billing toggle function (global)
 const _prices = {
-  basic: { monthly: '$8<span>.99</span>', yearly: '$6<span>.33</span>' },
-  pro:   { monthly: '$14<span>.99</span>', yearly: '$10<span>.50</span>' },
+  basic: { monthly: '$8<span>.99</span>', yearly: '$6<span>.29</span>' },
+  pro:   { monthly: '$13<span>.99</span>', yearly: '$9<span>.79</span>' },
 };
 const _periods = {
   tr: { monthly: '/ ay', yearly: '/ ay' },
   en: { monthly: '/ month', yearly: '/ month' },
 };
-const _currentLang = (navigator.language || 'tr').toLowerCase().startsWith('tr') ? 'tr' : 'en';
+const _currentLang = voxomixLang();
 
 function setBilling(mode) {
   const priceBasic  = document.getElementById('price-basic');
