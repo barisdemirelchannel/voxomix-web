@@ -1,6 +1,25 @@
+# Only real site files should be served publicly. Everything below is dev/build
+# tooling, version control, or OS cruft and must never be deployed.
+
+# Version control & tooling
 .git
 .git/**
+.gitignore
 .wrangler
+.wrangler/**
+.claude
+.claude/**
 .assetsignore
+
+# OS / editor cruft
+.DS_Store
+**/.DS_Store
+Icon?
+
+# Build config & source (not site assets)
 node_modules
 node_modules/**
+wrangler.toml
+package.json
+package-lock.json
+*.md
