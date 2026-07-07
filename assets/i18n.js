@@ -37,6 +37,10 @@ const translations = {
 
     'plans.label': 'Fiyatlandırma',
     'plans.h2': 'Sana Uygun Planı Seç',
+    'trial.title': 'Pro\'yu 14 Gün Ücretsiz Dene',
+    'trial.desc': 'Tüm Pro özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Pro\'ya geçer, istediğin an iptal edebilirsin.',
+    'trial.btn': 'Ücretsiz İndir ve Başla',
+    'plan.pro.trial': '14 gün ücretsiz deneme',
 
     'plan.free.name': 'Ücretsiz',
     'plan.free.period': 'sonsuza kadar ücretsiz',
@@ -158,6 +162,10 @@ const translations = {
 
     'plans.label': 'Pricing',
     'plans.h2': 'Choose Your Plan',
+    'trial.title': 'Try Pro Free for 14 Days',
+    'trial.desc': 'All Pro features free for 14 days. Download the app and add your card — it converts to Pro automatically on day 14, cancel anytime.',
+    'trial.btn': 'Download &amp; Start Free',
+    'plan.pro.trial': '14-day free trial',
 
     'plan.free.name': 'Free',
     'plan.free.period': 'free forever',
