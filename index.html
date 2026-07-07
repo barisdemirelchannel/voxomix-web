@@ -2,6 +2,20 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
+  <script>
+    // First-visit default = English (so any visitor can read the site); once the
+    // user explicitly picks a language via the TR/EN switcher we remember it and
+    // stop redirecting. Crawlers are never redirected, so the Turkish homepage at
+    // "/" stays indexable.
+    (function () {
+      try {
+        var pref = localStorage.getItem('voxomix_site_lang');
+        var isBot = /bot|crawl|spider|slurp|bing|google|yandex|duckduck|baidu|facebook|embed|preview|lighthouse|headless/i.test(navigator.userAgent);
+        var atRoot = location.pathname.replace(/\/+$/, '') === '';
+        if (!pref && !isBot && atRoot) location.replace('/en/');
+      } catch (e) {}
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VoxoMix — Müziği Katmanlarına Ayır</title>
   <meta name="description" content="VoxoMix ile şarkıları vokal, davul, bas ve enstrüman katmanlarına ayır. AI stem ayırma, akor & BPM tespiti, şarkı sözü. Mac için ücretsiz başla.">
@@ -68,7 +82,7 @@
     <a href="#plans" data-i18n="nav.plans">Planlar</a>
     <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
   </div>
-  <a href="/en/" class="nav-lang" hreflang="en">EN</a>
+  <a href="/en/" class="nav-lang" hreflang="en" onclick="try{localStorage.setItem('voxomix_site_lang','en')}catch(e){}">EN</a>
   <a href="#download" class="nav-cta desktop-cta" data-i18n="nav.cta">Ücretsiz Dene</a>
   <button class="hamburger" id="hamburger" aria-label="Menü">
     <span></span><span></span><span></span>
@@ -79,7 +93,7 @@
   <a href="#download" data-i18n="nav.download">İndir</a>
   <a href="#plans" data-i18n="nav.plans">Planlar</a>
   <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
-  <a href="/en/" hreflang="en">English</a>
+  <a href="/en/" hreflang="en" onclick="try{localStorage.setItem('voxomix_site_lang','en')}catch(e){}">English</a>
   <a href="#download" class="nav-cta" style="text-align:center;margin-top:8px;" data-i18n="nav.cta">Ücretsiz Dene</a>
 </div>
 
