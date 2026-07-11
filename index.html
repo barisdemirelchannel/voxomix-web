@@ -60,8 +60,9 @@
         "description": "AI destekli masaüstü müzik stüdyosu: stem ayırma, akor & BPM tespiti, şarkı sözü transkripsiyonu, pitch/speed.",
         "offers": [
           { "@type": "Offer", "name": "Ücretsiz", "price": "0", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Basic", "price": "8.99", "priceCurrency": "USD" },
-          { "@type": "Offer", "name": "Pro", "price": "13.99", "priceCurrency": "USD" }
+          { "@type": "Offer", "name": "Basic", "price": "2.99", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Student", "price": "8.99", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Producer", "price": "13.99", "priceCurrency": "USD" }
         ]
       }
     ]
@@ -83,7 +84,7 @@
     <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
   </div>
   <a href="/en/" class="nav-lang" hreflang="en" onclick="try{localStorage.setItem('voxomix_site_lang','en')}catch(e){}">EN</a>
-  <a href="#download" class="nav-cta desktop-cta" data-i18n="nav.cta">Ücretsiz Dene</a>
+  <a href="#download" class="nav-cta desktop-cta" data-i18n="nav.cta">Producer'ı 14 Gün Ücretsiz Dene</a>
   <button class="hamburger" id="hamburger" aria-label="Menü">
     <span></span><span></span><span></span>
   </button>
@@ -94,7 +95,7 @@
   <a href="#plans" data-i18n="nav.plans">Planlar</a>
   <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
   <a href="/en/" hreflang="en" onclick="try{localStorage.setItem('voxomix_site_lang','en')}catch(e){}">English</a>
-  <a href="#download" class="nav-cta" style="text-align:center;margin-top:8px;" data-i18n="nav.cta">Ücretsiz Dene</a>
+  <a href="#download" class="nav-cta" style="text-align:center;margin-top:8px;" data-i18n="nav.ctaShort">Ücretsiz Dene</a>
 </div>
 
 <!-- HERO -->
@@ -230,7 +231,7 @@
   <h2 data-i18n="download.h2">Ücretsiz İndirin</h2>
   <p style="text-align:center;color:var(--muted);font-size:16px;margin-top:-36px;margin-bottom:48px;" data-i18n="download.sub">Mac ve Windows için yerel uygulama. Kurulum gerektirmez.</p>
   <div class="download-grid">
-    <a href="https://github.com/barisdemirelchannel/voxomix-releases/releases/download/v1.1.8/VoxoMix-1.1.8-arm64.dmg" class="download-card" download>
+    <a href="https://github.com/barisdemirelchannel/voxomix-releases/releases/download/v1.2.0/VoxoMix-1.2.0-arm64.dmg" class="download-card" download>
       <div class="download-icon">
         <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
       </div>
@@ -267,16 +268,16 @@
 <div class="section">
   <div class="section-label" data-i18n="plans.label">Fiyatlandırma</div>
   <h2 data-i18n="plans.h2">Sana Uygun Planı Seç</h2>
-  <div style="max-width:820px;margin:8px auto 36px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;padding:20px 24px;background:linear-gradient(90deg,rgba(108,92,231,0.18),rgba(168,85,247,0.12));border:1px solid rgba(108,92,231,0.5);border-radius:16px;text-align:left;">
+  <div style="max-width:1160px;margin:8px auto 36px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;padding:20px 24px;background:linear-gradient(90deg,rgba(108,92,231,0.18),rgba(168,85,247,0.12));border:1px solid rgba(108,92,231,0.5);border-radius:16px;text-align:left;">
     <div style="flex:1;min-width:220px;">
-      <div style="font-size:19px;font-weight:800;color:#f0f0f0;" data-i18n="trial.title">Pro'yu 14 Gün Ücretsiz Dene</div>
-      <div style="font-size:13px;color:#b8b8c8;margin-top:6px;line-height:1.5;" data-i18n="trial.desc">Tüm Pro özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Pro'ya geçer, istediğin an iptal edebilirsin.</div>
+      <div style="font-size:19px;font-weight:800;color:#f0f0f0;" data-i18n="trial.title">Producer'ı 14 Gün Ücretsiz Dene</div>
+      <div style="font-size:13px;color:#b8b8c8;margin-top:6px;line-height:1.5;" data-i18n="trial.desc">Tüm Producer özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Producer'a geçer, istediğin an iptal edebilirsin.</div>
     </div>
     <a href="#download" style="flex-shrink:0;background:#6c5ce7;color:#fff;text-decoration:none;padding:13px 24px;border-radius:12px;font-size:14px;font-weight:700;white-space:nowrap;" data-i18n="trial.btn">Ücretsiz İndir ve Başla</a>
   </div>
   <div class="plans-toggle">
     <button class="active" id="btn-monthly" onclick="setBilling('monthly')" data-i18n-toggle-monthly="Aylık|Monthly">Aylık</button>
-    <button id="btn-yearly" onclick="setBilling('yearly')" data-i18n-toggle-yearly="Yıllık — %30 İndirim|Yearly — 30% Off">Yıllık — %30 İndirim</button>
+    <button id="btn-yearly" onclick="setBilling('yearly')" data-i18n-toggle-yearly="Yıllık — %20 İndirim|Yearly — 20% Off">Yıllık — %20 İndirim</button>
   </div>
   <div class="plan-billing-note" id="billing-note" style="display:none" data-i18n-note-tr="Yıllık faturalanır — aylık eşdeğer fiyat gösterilmektedir." data-i18n-note-en="Billed annually — monthly equivalent shown."></div>
   <div class="plans-grid">
@@ -285,44 +286,69 @@
       <div class="plan-price">$0</div>
       <div class="plan-period" data-i18n="plan.free.period">sonsuza kadar ücretsiz</div>
       <ul class="plan-features">
-        <li data-i18n="plan.free.f1">Aylık 2 şarkı</li>
-        <li data-i18n="plan.free.f2">5 dakika maksimum süre</li>
-        <li data-i18n="plan.free.f3">4 kanal (Temel)</li>
-        <li data-i18n="plan.free.fbpm">BPM Tespiti & Metronom</li>
-        <li data-i18n="plan.free.f4">MP3 dışa aktarım</li>
+        <li data-i18n="plan.f.songs2">Ayda 2 şarkı</li>
+        <li data-i18n="plan.f.dur4">4 dakika maks süre</li>
+        <li data-i18n="plan.f.ch4">4 kanal ayırma</li>
+        <li data-i18n="plan.f.bpm">Smart & Change BPM + Metronom</li>
+        <li data-i18n="plan.f.chordsPiano">Akor bulucu (piyano)</li>
       </ul>
       <a href="#download" class="plan-btn secondary" data-i18n="plan.free.btn">Ücretsiz Başla</a>
     </div>
-    <div class="plan-card featured">
-      <div class="plan-badge-tag popular" data-i18n="badge.popular">En Popüler</div>
+    <div class="plan-card">
       <div class="plan-name" data-i18n="plan.basic.name">Basic</div>
-      <div class="plan-price" id="price-basic">$8<span>.99</span></div>
+      <div class="plan-price" id="price-basic">$2<span>.99</span></div>
       <div class="plan-period" id="period-basic" data-i18n="plan.basic.period">/ ay</div>
       <ul class="plan-features">
-        <li data-i18n="plan.basic.f1">Aylık 20 şarkı</li>
-        <li data-i18n="plan.basic.f2">20 dakika maksimum süre</li>
-        <li data-i18n="plan.basic.f3">6+ kanal (Gelişmiş)</li>
-        <li data-i18n="plan.basic.fbpm">BPM Tespiti & Metronom</li>
-        <li data-i18n="plan.basic.f4">Yüksek Kalite MP3</li>
-        <li data-i18n="plan.basic.f5">Pitch, Speed</li>
+        <li data-i18n="plan.f.songs10">Ayda 10 şarkı</li>
+        <li data-i18n="plan.f.dur5">5 dakika maks süre</li>
+        <li data-i18n="plan.f.ch6">6 kanal ayırma</li>
+        <li data-i18n="plan.f.bpm">Smart & Change BPM + Metronom</li>
+        <li data-i18n="plan.f.chordsPiano">Akor bulucu (piyano)</li>
+        <li data-i18n="plan.f.lyrics">Şarkı sözü transkripti</li>
+        <li data-i18n="plan.f.transpose">Ton değiştirme</li>
+        <li data-i18n="plan.f.mp3">MP3 çıktı</li>
       </ul>
       <a href="#download" class="plan-btn upgrade-redirect-btn" data-i18n="plan.basic.btn">Yükselt</a>
     </div>
-    <div class="plan-card">
-      <div class="plan-badge-tag pro-tag">Pro</div>
-      <div class="plan-name" data-i18n="plan.pro.name">Pro</div>
-      <div class="plan-price" id="price-pro">$13<span>.99</span></div>
-      <div class="plan-period" id="period-pro" data-i18n="plan.pro.period">/ ay</div>
+    <div class="plan-card featured">
+      <div class="plan-badge-tag popular" data-i18n="badge.popular">En Popüler</div>
+      <div class="plan-name" data-i18n="plan.student.name">Student</div>
+      <div class="plan-price" id="price-student">$8<span>.99</span></div>
+      <div class="plan-period" id="period-student" data-i18n="plan.student.period">/ ay</div>
       <ul class="plan-features">
-        <li data-i18n="plan.pro.f1">Sınırsız şarkı</li>
-        <li data-i18n="plan.pro.f2">Sınır yok</li>
-        <li data-i18n="plan.pro.f3">Tüm kanallar</li>
-        <li data-i18n="plan.pro.fbpm">BPM Tespiti & Metronom</li>
-        <li data-i18n="plan.pro.f4">Kayıpsız WAV dışa aktarım</li>
-        <li data-i18n="plan.pro.f5">Şarkı Sözü & PDF indirme</li>
-        <li data-i18n="plan.pro.f6">En yüksek öncelik</li>
+        <li data-i18n="plan.f.songs50">Ayda 50 şarkı</li>
+        <li data-i18n="plan.f.dur7">7 dakika maks süre</li>
+        <li data-i18n="plan.f.ch6plus">6+ kanal ayırma</li>
+        <li data-i18n="plan.f.bpm">Smart & Change BPM + Metronom</li>
+        <li data-i18n="plan.f.chordsPianoGuitar">Akor bulucu (piyano + gitar)</li>
+        <li data-i18n="plan.f.lyrics">Şarkı sözü transkripti</li>
+        <li data-i18n="plan.f.transpose">Ton değiştirme</li>
+        <li data-i18n="plan.f.tuner">Akort Aracı (Tuner)</li>
+        <li data-i18n="plan.f.mp3">MP3 çıktı</li>
+        <li data-i18n="plan.f.pdf">PDF çıktı (akor sayfası)</li>
       </ul>
-      <a href="#download" class="plan-btn upgrade-redirect-btn" data-i18n="plan.pro.btn">Yükselt</a>
+      <a href="#download" class="plan-btn upgrade-redirect-btn" data-i18n="plan.student.btn">Yükselt</a>
+    </div>
+    <div class="plan-card">
+      <div class="plan-badge-tag pro-tag">Producer</div>
+      <div class="plan-name" data-i18n="plan.producer.name">Producer</div>
+      <div class="plan-price" id="price-producer">$13<span>.99</span></div>
+      <div class="plan-period" id="period-producer" data-i18n="plan.producer.period">/ ay</div>
+      <ul class="plan-features">
+        <li data-i18n="plan.f.unlimited">Sınırsız şarkı</li>
+        <li data-i18n="plan.f.durNo">Sınırsız süre</li>
+        <li data-i18n="plan.f.ch6plus">6+ kanal ayırma</li>
+        <li data-i18n="plan.f.chordsPianoGuitar">Akor bulucu (piyano + gitar)</li>
+        <li data-i18n="plan.f.lyrics">Şarkı sözü transkripti</li>
+        <li data-i18n="plan.f.transpose">Ton değiştirme</li>
+        <li data-i18n="plan.f.tuner">Akort Aracı (Tuner)</li>
+        <li data-i18n="plan.f.mp3wav">MP3 + Kayıpsız WAV çıktı</li>
+        <li data-i18n="plan.f.pdf">PDF çıktı (akor sayfası)</li>
+        <li data-i18n="plan.f.batch">Toplu çıktı (tüm kanallar)</li>
+        <li data-i18n="plan.f.midi">MIDI çıktı (vokal + akor + bas + davul)</li>
+        <li data-i18n="plan.f.allFeatures">Tüm özellikler açık</li>
+      </ul>
+      <a href="#download" class="plan-btn upgrade-redirect-btn" data-i18n="plan.producer.btn">Yükselt</a>
     </div>
   </div>
 </div>

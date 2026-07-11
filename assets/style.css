@@ -42,6 +42,16 @@ nav {
 .nav-links { display: flex; gap: 32px; }
 .nav-links a { color: var(--muted); font-size: 14px; transition: color 0.2s; }
 .nav-links a:hover { color: var(--text); }
+/* Truly center the menu only when there's room; the right-side CTA is wide,
+   so on narrower desktops fall back to the normal flow to avoid overlap. */
+@media (min-width: 992px) {
+  .nav-links {
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .nav-lang { margin-left: auto; }
+  .desktop-cta { margin-left: 16px; }
+}
 
 .nav-cta {
   background: var(--accent);
@@ -170,8 +180,8 @@ nav {
 /* PLANS */
 .plans-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px; max-width: 900px; margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px; max-width: 1160px; margin: 0 auto;
 }
 
 .plan-card {

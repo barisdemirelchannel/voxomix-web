@@ -4,7 +4,8 @@ const translations = {
     'nav.download': 'İndir',
     'nav.plans': 'Planlar',
     'nav.about': 'Hakkımızda',
-    'nav.cta': 'Ücretsiz Dene',
+    'nav.cta': 'Producer\'ı 14 Gün Ücretsiz Dene',
+    'nav.ctaShort': 'Ücretsiz Dene',
 
     'hero.badge': 'Mac için Hepsi Bir Arada AI Müzik Stüdyosu',
     'hero.h1': 'Bir Şarkının <span>Her Katmanı</span>,<br>Tek Uygulamada',
@@ -37,8 +38,8 @@ const translations = {
 
     'plans.label': 'Fiyatlandırma',
     'plans.h2': 'Sana Uygun Planı Seç',
-    'trial.title': 'Pro\'yu 14 Gün Ücretsiz Dene',
-    'trial.desc': 'Tüm Pro özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Pro\'ya geçer, istediğin an iptal edebilirsin.',
+    'trial.title': 'Producer\'ı 14 Gün Ücretsiz Dene',
+    'trial.desc': 'Tüm Producer özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Producer\'a geçer, istediğin an iptal edebilirsin.',
     'trial.btn': 'Ücretsiz İndir ve Başla',
     'plan.pro.trial': '14 gün ücretsiz deneme',
 
@@ -57,11 +58,41 @@ const translations = {
     'plan.basic.f2': '20 dakika maksimum süre',
     'plan.basic.f3': '6+ kanal (Gelişmiş)',
     'plan.basic.fbpm': 'BPM Tespiti & Metronom',
+    'plan.ftuner': 'Akort Aracı (Gitar, Bas, Ukulele, Keman, Çello)',
     'plan.basic.f4': 'Yüksek Kalite MP3',
     'plan.basic.f5': 'Pitch, Speed',
     'plan.basic.btn': 'Yükselt',
 
     'plan.pro.name': 'Pro',
+    'plan.student.name': 'Student',
+    'plan.student.period': '/ ay',
+    'plan.student.btn': 'Yükselt',
+    'plan.producer.name': 'Producer',
+    'plan.producer.period': '/ ay',
+    'plan.producer.btn': 'Yükselt',
+    'plan.f.songs2': 'Ayda 2 şarkı',
+    'plan.f.songs10': 'Ayda 10 şarkı',
+    'plan.f.songs50': 'Ayda 50 şarkı',
+    'plan.f.unlimited': 'Sınırsız şarkı',
+    'plan.f.dur4': '4 dakika maks süre',
+    'plan.f.dur5': '5 dakika maks süre',
+    'plan.f.dur7': '7 dakika maks süre',
+    'plan.f.durNo': 'Sınırsız süre',
+    'plan.f.ch4': '4 kanal ayırma',
+    'plan.f.ch6': '6 kanal ayırma',
+    'plan.f.ch6plus': '6+ kanal ayırma',
+    'plan.f.bpm': 'Smart & Change BPM + Metronom',
+    'plan.f.chordsPiano': 'Akor bulucu (piyano)',
+    'plan.f.chordsPianoGuitar': 'Akor bulucu (piyano + gitar)',
+    'plan.f.lyrics': 'Şarkı sözü transkripti',
+    'plan.f.transpose': 'Ton değiştirme',
+    'plan.f.tuner': 'Akort Aracı (Tuner)',
+    'plan.f.mp3': 'MP3 çıktı',
+    'plan.f.pdf': 'PDF çıktı (akor sayfası)',
+    'plan.f.mp3wav': 'MP3 + Kayıpsız WAV çıktı',
+    'plan.f.batch': 'Toplu çıktı (tüm kanallar)',
+    'plan.f.midi': 'MIDI çıktı (vokal + akor + bas + davul)',
+    'plan.f.allFeatures': 'Tüm özellikler açık',
     'plan.pro.period': '/ ay',
     'plan.pro.f1': 'Sınırsız şarkı',
     'plan.pro.f2': 'Sınır yok',
@@ -129,7 +160,8 @@ const translations = {
     'nav.download': 'Download',
     'nav.plans': 'Plans',
     'nav.about': 'About',
-    'nav.cta': 'Try Free',
+    'nav.cta': 'Try Producer Free for 14 Days',
+    'nav.ctaShort': 'Try Free',
 
     'hero.badge': 'All-in-One AI Music Studio for Mac',
     'hero.h1': 'Every <span>Layer</span> of a Song,<br>in One App',
@@ -162,8 +194,8 @@ const translations = {
 
     'plans.label': 'Pricing',
     'plans.h2': 'Choose Your Plan',
-    'trial.title': 'Try Pro Free for 14 Days',
-    'trial.desc': 'All Pro features free for 14 days. Download the app and add your card — it converts to Pro automatically on day 14, cancel anytime.',
+    'trial.title': 'Try Producer Free for 14 Days',
+    'trial.desc': 'All Producer features free for 14 days. Download the app and add your card — it converts to Producer automatically on day 14, cancel anytime.',
     'trial.btn': 'Download &amp; Start Free',
     'plan.pro.trial': '14-day free trial',
 
@@ -182,11 +214,41 @@ const translations = {
     'plan.basic.f2': '20 minutes max',
     'plan.basic.f3': '6+ channels (Advanced)',
     'plan.basic.fbpm': 'BPM Detection & Metronome',
+    'plan.ftuner': 'Instrument Tuner (Guitar, Bass, Ukulele, Violin, Cello)',
     'plan.basic.f4': 'High Quality MP3',
     'plan.basic.f5': 'Pitch, Speed',
     'plan.basic.btn': 'Upgrade',
 
     'plan.pro.name': 'Pro',
+    'plan.student.name': 'Student',
+    'plan.student.period': '/ mo',
+    'plan.student.btn': 'Upgrade',
+    'plan.producer.name': 'Producer',
+    'plan.producer.period': '/ mo',
+    'plan.producer.btn': 'Upgrade',
+    'plan.f.songs2': '2 songs / month',
+    'plan.f.songs10': '10 songs / month',
+    'plan.f.songs50': '50 songs / month',
+    'plan.f.unlimited': 'Unlimited songs',
+    'plan.f.dur4': 'Up to 4 minutes',
+    'plan.f.dur5': 'Up to 5 minutes',
+    'plan.f.dur7': 'Up to 7 minutes',
+    'plan.f.durNo': 'No duration limit',
+    'plan.f.ch4': '4-channel separation',
+    'plan.f.ch6': '6-channel separation',
+    'plan.f.ch6plus': '6+ channel separation',
+    'plan.f.bpm': 'Smart & Change BPM + Metronome',
+    'plan.f.chordsPiano': 'Chord finder (piano)',
+    'plan.f.chordsPianoGuitar': 'Chord finder (piano + guitar)',
+    'plan.f.lyrics': 'Lyrics transcription',
+    'plan.f.transpose': 'Transpose',
+    'plan.f.tuner': 'Instrument Tuner',
+    'plan.f.mp3': 'MP3 export',
+    'plan.f.pdf': 'PDF export (chord sheet)',
+    'plan.f.mp3wav': 'MP3 + lossless WAV export',
+    'plan.f.batch': 'Batch export (all channels)',
+    'plan.f.midi': 'MIDI export (vocal + chords + bass + drums)',
+    'plan.f.allFeatures': 'All features unlocked',
     'plan.pro.period': '/ month',
     'plan.pro.f1': 'Unlimited songs',
     'plan.pro.f2': 'No limit',
@@ -255,7 +317,7 @@ function voxomixLang() {
   const btnMonthly = document.getElementById('btn-monthly');
   const btnYearly  = document.getElementById('btn-yearly');
   if (btnMonthly) btnMonthly.textContent = lang === 'tr' ? 'Aylık' : 'Monthly';
-  if (btnYearly)  btnYearly.textContent  = lang === 'tr' ? 'Yıllık — %30 İndirim' : 'Yearly — 30% Off';
+  if (btnYearly)  btnYearly.textContent  = lang === 'tr' ? 'Yıllık — %20 İndirim' : 'Yearly — 20% Off';
 
   const billingNote = document.getElementById('billing-note');
   const noteText = lang === 'tr'
@@ -266,8 +328,9 @@ function voxomixLang() {
 
 // Billing toggle function (global)
 const _prices = {
-  basic: { monthly: '$8<span>.99</span>', yearly: '$6<span>.29</span>' },
-  pro:   { monthly: '$13<span>.99</span>', yearly: '$9<span>.79</span>' },
+  basic:    { monthly: '$2<span>.99</span>',  yearly: '$2<span>.39</span>' },
+  student:  { monthly: '$8<span>.99</span>',  yearly: '$7<span>.19</span>' },
+  producer: { monthly: '$13<span>.99</span>', yearly: '$11<span>.19</span>' },
 };
 const _periods = {
   tr: { monthly: '/ ay', yearly: '/ ay' },
@@ -276,18 +339,23 @@ const _periods = {
 const _currentLang = voxomixLang();
 
 function setBilling(mode) {
-  const priceBasic  = document.getElementById('price-basic');
-  const pricePro    = document.getElementById('price-pro');
-  const periodBasic = document.getElementById('period-basic');
-  const periodPro   = document.getElementById('period-pro');
+  const priceBasic    = document.getElementById('price-basic');
+  const priceStudent  = document.getElementById('price-student');
+  const priceProducer = document.getElementById('price-producer');
+  const periodBasic    = document.getElementById('period-basic');
+  const periodStudent  = document.getElementById('period-student');
+  const periodProducer = document.getElementById('period-producer');
   const btnMonthly  = document.getElementById('btn-monthly');
   const btnYearly   = document.getElementById('btn-yearly');
   const note        = document.getElementById('billing-note');
 
-  if (priceBasic)  priceBasic.innerHTML  = _prices.basic[mode];
-  if (pricePro)    pricePro.innerHTML    = _prices.pro[mode];
-  if (periodBasic) periodBasic.textContent = _periods[_currentLang][mode];
-  if (periodPro)   periodPro.textContent   = _periods[_currentLang][mode];
+  if (priceBasic)    priceBasic.innerHTML    = _prices.basic[mode];
+  if (priceStudent)  priceStudent.innerHTML  = _prices.student[mode];
+  if (priceProducer) priceProducer.innerHTML = _prices.producer[mode];
+  const per = _periods[_currentLang][mode];
+  if (periodBasic)    periodBasic.textContent    = per;
+  if (periodStudent)  periodStudent.textContent  = per;
+  if (periodProducer) periodProducer.textContent = per;
   if (note)        note.style.display = mode === 'yearly' ? 'block' : 'none';
   if (btnMonthly)  btnMonthly.classList.toggle('active', mode === 'monthly');
   if (btnYearly)   btnYearly.classList.toggle('active', mode === 'yearly');
