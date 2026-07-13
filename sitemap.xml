@@ -19,6 +19,30 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://voxomix.com/blog</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/blog/voxomix-nasil-kullanilir</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/en/blog</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/en/blog/how-to-use-voxomix</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://voxomix.com/kullanim-sartlari</loc>
     <lastmod>2026-07-05</lastmod>
     <changefreq>yearly</changefreq>
