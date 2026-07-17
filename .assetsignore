@@ -15,6 +15,10 @@
 .DS_Store
 **/.DS_Store
 Icon?
+# AppleDouble sidecars — macOS writes one next to every file on the exFAT SSD
+# checkout, so without this every deploy uploads ~45 junk files.
+._*
+**/._*
 
 # Build config & source (not site assets)
 node_modules
