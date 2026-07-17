@@ -3,3 +3,6 @@
 .wrangler/
 node_modules/
 Icon?
+
+# AppleDouble sidecars (exFAT SSD checkout)
+._*

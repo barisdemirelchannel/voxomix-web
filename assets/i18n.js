@@ -113,7 +113,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Yakında',
-    'download.version': 'v1.1.6 • Ücretsiz • İndirmek için kayıt gerekmez',
+    'download.version': 'v1.2.2 • Ücretsiz • İndirmek için kayıt gerekmez',
 
     'how.label': 'Nasıl Çalışır',
     'how.h2': '3 Adımda Hazır',
@@ -269,7 +269,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Coming soon',
-    'download.version': 'v1.1.6 • Free • No signup required',
+    'download.version': 'v1.2.2 • Free • No signup required',
 
     'badge.popular': 'Most Popular',
 
