@@ -145,6 +145,7 @@ const translations = {
     'footer.pricing': 'Fiyatlandırma',
     'footer.about': 'Hakkımızda',
     'footer.legal': 'Yasal',
+    'footer.terms': 'Kullanım Şartları',
     'footer.privacy': 'Gizlilik Sözleşmesi',
     'footer.delivery': 'Teslimat ve İade',
     'footer.distance': 'Mesafeli Satış Sözleşmesi',
@@ -279,6 +280,7 @@ const translations = {
     'footer.pricing': 'Pricing',
     'footer.about': 'About',
     'footer.legal': 'Legal',
+    'footer.terms': 'Terms of Use',
     'footer.privacy': 'Privacy Policy',
     'footer.delivery': 'Delivery & Returns',
     'footer.distance': 'Distance Sales Agreement',
@@ -288,6 +290,28 @@ const translations = {
 
     'about.title': 'About Us',
     'about.subtitle': 'The story and mission of VoxoMix',
+
+    'how.label': 'How It Works',
+    'how.h2': 'Ready in 3 Steps',
+    'how.step1.title': 'Upload Your Song',
+    'how.step1.desc': 'Drag and drop an MP3, WAV or any audio file, or open it with the file picker.',
+    'how.step2.title': 'AI Processing',
+    'how.step2.desc': 'AI analyzes your song and separates it into vocal, drum, bass and instrument layers.',
+    'how.step3.title': 'Download & Use',
+    'how.step3.desc': 'Listen to each layer separately, mute or solo tracks, or download them as WAV to your computer.',
+
+    'faq.label': 'FAQ',
+    'faq.h2': 'Frequently Asked Questions',
+    'faq.q1': 'Does it work without an internet connection?',
+    'faq.a1': 'After you sign in and verify your license, the app works completely offline. The internet is only needed for the first sign-in and license verification.',
+    'faq.q2': 'Which audio formats are supported?',
+    'faq.a2': 'MP3, WAV, FLAC, AAC and M4A are supported. You can export as WAV (lossless) or MP3.',
+    'faq.q3': 'Can I cancel my subscription anytime?',
+    'faq.a3': 'Yes, you can cancel anytime. After cancelling, you can keep using the app until the end of your current period.',
+    'faq.q4': 'How long does stem separation take?',
+    'faq.a4': 'For an average song (3-4 minutes) it takes 1-3 minutes on Apple Silicon Macs and 3-6 minutes on Windows computers.',
+    'faq.q5': 'Is my payment information secure?',
+    'faq.a5': 'All payments are processed through iyzico with 256-bit SSL encryption. Your card details are never stored on our servers.',
   }
 };
 
