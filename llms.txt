@@ -1,0 +1,46 @@
+# VoxoMix
+
+> VoxoMix is an offline, privacy-first desktop app for musicians. It uses on-device AI to split any song into stems (vocals, drums, bass, guitar, piano), detect chords and BPM, transcribe lyrics, and shift pitch or tempo — all locally, with no upload to any server. Built for home musicians and beginner instrumentalists to practice, and for producers to work with stems. Runs on Mac and Windows.
+
+## What makes VoxoMix different
+- **Fully offline / on-device**: songs, chords, lyrics and melodies never leave your computer — nothing is uploaded to any server.
+- **All-in-one practice studio**: stem separation + chord detection + lyrics + pitch/tempo shift + metronome + song-structure analysis + a record channel, in one app (competitors split these across cloud tools).
+- **No signup, no queue**: download and start free; Apple-notarized native app.
+
+## Core features
+- AI stem separation: vocals, drums, bass, guitar, piano
+- Real-time pitch shift / transpose (tempo preserved)
+- Automatic chord detection (piano and guitar)
+- Automatic lyrics transcription
+- BPM detection, metronome, and song-structure bar
+- Record channel: record your own playing into the song (with headphone monitoring) and export it as WAV
+- Instrument tuner
+- Export: MP3, lossless WAV, MIDI, and PDF chord sheets
+
+## Platforms
+- macOS (Apple Silicon: M1–M5), .dmg
+- Windows 10/11, .exe
+
+## Pricing
+- Free: $0 — 2 songs/month, 4-channel separation, chord finder (piano)
+- Basic: $2.99/mo — 10 songs/month, 6-channel, lyrics, transpose, MP3 export
+- Student: $8.99/mo — 50 songs/month, chords (piano+guitar), tuner, PDF export
+- Producer: $13.99/mo — unlimited songs, lossless WAV, MIDI, batch export, all features
+- 14-day free Producer trial. Cancel anytime.
+
+## Best for (use cases)
+- Practicing an instrument by isolating or muting parts of any song, then recording yourself in place of the muted part
+- Slowing a song down without changing its pitch to learn a part
+- Finding the chords and lyrics of a song to play along
+- Producers extracting clean stems for remixing or sampling
+- Musicians who want a private, offline alternative to cloud-based stem separation and chord-finding tools
+
+## Links
+- Home (Turkish): https://voxomix.com/
+- Home (English): https://voxomix.com/en/
+- Blog: https://voxomix.com/blog/
+- Guide — How to practise any song at home: https://voxomix.com/en/blog/practice-any-song-complete-guide
+- Guide — Offline stem separation (why local processing matters): https://voxomix.com/en/blog/offline-stem-separation
+- Guide — Slow down a song without changing the pitch: https://voxomix.com/en/blog/slow-down-song-without-changing-pitch
+- About: https://voxomix.com/hakkimizda
+- Contact: info@voxomix.com
