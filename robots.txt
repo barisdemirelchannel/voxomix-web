@@ -1,4 +1,31 @@
+# VoxoMix — robots.txt
+# Public marketing content is open to all crawlers, including AI search & answer engines.
+# We WANT AI engines to read and cite VoxoMix. User audio/data privacy is enforced
+# in-app via on-device processing — unrelated to this file.
+
 User-agent: *
+Allow: /
+
+# AI search & answer engines are explicitly welcome (citations / reference use):
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://voxomix.com/sitemap.xml
