@@ -7,9 +7,9 @@ const translations = {
     'nav.cta': 'Producer\'ı 14 Gün Ücretsiz Dene',
     'nav.ctaShort': 'Ücretsiz Dene',
 
-    'hero.badge': 'Mac için Hepsi Bir Arada AI Müzik Stüdyosu',
+    'hero.badge': 'Mac ve Windows için Hepsi Bir Arada AI Müzik Stüdyosu',
     'hero.h1': 'Bir Şarkının <span>Her Katmanı</span>,<br>Tek Uygulamada',
-    'hero.p': 'Vokal ve enstrümanlara ayır; akoru, BPM\'i ve tonaliteyi gör; tonunu değiştir; sözü çıkar — hepsi Mac\'inde, çevrimdışı ve sıra beklemeden.',
+    'hero.p': 'Vokal ve enstrümanlara ayır; akoru, BPM\'i ve tonaliteyi gör; tonunu değiştir; sözü çıkar — hepsi bilgisayarında, çevrimdışı ve sıra beklemeden.',
     'hero.btn1': 'Ücretsiz İndir',
     'hero.btn2': 'Nasıl Çalışır?',
     'hero.trust1': 'Kayıt gerekmez',
@@ -164,9 +164,9 @@ const translations = {
     'nav.cta': 'Try Producer Free for 14 Days',
     'nav.ctaShort': 'Try Free',
 
-    'hero.badge': 'All-in-One AI Music Studio for Mac',
+    'hero.badge': 'All-in-One AI Music Studio for Mac & Windows',
     'hero.h1': 'Every <span>Layer</span> of a Song,<br>in One App',
-    'hero.p': 'Split into vocals & instruments; see chords, BPM and key; change the pitch; get the lyrics — all on your Mac, offline, with no queue.',
+    'hero.p': 'Split into vocals & instruments; see chords, BPM and key; change the pitch; get the lyrics — all on your computer, offline, with no queue.',
     'hero.btn1': 'Download Free',
     'hero.btn2': 'How It Works?',
     'hero.trust1': 'No signup',
