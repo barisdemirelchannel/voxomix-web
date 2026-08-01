@@ -839,6 +839,68 @@ function voxomixLang() {
 
   const billingNote = document.getElementById('billing-note');
   if (billingNote) billingNote.textContent = t['billing.note'];
+
+  // ── 5-language switcher. Upgrades the single .nav-lang toggle into a dropdown
+  // and the mobile menu's language link into an inline row, so no per-page
+  // markup change is needed — every page that loads i18n.js gets all 5 languages.
+  // Each link targets that language's homepage (always a valid URL); per-page
+  // SEO cross-linking is handled separately by <link rel="alternate" hreflang>.
+  const LANGS = [
+    { code: 'tr', label: 'Türkçe',   url: '/'    },
+    { code: 'en', label: 'English',  url: '/en/' },
+    { code: 'es', label: 'Español',  url: '/es/' },
+    { code: 'fr', label: 'Français', url: '/fr/' },
+    { code: 'de', label: 'Deutsch',  url: '/de/' },
+  ];
+  const cur = LANGS.find(l => l.code === lang) || LANGS[0];
+
+  // Desktop: replace .nav-lang with a dropdown
+  document.querySelectorAll('.nav-lang').forEach(function (el) {
+    const dd = document.createElement('div');
+    dd.className = 'nav-lang-dd';
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'nav-lang';
+    btn.setAttribute('aria-haspopup', 'true');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.innerHTML = '🌐 ' + cur.code.toUpperCase() + ' ▾';
+    const menu = document.createElement('div');
+    menu.className = 'nav-lang-menu';
+    LANGS.forEach(function (l) {
+      const a = document.createElement('a');
+      a.href = l.url; a.textContent = l.label; a.hreflang = l.code;
+      if (l.code === lang) a.className = 'active';
+      a.addEventListener('click', function () { try { localStorage.setItem('voxomix_site_lang', l.code); } catch (e) {} });
+      menu.appendChild(a);
+    });
+    dd.appendChild(btn); dd.appendChild(menu);
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const open = dd.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    el.replaceWith(dd);
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.nav-lang-dd')) {
+      document.querySelectorAll('.nav-lang-dd.open').forEach(function (d) { d.classList.remove('open'); });
+    }
+  });
+
+  // Mobile: replace the menu's single language link with an inline 5-language row
+  const mLangLink = document.querySelector('.mobile-menu a[hreflang]');
+  if (mLangLink) {
+    const row = document.createElement('div');
+    row.className = 'mobile-lang-row';
+    LANGS.forEach(function (l) {
+      const a = document.createElement('a');
+      a.href = l.url; a.textContent = l.code.toUpperCase(); a.hreflang = l.code;
+      if (l.code === lang) a.className = 'active';
+      a.addEventListener('click', function () { try { localStorage.setItem('voxomix_site_lang', l.code); } catch (e) {} });
+      row.appendChild(a);
+    });
+    mLangLink.replaceWith(row);
+  }
 })();
 
 // Billing toggle function (global). Prices are USD everywhere (Polar charges USD
