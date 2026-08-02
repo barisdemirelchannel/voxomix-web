@@ -49,7 +49,9 @@ nav {
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
   }
-  .nav-lang { margin-left: auto; }
+  /* JS, .nav-lang <a>'yı .nav-lang-dd sarmalayıcıya yükseltiyor; flex child artık
+     sarmalayıcı olduğu için auto'yu ona da ver — yoksa dropdown ortadaki menüyle çakışır. */
+  .nav-lang, .nav-lang-dd { margin-left: auto; }
   .desktop-cta { margin-left: 16px; }
 }
 
@@ -469,6 +471,9 @@ footer {
   nav { padding: 0 20px; }
   .nav-links { display: none; }
   .desktop-cta { display: none; }
+  /* Mobilde dil seçimi hamburger menüsündeki satırdan (.mobile-lang-row) yapılır;
+     üst bardaki dropdown'ı gizle ki menünün üstüne binmesin / çift seçici olmasın. */
+  .nav-lang-dd, .nav-lang { display: none; }
   .hamburger { display: flex; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-content, .legal-content { padding: 28px 20px; }
