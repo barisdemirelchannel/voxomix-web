@@ -888,6 +888,47 @@ function voxomixLang() {
     }
   });
 
+  // Hamburger'ı olmayan sayfalar (blog index + yazılar) mevcut nav'dan bir
+  // hamburger + mobil menü ÜRETİR; böylece mobilde ana sayfayla aynı temiz
+  // logo+menü görünümü olur ve dil seçici kaybolmaz. Ana sayfada zaten hamburger
+  // + #mobile-menu var → erken çık. Aşağıdaki dil-satırı kodundan ÖNCE çalışmalı.
+  (function () {
+    const nav = document.querySelector('nav');
+    if (!nav || nav.querySelector('.hamburger') || document.getElementById('mobile-menu')) return;
+    const base = lang === 'tr' ? '' : '/' + lang;
+    const cta = nav.querySelector('.nav-cta');
+    if (cta) cta.classList.add('desktop-cta');           // uzun CTA'yı mobilde gizle
+    const burger = document.createElement('button');
+    burger.className = 'hamburger'; burger.id = 'hamburger';
+    burger.setAttribute('aria-label', 'Menu');
+    burger.innerHTML = '<span></span><span></span><span></span>';
+    nav.appendChild(burger);
+    const menu = document.createElement('div');
+    menu.className = 'mobile-menu'; menu.id = 'mobile-menu';
+    [[t['nav.features'], base + '/#features'],
+     [t['nav.download'], base + '/#download'],
+     [t['nav.plans'],    base + '/#plans'],
+     ['Blog',            base + '/blog/'],
+     [t['nav.about'],    base + '/hakkimizda']].forEach(function (l) {
+      const a = document.createElement('a'); a.href = l[1]; a.textContent = l[0]; menu.appendChild(a);
+    });
+    const seed = document.createElement('a');            // dil-satırı kodu bunu değiştirir
+    seed.href = '/'; seed.hreflang = 'tr'; seed.textContent = 'Türkçe';
+    menu.appendChild(seed);
+    const mcta = document.createElement('a');
+    mcta.href = base + '/#download'; mcta.className = 'nav-cta';
+    mcta.style.textAlign = 'center'; mcta.style.marginTop = '8px';
+    mcta.textContent = t['nav.ctaShort'] || t['nav.cta'] || 'Free';
+    menu.appendChild(mcta);
+    nav.insertAdjacentElement('afterend', menu);
+    burger.addEventListener('click', function () {
+      burger.classList.toggle('open'); menu.classList.toggle('open');
+    });
+    menu.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { burger.classList.remove('open'); menu.classList.remove('open'); });
+    });
+  })();
+
   // Mobile: replace the menu's single language link with an inline 5-language row
   const mLangLink = document.querySelector('.mobile-menu a[hreflang]');
   if (mLangLink) {
