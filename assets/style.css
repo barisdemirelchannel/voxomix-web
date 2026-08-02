@@ -44,7 +44,9 @@ nav {
 .nav-links a:hover { color: var(--text); }
 /* Truly center the menu only when there's room; the right-side CTA is wide,
    so on narrower desktops fall back to the normal flow to avoid overlap. */
-@media (min-width: 992px) {
+/* Absolute-centering only on wide screens where even the longest language
+   (Almanca ~1029px tek satır) rahatça sığar; altında normal akış kullanılır. */
+@media (min-width: 1280px) {
   .nav-links {
     position: absolute; left: 50%; top: 50%;
     transform: translate(-50%, -50%);
@@ -466,15 +468,20 @@ footer {
 .mobile-menu a { color: var(--muted); font-size: 16px; font-weight: 600; padding: 12px 0; border-bottom: 1px solid #1e1e1e; text-decoration: none; }
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu.open { display: flex; }
+/* Masaüstünde hamburger gizli; menü açık kalmışsa (ör. yeniden boyutlandırma) zorla kapat. */
+@media (min-width: 1025px) { .mobile-menu { display: none !important; } }
 
-@media (max-width: 768px) {
-  nav { padding: 0 20px; }
+/* Nav → hamburger ≤1024px: en uzun dil (Almanca) tek satıra sığmadan önce menüye
+   geç. Dil seçimi hamburger içindeki .mobile-lang-row satırından yapılır; üst
+   bardaki dropdown gizlenir (çift seçici + menü üstüne binme sorunu olmasın). */
+@media (max-width: 1024px) {
   .nav-links { display: none; }
   .desktop-cta { display: none; }
-  /* Mobilde dil seçimi hamburger menüsündeki satırdan (.mobile-lang-row) yapılır;
-     üst bardaki dropdown'ı gizle ki menünün üstüne binmesin / çift seçici olmasın. */
   .nav-lang-dd, .nav-lang { display: none; }
   .hamburger { display: flex; }
+}
+@media (max-width: 768px) {
+  nav { padding: 0 20px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .about-content, .legal-content { padding: 28px 20px; }
 }

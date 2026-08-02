@@ -845,12 +845,13 @@ function voxomixLang() {
   // markup change is needed — every page that loads i18n.js gets all 5 languages.
   // Each link targets that language's homepage (always a valid URL); per-page
   // SEO cross-linking is handled separately by <link rel="alternate" hreflang>.
+  // Alfabetik sıra (etiket = kod sırasıyla aynı): Deutsch, English, Español, Français, Türkçe
   const LANGS = [
-    { code: 'tr', label: 'Türkçe',   url: '/'    },
+    { code: 'de', label: 'Deutsch',  url: '/de/' },
     { code: 'en', label: 'English',  url: '/en/' },
     { code: 'es', label: 'Español',  url: '/es/' },
     { code: 'fr', label: 'Français', url: '/fr/' },
-    { code: 'de', label: 'Deutsch',  url: '/de/' },
+    { code: 'tr', label: 'Türkçe',   url: '/'    },
   ];
   const cur = LANGS.find(l => l.code === lang) || LANGS[0];
 
