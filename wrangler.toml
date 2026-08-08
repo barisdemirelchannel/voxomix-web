@@ -1,5 +1,19 @@
 name = "voxomix-web"
-compatibility_date = "2024-06-19"
+main = "worker/index.js"
+# Statik varlık + Worker birlikte çalışabilmesi için 2024 sonrası bir tarih gerekiyor
+# (eski değer 2024-06-19 idi ve yalnız statik sunum için kullanılıyordu).
+compatibility_date = "2025-01-01"
 
 [assets]
 directory = "."
+binding = "ASSETS"
+# Varsayılan davranış korunuyor: bir istek statik dosyayla eşleşiyorsa Worker
+# hiç çalışmaz. Yalnız /download/* gibi eşleşmeyen yollar Worker'a düşer.
+
+# İndirme sayacı (opsiyonel). Etkinleştirmek için:
+#   npx wrangler kv namespace create DOWNLOADS
+# çıktısındaki id'yi aşağıya yazıp yorumu kaldırın. Bağlanmazsa Worker
+# sayım yapmadan normal çalışmaya devam eder.
+# [[kv_namespaces]]
+# binding = "DOWNLOADS"
+# id = "..."

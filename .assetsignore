@@ -31,3 +31,7 @@ package-lock.json
 # build/tool scripts
 *.py
 tools
+
+# Worker kaynagi — statik dosya olarak servis edilmemeli (main olarak calisir)
+worker
+worker/**
