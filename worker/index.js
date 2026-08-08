@@ -61,18 +61,25 @@ async function resolveAsset(os) {
   return { url: `${LATEST}/${encodeURIComponent(name)}`, version, name };
 }
 
-/* Günlük indirme sayacı.
+/* İndirme sayacı — OLAY BAŞINA AYRI ANAHTAR.
+ *
+ * ⚠️ İlk sürüm tek anahtarı oku-artır-yaz yapıyordu ve ÖLÇÜLDÜ: 6 isteğin
+ * yalnız 4'ü sayıldı. Sebep yalnızca eşzamanlılık değil — KV okuması ~60 sn'ye
+ * kadar bayat olabiliyor, dolayısıyla arka arkaya gelen istekler aynı eski
+ * değeri okuyup birbirinin üzerine yazıyor. Yani sayaç, tam da kampanya
+ * yoğunluğunda sistematik olarak eksik sayardı.
+ *
+ * Çözüm: hiç okuma yapma, her indirme için benzersiz anahtar yaz. Sayım =
+ * ön ekle listeleme (tools/download-stats.py). Kesin sonuç, yarış yok.
  * KV bağlı değilse sessizce atlanır → Worker KV olmadan da çalışır.
- * Bilinçli basitlik: oku-artır-yaz yarışında eşzamanlı indirmelerde birkaç
- * artış kaybolabilir. Günde onlarca indirmede bu fark önemsiz; kesin sayım
- * Durable Object ister ve bu aşamada karşılığı yok. */
+ * Sınır: ücretsiz planda 1.000 KV yazma/gün. Aşılırsa sayım düşer, indirme
+ * etkilenmez; o hacme gelinirse Workers Analytics Engine'e geçilmeli. */
 async function count(env, os, version) {
   if (!env.DOWNLOADS) return;
   try {
-    const day = new Date().toISOString().slice(0, 10);
-    const key = `dl:${day}:${os}:${version || 'unknown'}`;
-    const current = parseInt((await env.DOWNLOADS.get(key)) || '0', 10);
-    await env.DOWNLOADS.put(key, String(current + 1), {
+    const now = new Date();
+    const key = `dl:${now.toISOString().slice(0, 10)}:${os}:${version || 'unknown'}:${crypto.randomUUID()}`;
+    await env.DOWNLOADS.put(key, now.toISOString(), {
       expirationTtl: 60 * 60 * 24 * 400, // ~13 ay
     });
   } catch {
