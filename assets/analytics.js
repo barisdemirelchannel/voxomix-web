@@ -33,7 +33,7 @@
   // i18n.js'e bağımlı olmamak bilinçli: bu dosya head'de, o body sonunda yükleniyor.
   function pageLang() {
     var seg = location.pathname.split('/')[1];
-    return (seg === 'en' || seg === 'es' || seg === 'fr' || seg === 'de') ? seg : 'tr';
+    return (seg === 'en' || seg === 'es' || seg === 'fr' || seg === 'de' || seg === 'it') ? seg : 'tr';
   }
   var LANG = pageLang();
 
@@ -64,6 +64,11 @@
       body: 'Wir möchten Analyse-Cookies verwenden, um zu verstehen, wie diese Website genutzt wird. Wenn du ablehnst, werden keine Cookies gesetzt und keine Daten gesendet.',
       note: 'Die VoxoMix-App funktioniert ohnehin offline — deine Musikdateien verlassen deinen Computer nie.',
       ok: 'Akzeptieren', no: 'Ablehnen', more: 'Datenschutz', privacy: '/en/gizlilik.html'
+    },
+    it: {
+      body: 'Vorremmo usare cookie di analisi per capire come viene usato il sito. Se rifiuti, non viene installato alcun cookie e non viene inviato alcun dato.',
+      note: "L'app VoxoMix funziona comunque offline — i tuoi file musicali non lasciano mai il tuo computer.",
+      ok: 'Accetta', no: 'Rifiuta', more: 'Informativa sulla privacy', privacy: '/en/gizlilik.html'
     }
   }[LANG];
 
