@@ -7,31 +7,31 @@ import re, html, os, sys
 
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = sys.argv[1:] or ['es', 'fr', 'de']
-ALL = ['tr', 'en', 'es', 'fr', 'de']
-LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE'}
+ALL = ['tr', 'en', 'es', 'fr', 'de', 'it']
+LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
     {'key': 'pillar',  'read': 12,
-     'slug': {'es': 'como-practicar-con-cualquier-cancion', 'fr': 'travailler-nimporte-quelle-chanson-guide', 'de': 'mit-jedem-song-zu-hause-ueben'},
-     'date': {'es': '3 de agosto de 2026', 'fr': '3 août 2026', 'de': '3. August 2026'}},
+     'slug': {'es': 'como-practicar-con-cualquier-cancion', 'fr': 'travailler-nimporte-quelle-chanson-guide', 'de': 'mit-jedem-song-zu-hause-ueben', 'it': 'esercitarsi-con-qualsiasi-canzone-guida'},
+     'date': {'es': '3 de agosto de 2026', 'fr': '3 août 2026', 'de': '3. August 2026', 'it': '3 agosto 2026'}},
     {'key': 'slow',    'read': 6,
-     'slug': {'es': 'ralentizar-cancion-sin-cambiar-el-tono', 'fr': 'ralentir-une-chanson-sans-changer-la-hauteur', 'de': 'song-verlangsamen-ohne-tonhoehe'},
-     'date': {'es': '27 de julio de 2026', 'fr': '27 juillet 2026', 'de': '27. Juli 2026'}},
+     'slug': {'es': 'ralentizar-cancion-sin-cambiar-el-tono', 'fr': 'ralentir-une-chanson-sans-changer-la-hauteur', 'de': 'song-verlangsamen-ohne-tonhoehe', 'it': 'rallentare-una-canzone-senza-cambiare-tono'},
+     'date': {'es': '27 de julio de 2026', 'fr': '27 juillet 2026', 'de': '27. Juli 2026', 'it': '27 luglio 2026'}},
     {'key': 'offline', 'read': 6,
-     'slug': {'es': 'separacion-de-pistas-sin-conexion', 'fr': 'separation-de-pistes-hors-ligne', 'de': 'offline-stem-trennung'},
-     'date': {'es': '20 de julio de 2026', 'fr': '20 juillet 2026', 'de': '20. Juli 2026'}},
+     'slug': {'es': 'separacion-de-pistas-sin-conexion', 'fr': 'separation-de-pistes-hors-ligne', 'de': 'offline-stem-trennung', 'it': 'separazione-tracce-offline'},
+     'date': {'es': '20 de julio de 2026', 'fr': '20 juillet 2026', 'de': '20. Juli 2026', 'it': '20 luglio 2026'}},
     {'key': 'howto',   'read': 8,
-     'slug': {'es': 'como-usar-voxomix', 'fr': 'comment-utiliser-voxomix', 'de': 'voxomix-verwenden'},
-     'date': {'es': '13 de julio de 2026', 'fr': '13 juillet 2026', 'de': '13. Juli 2026'}},
+     'slug': {'es': 'como-usar-voxomix', 'fr': 'comment-utiliser-voxomix', 'de': 'voxomix-verwenden', 'it': 'come-usare-voxomix'},
+     'date': {'es': '13 de julio de 2026', 'fr': '13 juillet 2026', 'de': '13. Juli 2026', 'it': '13 luglio 2026'}},
 ]
 
 # category-key -> per-lang label
 CAT = {
-    'pillar':  {'es': 'Guía completa', 'fr': 'Guide complet', 'de': 'Kompletter Guide'},
-    'slow':    {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide'},
-    'offline': {'es': 'Comparativa', 'fr': 'Comparatif', 'de': 'Vergleich'},
-    'howto':   {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide'},
+    'pillar':  {'es': 'Guía completa', 'fr': 'Guide complet', 'de': 'Kompletter Guide', 'it': 'Guida completa'},
+    'slow':    {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
+    'offline': {'es': 'Comparativa', 'fr': 'Comparatif', 'de': 'Vergleich', 'it': 'Confronto'},
+    'howto':   {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
 }
 
 CHROME = {
@@ -58,6 +58,14 @@ CHROME = {
         'schema_desc': 'Guides und Tipps zu Stem-Trennung, Akkorderkennung, BPM-Analyse und KI-Musikproduktion für den Mac.',
         'h1': 'VoxoMix Blog', 'sub': 'Guides zu Stem-Trennung, Akkorderkennung und KI-Musikproduktion für den Mac',
         'read_more': 'Weiterlesen →', 'min': 'Min. Lesezeit', 'home': 'Start', 'blog': 'Blog',
+    },
+    'it': {
+        'title': 'Blog di VoxoMix — Guide e consigli',
+        'desc': 'Il blog di VoxoMix: guide, consigli e tutorial su separazione delle tracce, riconoscimento degli accordi, analisi del BPM e produzione musicale con IA per Mac.',
+        'ogd': 'Guide e consigli su separazione delle tracce, riconoscimento degli accordi e produzione musicale con IA per Mac.',
+        'schema_desc': 'Guide e consigli su separazione delle tracce, riconoscimento degli accordi, analisi del BPM e produzione musicale con IA per Mac.',
+        'h1': 'Blog di VoxoMix', 'sub': 'Guide su separazione delle tracce, riconoscimento degli accordi e produzione musicale con IA per Mac',
+        'read_more': 'Leggi tutto →', 'min': 'min di lettura', 'home': 'Home', 'blog': 'Blog',
     },
 }
 

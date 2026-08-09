@@ -9,8 +9,8 @@ import re, html, os, sys
 
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = sys.argv[1:] or ['es', 'fr', 'de']
-ALL = ['tr', 'en', 'es', 'fr', 'de']
-LOCALE = {'tr': 'tr_TR', 'en': 'en_US', 'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE'}
+ALL = ['tr', 'en', 'es', 'fr', 'de', 'it']
+LOCALE = {'tr': 'tr_TR', 'en': 'en_US', 'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 # Yasal sayfa slug'ları — Türkçe dışında hep İngilizce (/en/) gösterilir.
 LEGAL = ['kullanim-sartlari', 'gizlilik', 'mesafeli-satis', 'teslimat-iade']
 
@@ -51,6 +51,12 @@ META = {
       'ogt': 'VoxoMix — Jede Ebene eines Songs, in einer App',
       'ogd': 'Trenne jeden Song mit KI in Gesang-, Schlagzeug-, Bass- und Instrumenten-Stems. Akkorde, BPM, Songtext und Tonhöhe. Kostenlos starten auf Mac & Windows.',
     },
+    'it': {
+      'title': 'VoxoMix — Separa ogni canzone in tracce, accordi, BPM e testo',
+      'desc': "Separa ogni canzone in tracce di voce, batteria, basso e strumenti con VoxoMix. Separazione con IA, riconoscimento di accordi e BPM, testo e cambio di tonalità. Gratis su Mac e Windows.",
+      'ogt': 'VoxoMix — Ogni livello di una canzone, in una sola app',
+      'ogd': "Separa ogni canzone in tracce di voce, batteria, basso e strumenti con l'IA. Accordi, BPM, testo e tonalità. Inizia gratis su Mac e Windows.",
+    },
   },
   'hakkimizda': {
     'es': {
@@ -67,6 +73,11 @@ META = {
       'title': 'Über uns — VoxoMix',
       'desc': 'Die Geschichte und Mission von VoxoMix: eine KI-Desktop-App für Musiker — Stem-Trennung, Akkord- und Songtext-Erkennung.',
       'ogt': 'Über uns — VoxoMix', 'ogd': 'Die Geschichte und Mission von VoxoMix.',
+    },
+    'it': {
+      'title': 'Chi siamo — VoxoMix',
+      'desc': "La storia e la missione di VoxoMix: un'app desktop con IA per musicisti — separazione delle tracce, riconoscimento di accordi e testo.",
+      'ogt': 'Chi siamo — VoxoMix', 'ogd': 'La storia e la missione di VoxoMix.',
     },
   },
 }
