@@ -20,7 +20,8 @@
 
   // ---- YAPILANDIRMA --------------------------------------------------------
   // GA4 → Yönetici → Veri akışları → Web akışı → "Ölçüm Kimliği" (G- ile başlar).
-  var GA_ID = '';
+  // Mülk: "voxomix.com" · akış: "voxomix.com — web" (akış no 15404955615), 8 Ağu 2026.
+  var GA_ID = 'G-1N6R4SZ3TY';
 
   var STORE_KEY = 'voxomix_consent';      // 'granted' | 'denied'
   var STORE_VER = 'voxomix_consent_v';    // metin/kapsam değişirse tekrar sorulur
