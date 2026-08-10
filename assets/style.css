@@ -446,6 +446,43 @@ footer {
   .how-connector { padding-top: 0; transform: rotate(90deg); }
 }
 
+/* ── Özellik vitrini: gerçek uygulama ekranından kırpılmış görseller ───────── */
+.showcase-list { max-width: 1100px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+.showcase-row, .showcase-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 18px; padding: 22px;
+}
+.showcase-row img, .showcase-card img {
+  width: 100%; display: block; border-radius: 10px;
+  background: #0b0a12; border: 1px solid var(--border);
+}
+.showcase-row h3, .showcase-card h3 {
+  color: var(--text); font-size: 20px; font-weight: 700;
+  margin: 18px 0 8px; line-height: 1.35;
+}
+.showcase-row p, .showcase-card p { color: var(--muted); font-size: 15px; line-height: 1.75; margin: 0; }
+.showcase-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+/* İki kartın görselleri farklı oranda; ortak orana sabitle ki başlıklar aynı hizada dursun
+   (contain: arayüz kırpılmaz, artan yer kart zeminiyle dolar). */
+.showcase-pair img { aspect-ratio: 4 / 3; object-fit: contain; }
+/* İkili kartlarda görseller farklı yükseklikte; üstten hizala ki başlıklar aynı hatta düşsün. */
+.showcase-card { display: flex; flex-direction: column; }
+.showcase-sub {
+  color: var(--muted); font-size: 17px; line-height: 1.7;
+  max-width: 720px; margin: 0 auto 40px; text-align: center;
+}
+/* Geniş şeritler (tempo ızgarası, kayıt kanalı) ~16:1; dar ekranda tam genişliğe
+   sığdırılınca okunmuyordu. Kendi kutusunda yatay kaydırılsın, sayfa kaymasın. */
+.showcase-scroll { overflow-x: auto; overscroll-behavior-x: contain; border-radius: 10px; }
+.showcase-scroll img { width: 100%; }
+@media (max-width: 760px) {
+  .showcase-pair { grid-template-columns: 1fr; }
+  .showcase-row, .showcase-card { padding: 16px; }
+  .showcase-row h3, .showcase-card h3 { font-size: 18px; }
+  /* Şeridi okunur bir yükseklikte tut; genişliği taşsın ve kaydırılsın. */
+  .showcase-scroll img { width: auto; max-width: none; height: 90px; }
+}
+
 .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: all 0.3s; }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
