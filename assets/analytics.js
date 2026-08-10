@@ -169,6 +169,7 @@
       set(STORE_KEY, choice);
       set(STORE_VER, CURRENT_V);
       box.remove();
+      setConsentH(0);   // menü tekrar tam yüksekliği kullanabilsin
       // Tercih gizlilik sayfasından DEĞİŞTİRİLDİYSE yeniden yükle: gtag bir kez
       // yüklendikten sonra geri alınamaz, "kabul → ret" ancak temiz sayfada geçerli olur.
       if (reopened) { location.reload(); return; }
@@ -180,6 +181,24 @@
     actions.appendChild(no); actions.appendChild(ok);
     box.appendChild(p); box.appendChild(actions);
     document.body.appendChild(box);
+    trackConsentHeight(box);
+  }
+
+  // Bandın kapladığı yüksekliği CSS'e bildir (--vx-consent-h). Mobil menü
+  // max-height'ını buna göre kısaltıyor; yoksa yatay telefonda menünün son
+  // öğeleri (dil satırı, CTA) bandın arkasında kalıyor.
+  function setConsentH(px) {
+    document.documentElement.style.setProperty('--vx-consent-h', px ? px + 'px' : '0px');
+  }
+  function trackConsentHeight(box) {
+    var apply = function () {
+      if (!document.body.contains(box)) { setConsentH(0); return; }
+      // 16px alt boşluk + bandın kendi yüksekliği
+      setConsentH(Math.ceil(box.getBoundingClientRect().height) + 16);
+    };
+    apply();
+    window.addEventListener('resize', apply);
+    if (window.ResizeObserver) { new ResizeObserver(apply).observe(box); }
   }
 
   // ---- Tıklama ölçümü ------------------------------------------------------

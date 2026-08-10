@@ -464,6 +464,15 @@ footer {
   left: 0;
   right: 0;
   z-index: 99;
+  /* Yatay telefon/kısa tablette menü ekrandan taşıyordu: dil satırı ve CTA
+     erişilemez kalıyordu. Yüksekliği görünür alana sınırla ve kaydırılabilir yap.
+     --vx-consent-h: çerez bandı açıkken analytics.js yüksekliğini buraya yazar,
+     böylece son öğeler bandın arkasında kalmaz. */
+  max-height: calc(100vh - 64px - var(--vx-consent-h, 0px));
+  max-height: calc(100dvh - 64px - var(--vx-consent-h, 0px));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .mobile-menu a { color: var(--muted); font-size: 16px; font-weight: 600; padding: 12px 0; border-bottom: 1px solid #1e1e1e; text-decoration: none; }
 .mobile-menu a:last-child { border-bottom: none; }
