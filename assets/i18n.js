@@ -145,7 +145,7 @@ const translations = {
     'faq.q3': 'Aboneliği istediğim zaman iptal edebilir miyim?',
     'faq.a3': 'Evet, istediğiniz zaman iptal edebilirsiniz. İptal işleminden sonra mevcut dönemin sonuna kadar uygulamayı kullanmaya devam edebilirsiniz.',
     'faq.q4': 'Stem ayrıştırma ne kadar sürer?',
-    'faq.a4': 'Ortalama bir şarkı (3-4 dakika) için Apple Silicon Mac\'lerde 1-3 dakika, Windows bilgisayarlarda 3-6 dakika sürmektedir.',
+    'faq.a4': 'Ortalama bir şarkı (3-4 dakika) için Apple Silicon Mac\'lerde 1-3 dakika, Windows bilgisayarlarda 3-6 dakika sürmektedir. İşlem tamamen yerel bilgisayarınızda gerçekleşir.',
     'faq.q5': 'Ödeme bilgilerim güvende mi?',
     'faq.a5': 'Tüm ödemeler iyzico altyapısı üzerinden 256-bit SSL şifreleme ile gerçekleştirilir. Kart bilgileriniz hiçbir zaman sunucularımızda saklanmaz.',
 
@@ -337,9 +337,9 @@ const translations = {
     'faq.q3': 'Can I cancel my subscription anytime?',
     'faq.a3': 'Yes, you can cancel anytime. After cancelling, you can keep using the app until the end of your current period.',
     'faq.q4': 'How long does stem separation take?',
-    'faq.a4': 'For an average song (3-4 minutes) it takes 1-3 minutes on Apple Silicon Macs and 3-6 minutes on Windows computers.',
+    'faq.a4': 'For an average song (3-4 minutes) it takes 1-3 minutes on Apple Silicon Macs and 3-6 minutes on Windows computers. The processing happens entirely on your own computer.',
     'faq.q5': 'Is my payment information secure?',
-    'faq.a5': 'All payments are processed through iyzico with 256-bit SSL encryption. Your card details are never stored on our servers.',
+    'faq.a5': 'All payments are processed with 256-bit SSL encryption. Your card details are never stored on our servers.',
 
     'billing.monthly': 'Monthly',
     'billing.yearly': 'Yearly — 20% Off',
@@ -491,7 +491,7 @@ const translations = {
     'faq.q3': '¿Puedo cancelar la suscripción cuando quiera?',
     'faq.a3': 'Sí, puedes cancelar cuando quieras. Tras cancelar, puedes seguir usando la app hasta el final del periodo actual.',
     'faq.q4': '¿Cuánto tarda la separación de pistas?',
-    'faq.a4': 'Para una canción media (3-4 minutos) tarda de 1 a 3 minutos en Mac con Apple Silicon y de 3 a 6 minutos en ordenadores Windows.',
+    'faq.a4': 'Para una canción media (3-4 minutos) tarda de 1 a 3 minutos en Mac con Apple Silicon y de 3 a 6 minutos en ordenadores Windows. El procesamiento ocurre por completo en tu propio ordenador.',
     'faq.q5': '¿Están seguros mis datos de pago?',
     'faq.a5': 'Todos los pagos se procesan con cifrado SSL de 256 bits. Los datos de tu tarjeta nunca se almacenan en nuestros servidores.',
 
@@ -664,7 +664,7 @@ const translations = {
     'faq.q3': 'Puis-je annuler mon abonnement à tout moment ?',
     'faq.a3': 'Oui, vous pouvez annuler à tout moment. Après l\'annulation, vous pouvez continuer à utiliser l\'app jusqu\'à la fin de la période en cours.',
     'faq.q4': 'Combien de temps prend la séparation des pistes ?',
-    'faq.a4': 'Pour une chanson moyenne (3-4 minutes), cela prend 1 à 3 minutes sur les Mac Apple Silicon et 3 à 6 minutes sur les ordinateurs Windows.',
+    'faq.a4': 'Pour une chanson moyenne (3-4 minutes), cela prend 1 à 3 minutes sur les Mac Apple Silicon et 3 à 6 minutes sur les ordinateurs Windows. Le traitement se fait entièrement sur votre propre ordinateur.',
     'faq.q5': 'Mes informations de paiement sont-elles sécurisées ?',
     'faq.a5': 'Tous les paiements sont traités avec un chiffrement SSL 256 bits. Les données de votre carte ne sont jamais stockées sur nos serveurs.',
 
@@ -837,7 +837,7 @@ const translations = {
     'faq.q3': 'Kann ich mein Abo jederzeit kündigen?',
     'faq.a3': 'Ja, du kannst jederzeit kündigen. Nach der Kündigung kannst du die App bis zum Ende des laufenden Zeitraums weiter nutzen.',
     'faq.q4': 'Wie lange dauert die Stem-Trennung?',
-    'faq.a4': 'Für einen durchschnittlichen Song (3-4 Minuten) dauert es 1-3 Minuten auf Apple-Silicon-Macs und 3-6 Minuten auf Windows-Computern.',
+    'faq.a4': 'Für einen durchschnittlichen Song (3-4 Minuten) dauert es 1-3 Minuten auf Apple-Silicon-Macs und 3-6 Minuten auf Windows-Computern. Die Verarbeitung findet komplett auf deinem eigenen Computer statt.',
     'faq.q5': 'Sind meine Zahlungsdaten sicher?',
     'faq.a5': 'Alle Zahlungen werden mit 256-Bit-SSL-Verschlüsselung verarbeitet. Deine Kartendaten werden niemals auf unseren Servern gespeichert.',
 
@@ -1010,7 +1010,7 @@ const translations = {
     'faq.q3': 'Posso disdire l\'abbonamento quando voglio?',
     'faq.a3': 'Sì, puoi disdire quando vuoi. Dopo la disdetta, puoi continuare a usare l\'app fino alla fine del periodo in corso.',
     'faq.q4': 'Quanto tempo richiede la separazione delle tracce?',
-    'faq.a4': 'Per una canzone media (3-4 minuti) servono da 1 a 3 minuti su Mac con Apple Silicon e da 3 a 6 minuti sui computer Windows.',
+    'faq.a4': 'Per una canzone media (3-4 minuti) servono da 1 a 3 minuti su Mac con Apple Silicon e da 3 a 6 minuti sui computer Windows. L\'elaborazione avviene interamente sul tuo computer.',
     'faq.q5': 'I miei dati di pagamento sono al sicuro?',
     'faq.a5': 'Tutti i pagamenti sono elaborati con crittografia SSL a 256 bit. I dati della tua carta non vengono mai memorizzati sui nostri server.',
 
