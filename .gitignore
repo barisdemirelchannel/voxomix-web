@@ -6,3 +6,9 @@ Icon?
 
 # AppleDouble sidecars (exFAT SSD checkout)
 ._*
+
+# API anahtarları — ASLA commit edilmez
+.env
+.env.*
+!.env.example
+secrets/
