@@ -225,7 +225,7 @@ const translations = {
     'plans.h2': 'Choose Your Plan',
     'trial.title': 'Try Producer Free for 14 Days',
     'trial.desc': 'All Producer features free for 14 days. Download the app and add your card — it converts to Producer automatically on day 14, cancel anytime.',
-    'trial.btn': 'Download &amp; Start Free',
+    'trial.btn': 'Download & Start Free',
     'plan.pro.trial': '14-day free trial',
 
     'plan.free.name': 'Free',
