@@ -989,7 +989,7 @@ const translations = {
     'download.mac-intel-sub': 'Intel Core • .dmg',
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
-    'download.win-badge': 'Próximamente',
+    'download.win-badge': 'Prossimamente',
     'download.version': 'v1.2.2 • Gratis • Nessuna registrazione per scaricare',
 
     'how.label': 'Come funziona',
