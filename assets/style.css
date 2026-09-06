@@ -526,6 +526,11 @@ footer {
   .nav-lang-dd, .nav-lang { display: none; }
   .hamburger { display: flex; }
 }
+/* Dar ekranda geniş tablolar SAYFAYI yatay kaydırmasın; kendi kutusunda kaysınlar.
+   (Vitrin şeritlerinde uygulanan .showcase-scroll kuralının tablo karşılığı.) */
+@media (max-width: 640px) {
+  .legal-content table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
 @media (max-width: 768px) {
   nav { padding: 0 20px; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
