@@ -11,6 +11,8 @@ URL kalıbı: TR = `https://voxomix.com/blog/<tr>` · diğerleri = `https://voxo
 | Pillar — şarkıyla pratik | sarkiyla-pratik-yapma-rehberi | practice-any-song-complete-guide | como-practicar-con-cualquier-cancion | travailler-nimporte-quelle-chanson-guide | mit-jedem-song-zu-hause-ueben | esercitarsi-con-qualsiasi-canzone-guida |
 | VoxoMix nasıl kullanılır | voxomix-nasil-kullanilir | how-to-use-voxomix | como-usar-voxomix | comment-utiliser-voxomix | voxomix-verwenden | come-usare-voxomix |
 | Şarkıdan vokal ayırma (YENİ) | sarkidan-vokal-ayirma | how-to-remove-vocals-from-a-song | como-quitar-la-voz-de-una-cancion | supprimer-la-voix-dune-chanson | gesang-aus-einem-song-entfernen | rimuovere-la-voce-da-una-canzone |
+| Şarkının akorlarını bulma | sarkinin-akorlarini-bulma | how-to-find-the-chords-of-a-song | como-encontrar-los-acordes-de-una-cancion | trouver-les-accords-dune-chanson | akkorde-eines-songs-herausfinden | trovare-gli-accordi-di-una-canzone |
+| Şarkıdan enstrüman ayırma | sarkidan-enstruman-ayirma | how-to-remove-an-instrument-from-a-song | como-quitar-un-instrumento-de-una-cancion | supprimer-un-instrument-dune-chanson | instrument-aus-einem-song-entfernen | rimuovere-uno-strumento-da-una-canzone |
 
 ## og:locale
 tr→tr_TR · en→en_US · es→es_ES · fr→fr_FR · de→de_DE · it→it_IT

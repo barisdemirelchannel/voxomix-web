@@ -12,6 +12,12 @@ LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
+    {'key': 'chords',  'read': 9,
+     'slug': {'es': 'como-encontrar-los-acordes-de-una-cancion', 'fr': 'trouver-les-accords-dune-chanson', 'de': 'akkorde-eines-songs-herausfinden', 'it': 'trovare-gli-accordi-di-una-canzone'},
+     'date': {'es': '6 de septiembre de 2026', 'fr': '6 septembre 2026', 'de': '6. September 2026', 'it': '6 settembre 2026'}},
+    {'key': 'instrument', 'read': 8,
+     'slug': {'es': 'como-quitar-un-instrumento-de-una-cancion', 'fr': 'supprimer-un-instrument-dune-chanson', 'de': 'instrument-aus-einem-song-entfernen', 'it': 'rimuovere-uno-strumento-da-una-canzone'},
+     'date': {'es': '6 de septiembre de 2026', 'fr': '6 septembre 2026', 'de': '6. September 2026', 'it': '6 settembre 2026'}},
     {'key': 'pillar',  'read': 12,
      'slug': {'es': 'como-practicar-con-cualquier-cancion', 'fr': 'travailler-nimporte-quelle-chanson-guide', 'de': 'mit-jedem-song-zu-hause-ueben', 'it': 'esercitarsi-con-qualsiasi-canzone-guida'},
      'date': {'es': '3 de agosto de 2026', 'fr': '3 août 2026', 'de': '3. August 2026', 'it': '3 agosto 2026'}},
@@ -28,6 +34,8 @@ POSTS = [
 
 # category-key -> per-lang label
 CAT = {
+    'chords':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
+    'instrument': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'pillar':  {'es': 'Guía completa', 'fr': 'Guide complet', 'de': 'Kompletter Guide', 'it': 'Guida completa'},
     'slow':    {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'offline': {'es': 'Comparativa', 'fr': 'Comparatif', 'de': 'Vergleich', 'it': 'Confronto'},

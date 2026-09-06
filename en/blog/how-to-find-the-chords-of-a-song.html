@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Find the Chords of a Song (2026 Guide) — VoxoMix Blog</title>
+  <meta name="description" content="Find a song's chords without trusting a chord site. How automatic chord detection works, where it gets things wrong, and how to verify the result with your own ears.">
+  <meta name="keywords" content="how to find the chords of a song, chord finder, chord detection, figure out chords by ear, guitar chords of a song, piano chord finder">
+  <link rel="canonical" href="https://voxomix.com/en/blog/how-to-find-the-chords-of-a-song">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-akorlarini-bulma">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-find-the-chords-of-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-encontrar-los-acordes-de-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/trouver-les-accords-dune-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/akkorde-eines-songs-herausfinden">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/trovare-gli-accordi-di-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-akorlarini-bulma">
+  <meta name="theme-color" content="#0e0e14">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://voxomix.com/en/blog/how-to-find-the-chords-of-a-song">
+  <meta property="og:title" content="How to Find the Chords of a Song (2026 Guide)">
+  <meta property="og:description" content="How automatic chord detection works, where it gets things wrong, and how to verify the result with your own ears.">
+  <meta property="og:image" content="https://voxomix.com/assets/promo-banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-09-06">
+  <meta property="article:modified_time" content="2026-09-06">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Find the Chords of a Song (2026 Guide)">
+  <meta name="twitter:description" content="How automatic chord detection works, where it gets things wrong, and how to verify it by ear.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/promo-banner.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Find the Chords of a Song (2026 Guide)",
+        "description": "Find a song's chords without trusting a chord site. How automatic chord detection works, where it gets things wrong, and how to verify the result with your own ears.",
+        "image": "https://voxomix.com/assets/promo-banner.png",
+        "datePublished": "2026-09-06",
+        "dateModified": "2026-09-06",
+        "inLanguage": "en",
+        "author": { "@type": "Organization", "name": "VoxoMix", "url": "https://voxomix.com/" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": { "@type": "ImageObject", "url": "https://voxomix.com/assets/logo.png" }
+        },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://voxomix.com/en/blog/how-to-find-the-chords-of-a-song" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://voxomix.com/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://voxomix.com/en/blog" },
+          { "@type": "ListItem", "position": 3, "name": "How to Find the Chords of a Song", "item": "https://voxomix.com/en/blog/how-to-find-the-chords-of-a-song" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How accurate is automatic chord detection?",
+            "acceptedAnswer": { "@type": "Answer", "text": "On sparse arrangements — pop, rock and folk built around a guitar or piano — the result is usually good enough to play straight away. Dense mixes, heavy distortion, wide jazz voicings and slash chords are where every detection engine struggles. Treat the output as a very good first draft and let your ear be the final judge." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need an internet connection to find chords?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. In VoxoMix, once you have signed in and verified your licence, analysis runs entirely on your own computer. The song is never uploaded to a server, so you can find chords on a plane or in a room with no connection." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which plan includes the guitar chord diagram?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The chord finder in piano view is available on the free plan. The guitar diagram view is included in the Student and Producer plans." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I find chords in my own recording or a cover version?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Detection does not look a song up in a database — it analyses the audio in front of it. That means it works with live recordings, covers, rehearsal takes and your own unreleased demos." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I print the chord sheet?",
+            "acceptedAnswer": { "@type": "Answer", "text": "On the Student and Producer plans you can export the chord sheet as a PDF, which is useful for teachers preparing lesson material and for building your own practice folder." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I find out what key a song is in?",
+            "acceptedAnswer": { "@type": "Answer", "text": "When the analysis finishes, VoxoMix shows the key in the Transpose panel (for example E minor). From the same panel you can move the key up or down and return to the original with Reset to Original Key." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=3"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/en/" class="nav-logo">
+    <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/en/#features" data-i18n="nav.features">Features</a>
+    <a href="/en/#plans" data-i18n="nav.plans">Plans</a>
+    <a href="/en/blog">Blog</a>
+    <a href="/en/hakkimizda" data-i18n="nav.about">About</a>
+  </div>
+  <a href="/blog/sarkinin-akorlarini-bulma" class="nav-lang" hreflang="tr" onclick="try{localStorage.setItem('voxomix_site_lang','tr')}catch(e){}">TR</a>
+  <a href="/en/#download" class="nav-cta" data-i18n="nav.cta">Try Producer Free for 14 Days</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/en/">Home</a> › <a href="/en/blog">Blog</a> › <span>How to find the chords of a song</span>
+</div>
+
+<div class="page-header">
+  <h1>How to Find the Chords of a Song (2026 Guide)</h1>
+  <p>Beyond chord sites: how detection works, where it fails, and how to check it with your ears</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Published: September 6, 2026 · ~9 min read</div>
+
+    <p>You have found the song you want to play, and now you need the chords. You search, and up come five different pages for the same track. One says capo 2, one says nothing about a capo, and in the chorus one has <em>Am</em> where another has <em>F</em>. All of them came out of somebody's ear, and none of them is looking at the recording itself. You start playing, something doesn't sit right, and you have no way of knowing whether the mistake is yours or the page's.</p>
+
+    <p>This guide compares the three honest ways to get a song's chords, explains what automatic detection is actually doing under the hood, and — most importantly — shows you <strong>what to do when the detection looks wrong</strong>. Because no method is perfect, and working with that in mind will get you further, faster, than trusting a chord sheet blindly.</p>
+
+    <div class="toc">
+      <strong>Contents</strong>
+      <ul>
+        <li><a href="#three-ways-to-get-chords">Three ways to get chords</a></li>
+        <li><a href="#how-chord-detection-works">How chord detection works</a></li>
+        <li><a href="#step-by-step">Step by step: finding the chords</a></li>
+        <li><a href="#reading-the-chord-strip">Reading the chord strip</a></li>
+        <li><a href="#when-detection-looks-wrong">When detection looks wrong</a></li>
+        <li><a href="#capo-key-and-transposing">Capo, key and transposing</a></li>
+        <li><a href="#export-the-chord-sheet">Export the chord sheet</a></li>
+        <li><a href="#what-each-plan-includes">What each plan includes</a></li>
+        <li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+      </ul>
+    </div>
+
+    <h2 id="three-ways-to-get-chords">Three ways to get a song's chords</h2>
+    <p>In practice you have three options, and each of them charges you differently.</p>
+
+    <h3>1. Working them out by ear</h3>
+    <p>The slowest route and the one that teaches you the most. You listen for the bass, find the root, then decide whether it's major or minor on top. What you gain isn't the chords — it's <strong>a skill you never lose again</strong>. The price is time: for a beginner, a single song can eat an entire evening.</p>
+
+    <h3>2. Chord archive sites</h3>
+    <p>Fast, and often good enough. But archives built on volunteer submissions have three chronic problems: it's rarely clear <strong>which recording</strong> was transcribed (album, acoustic version, live?), capo and key information is frequently missing, and whoever wrote the page worked it out by ear too. For lesser-known tracks, there's often no page at all.</p>
+
+    <h3>3. Automatic chord detection</h3>
+    <p>The software listens to the recording itself and lays the chords out on a timeline. It's as fast as an archive site, but its coverage is unlimited — it works on <strong>any audio file you have</strong>: live recordings, covers, rehearsal takes, your own unreleased demo. In exchange it asks for attention: trust the output without understanding what the engine heard, and you'll learn the wrong thing.</p>
+
+    <table>
+      <thead>
+        <tr><th></th><th>By ear</th><th>Archive site</th><th>Auto detection</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Speed</td><td>Slow</td><td>Fast</td><td>Fast</td></tr>
+        <tr><td>Available for every song?</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Looks at your recording?</td><td>Yes</td><td>Unclear</td><td>Yes</td></tr>
+        <tr><td>Key/capo reliability</td><td>High</td><td>Low</td><td>High</td></tr>
+        <tr><td>Does it make you better?</td><td>A lot</td><td>No</td><td>If you check it</td></tr>
+      </tbody>
+    </table>
+
+    <p>The best result comes from putting them against each other: <strong>start with detection, verify with your ear.</strong> Playing through the progression the engine produced skips the hardest part of transcribing from scratch, while still keeping your ear in the loop.</p>
+
+    <h2 id="how-chord-detection-works">How automatic chord detection works</h2>
+    <p>Briefly: the software breaks the audio into frequencies, works out <strong>which of the twelve notes are sounding</strong> at each moment, matches that set of notes against known chord shapes, and smooths the result over time by locking it to the beat grid. So it isn't looking up a song title in a database — <em>it listens to the recording in front of it</em>. That's why it works on a track nobody has ever transcribed.</p>
+    <p>For the same reason, you can predict where it will struggle:</p>
+    <ul>
+      <li><strong>Dense mixes</strong> — in heavily layered productions the harmony sits under the drums and effects.</li>
+      <li><strong>Heavy distortion</strong> — clipping adds harmonics that were never in the original note.</li>
+      <li><strong>Wide voicings</strong> — in jazz, 9ths, 11ths and 13ths sit equally close to more than one chord name.</li>
+      <li><strong>Slash chords</strong> — mistaking the bass note for the root is the classic confusion (G/B and Bm look alike from below).</li>
+      <li><strong>Passages with no chord</strong> — during a drum intro or a single-note riff there is no chord to display. A blank cell is not a bug.</li>
+    </ul>
+    <blockquote>The rule: treat detection as <strong>a very good first draft</strong>. It hands you 90% of the song for free — and checking the remaining 10% is the part you learn the most from anyway.</blockquote>
+
+    <h2 id="step-by-step">Step by step: finding a song's chords</h2>
+    <p><strong>1. Load the song.</strong> Drag the audio file into the window. MP3, WAV, FLAC, AAC and M4A open directly — no conversion needed. The analysis runs on your own computer; the file is never uploaded anywhere.</p>
+    <p><strong>2. Look at the chord finder.</strong> As soon as the analysis finishes, the <strong>Chord Finder</strong> panel shows three chords: the one just past on the left, the one <strong>playing right now</strong> in large type in the middle, and the one coming up on the right. They scroll by on their own as the song plays.</p>
+    <p><strong>3. Enlarge it.</strong> The <strong>⤢</strong> button in the corner of the panel opens the chord finder full-window. When you're sitting at your instrument you're a metre from the screen — the large view exists for exactly that.</p>
+    <p><strong>4. Choose piano or guitar.</strong> The <strong>Piano | Guitar</strong> toggle at the bottom switches views. The guitar view shows the chord as finger positions on the fretboard, marking strings you shouldn't play with an ×.</p>
+    <p><strong>5. Basic or Inversion.</strong> <strong>Basic</strong> gives you the most common shape. <strong>Inversion</strong> shows the inversions — useful when you want to move your hand as little as possible on piano, or find a guitar position closer to the next chord.</p>
+    <p><strong>6. Step through the chords.</strong> The <strong>‹ ›</strong> arrows move chord by chord without playing the song, which saves you rewinding constantly while you work on a difficult change.</p>
+
+    <img src="/assets/blog/voxomix-chord-finder-guitar-bm-web.png" alt="The VoxoMix chord finder in enlarged view: a waveform and chord strip at the top (Em – Bm – Bm – A), the current chord Bm shown large in the middle with Em and A either side, and below it a guitar fretboard diagram with the finger positions for a Bm barre chord, plus Piano / Guitar toggle buttons" loading="lazy">
+
+    <h2 id="reading-the-chord-strip">Reading the chord strip — this is the real technique</h2>
+    <p>The most valuable thing about a chord finder is not the chord it names; it's that it <strong>shows you the next one in advance</strong>. In the view above, Bm is in the middle and A is waiting on the right. That second of forewarning changes your playing in two ways:</p>
+    <ul>
+      <li><strong>You play through the change instead of chasing it.</strong> Reacting after you hear a chord change is always late; seeing it lets you prepare your hand.</li>
+      <li><strong>You learn structure instead of memorising.</strong> Watching the same four chords come round on the strip sticks far better than "remembering" the song.</li>
+    </ul>
+    <p>A useful exercise: follow the strip and play through the song once hitting <em>only one strum on each chord change</em>. Drop the rhythm entirely and just concentrate on arriving at the right chord at the right moment. Once the progression is in place, adding the rhythm back is surprisingly easy. The full method is in our <a href="/en/blog/practice-any-song-complete-guide">complete guide to practising any song</a>.</p>
+
+    <h2 id="when-detection-looks-wrong">When the detection looks wrong: a four-step check</h2>
+    <p>If a chord sounds wrong to you, don't guess — open the track up and look. You have four moves, in order.</p>
+
+    <h3>1. Slow it down</h3>
+    <p>The <strong>0.5x</strong> button in the metronome panel drops the song to half speed with no change in pitch — only time stretches. A chord change that flies past becomes obvious at half speed. We covered why this works and how to use it properly in <a href="/en/blog/slow-down-song-without-changing-pitch">how to slow down a song without changing the pitch</a>.</p>
+
+    <h3>2. Isolate the harmony</h3>
+    <p>This is the most effective move. Because the song is split into channels, you can hit <strong>S</strong> (solo) on the <strong>String Instrument</strong> or <strong>Keyboard Instrument</strong> channel: drums, bass and vocals drop away and you're left with just the instrument playing the chords. Harmony you couldn't hear in a crowded mix is suddenly exposed. For the other uses of splitting channels, see <a href="/en/blog/how-to-remove-an-instrument-from-a-song">how to remove an instrument from a song</a>.</p>
+
+    <h3>3. Check the key</h3>
+    <p>The <strong>Transpose</strong> panel names the song's key (<em>E minor</em>, for example). Compare the chord you're unsure about against the diatonic chords of that key. A chord from outside the key isn't necessarily wrong — but it earns a second look.</p>
+
+    <h3>4. Decide with your ear</h3>
+    <p>Play the chord against the recording. If it doesn't sit, try the three most likely alternatives: the <strong>relative major/minor</strong> (Am ↔ C), a <strong>sus2 / sus4</strong> (where the third is ambiguous), and <strong>the same chord over a different bass</strong> (like G/B). Those three account for most of what automatic detection misses.</p>
+    <blockquote>This may look like error correction, but it's actually the most efficient ear training you can do: listening when you know what you're listening for teaches you far faster than listening into the void.</blockquote>
+
+    <h2 id="capo-key-and-transposing">Capo, key and transposing</h2>
+    <p>Detection gives you <strong>the real chords in the recording</strong> — not the shapes a guitarist with a capo sees. Someone playing a <em>D</em> shape with a capo on the 2nd fret is actually playing <em>E</em>, and detection will tell you <em>E</em>. Both are correct; they just describe different things.</p>
+    <p>If the shapes are awkward for you, you have two routes:</p>
+    <ul>
+      <li><strong>Move the song.</strong> Use <strong>−/+</strong> in the Transpose panel to bring the track into a key you play comfortably, then <strong>Reset to Original Key</strong> to go back. Transposing is available from the Basic plan upward.</li>
+      <li><strong>Work out the capo yourself.</strong> If the song is in E and you want to play D shapes, that's capo 2. The real key from detection is exactly what you need to do that maths.</li>
+    </ul>
+    <p>If you sing, transpose without hesitation: pulling a song written for someone else's range into your own is a far better use of a practice hour than fighting for high notes.</p>
+
+    <h2 id="export-the-chord-sheet">Export the chord sheet as a PDF</h2>
+    <p>On the <strong>Student</strong> and <strong>Producer</strong> plans you can export the chord sheet as a PDF. If you teach, it leaves your student with something to take away; if you're working alone, you get a printout you can read at your instrument without a screen. Lyrics transcription is available from Basic upward, so singers who want lyrics and chords together can use both.</p>
+
+    <h2 id="what-each-plan-includes">What each plan includes</h2>
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Free</th><th>Basic</th><th>Student</th><th>Producer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Chord finder (piano)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Chord finder (guitar diagram)</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>BPM detection + metronome</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Transpose</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Lyrics transcription</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>PDF export (chord sheet)</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Songs / length per month</td><td>2 · 4 min</td><td>10 · 5 min</td><td>50 · 7 min</td><td>Unlimited</td></tr>
+      </tbody>
+    </table>
+    <p>For finding chords, <strong>the free plan is enough</strong> — the chord finder in piano view, BPM detection and the metronome are all available on it. Current pricing and the full comparison are in the <a href="/en/#plans">plans section</a>.</p>
+
+    <h2 id="frequently-asked-questions">Frequently asked questions</h2>
+    <h3>How accurate is automatic chord detection?</h3>
+    <p>On sparse arrangements — pop, rock and folk built around a guitar or piano — the result is usually good enough to play straight away. Dense mixes, heavy distortion, wide jazz voicings and slash chords are where every detection engine struggles. Treat the output as a very good first draft and let your ear be the final judge.</p>
+    <h3>Do I need an internet connection to find chords?</h3>
+    <p>No. Once you have signed in and verified your licence, analysis runs entirely on your own computer. The song is never uploaded to a server, so you can find chords on a plane or in a room with no connection.</p>
+    <h3>Which plan includes the guitar chord diagram?</h3>
+    <p>The chord finder in piano view is available on the free plan. The guitar diagram view is included in the Student and Producer plans.</p>
+    <h3>Can I find chords in my own recording or a cover version?</h3>
+    <p>Yes. Detection doesn't look a song up in a database — it analyses the audio in front of it. That means live recordings, covers, rehearsal takes and your own unreleased demos all work.</p>
+    <h3>Can I print the chord sheet?</h3>
+    <p>On the Student and Producer plans you can export the chord sheet as a PDF.</p>
+    <h3>How do I find out what key a song is in?</h3>
+    <p>When the analysis finishes, the Transpose panel shows the key (E minor, for example). From the same panel you can move the key and return to the original with <em>Reset to Original Key</em>.</p>
+
+    <h2>Conclusion</h2>
+    <p>Finding chords is no longer a search problem — it's a <strong>verification</strong> problem. Automatic detection hands you the skeleton of the song in seconds; your job is to test that skeleton against your ear. Slow it down, isolate the harmony, check the key, play it and listen. Do that loop on a few songs and two things happen at once: you learn the song, and you need the software a little less next time.</p>
+    <p>If you want an end-to-end tour of every feature, start with <a href="/en/blog/how-to-use-voxomix">how to use VoxoMix</a>; if you're wondering why all of this runs on your own machine, see <a href="/en/blog/offline-stem-separation">offline stem separation</a>.</p>
+
+    <div class="cta-box">
+      <p>Download VoxoMix free and work out the chords to your first song today.</p>
+      <a href="/en/#download" class="btn-primary">Download Free</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p>AI-powered stem separation app for musicians.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Product</h4>
+        <a href="/en/#features" data-i18n="nav.features">Features</a>
+        <a href="/en/#plans" data-i18n="footer.pricing">Pricing</a>
+        <a href="/en/blog">Blog</a>
+        <a href="/en/hakkimizda" data-i18n="nav.about">About</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <a href="/en/kullanim-sartlari">Terms of Use</a>
+        <a href="/en/gizlilik">Privacy Policy</a>
+        <a href="/en/teslimat-iade">Delivery &amp; Returns</a>
+        <a href="/en/mesafeli-satis">Distance Sales Agreement</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=12"></script>
+</body>
+</html>

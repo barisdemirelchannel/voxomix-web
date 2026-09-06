@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trouver les accords d'une chanson (guide 2026) — VoxoMix Blog</title>
+  <meta name="description" content="Trouvez les accords d'une chanson sans vous fier à un site de grilles. Comment fonctionne la détection automatique des accords, où elle se trompe, et comment vérifier le résultat à l'oreille.">
+  <meta name="keywords" content="trouver les accords d'une chanson, repéreur d'accords, détection des accords, relever les accords à l'oreille, accords guitare d'une chanson, accords piano">
+  <link rel="canonical" href="https://voxomix.com/fr/blog/trouver-les-accords-dune-chanson">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-akorlarini-bulma">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-find-the-chords-of-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-encontrar-los-acordes-de-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/trouver-les-accords-dune-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/akkorde-eines-songs-herausfinden">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/trovare-gli-accordi-di-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-akorlarini-bulma">
+  <meta name="theme-color" content="#0e0e14">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://voxomix.com/fr/blog/trouver-les-accords-dune-chanson">
+  <meta property="og:title" content="Trouver les accords d'une chanson (guide 2026)">
+  <meta property="og:description" content="Comment fonctionne la détection automatique des accords, où elle se trompe, et comment vérifier le résultat à l'oreille.">
+  <meta property="og:image" content="https://voxomix.com/assets/promo-banner.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-09-06">
+  <meta property="article:modified_time" content="2026-09-06">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trouver les accords d'une chanson (guide 2026)">
+  <meta name="twitter:description" content="Comment fonctionne la détection automatique des accords, où elle se trompe, et comment la vérifier à l'oreille.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/promo-banner.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Trouver les accords d'une chanson (guide 2026)",
+        "description": "Trouvez les accords d'une chanson sans vous fier à un site de grilles. Comment fonctionne la détection automatique des accords, où elle se trompe, et comment vérifier le résultat à l'oreille.",
+        "image": "https://voxomix.com/assets/promo-banner.png",
+        "datePublished": "2026-09-06",
+        "dateModified": "2026-09-06",
+        "inLanguage": "fr",
+        "author": { "@type": "Organization", "name": "VoxoMix", "url": "https://voxomix.com/" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": { "@type": "ImageObject", "url": "https://voxomix.com/assets/logo.png" }
+        },
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://voxomix.com/fr/blog/trouver-les-accords-dune-chanson" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://voxomix.com/fr/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://voxomix.com/fr/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Trouver les accords d'une chanson", "item": "https://voxomix.com/fr/blog/trouver-les-accords-dune-chanson" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "La détection automatique des accords est-elle fiable ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sur les arrangements dépouillés, pop, rock et folk construits autour d'une guitare ou d'un piano, le résultat est en général assez bon pour jouer tout de suite. Les mixages denses, la grosse distorsion, les voicings larges du jazz et les accords avec basse étrangère sont les points où tous les moteurs de détection peinent. Traitez le résultat comme un très bon premier jet et laissez votre oreille trancher." }
+          },
+          {
+            "@type": "Question",
+            "name": "Faut-il une connexion internet pour trouver les accords ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Non. Dans VoxoMix, une fois connecté et votre licence vérifiée, l'analyse tourne entièrement sur votre propre ordinateur. La chanson n'est jamais envoyée sur un serveur : vous pouvez donc trouver des accords en avion ou dans une pièce sans réseau." }
+          },
+          {
+            "@type": "Question",
+            "name": "Quelle formule inclut les diagrammes d'accords de guitare ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Le repéreur d'accords en vue piano est disponible dans la formule gratuite. La vue avec diagrammes de guitare est incluse dans les formules Student et Producer." }
+          },
+          {
+            "@type": "Question",
+            "name": "Puis-je trouver les accords de mon propre enregistrement ou d'une reprise ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Oui. La détection ne cherche pas la chanson dans une base de données : elle analyse l'audio qu'on lui donne. Elle fonctionne donc avec les enregistrements live, les reprises, les prises de répétition et vos propres maquettes inédites." }
+          },
+          {
+            "@type": "Question",
+            "name": "Puis-je imprimer la grille d'accords ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Dans les formules Student et Producer, vous pouvez exporter la grille d'accords en PDF, ce qui est pratique pour les professeurs qui préparent leurs supports de cours et pour constituer votre propre classeur de travail." }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment savoir dans quelle tonalité est une chanson ?",
+            "acceptedAnswer": { "@type": "Answer", "text": "À la fin de l'analyse, VoxoMix affiche la tonalité dans le panneau Transposition (mi mineur, par exemple). Depuis ce même panneau, vous pouvez monter ou descendre la tonalité et revenir à l'original avec Retour à la tonalité d'origine." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=3"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/fr/" class="nav-logo">
+    <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/fr/#features" data-i18n="nav.features">Fonctionnalités</a>
+    <a href="/fr/#plans" data-i18n="nav.plans">Offres</a>
+    <a href="/fr/blog">Blog</a>
+    <a href="/fr/hakkimizda" data-i18n="nav.about">À propos</a>
+  </div>
+  <a href="/blog/sarkinin-akorlarini-bulma" class="nav-lang" hreflang="tr" onclick="try{localStorage.setItem('voxomix_site_lang','tr')}catch(e){}">TR</a>
+  <a href="/fr/#download" class="nav-cta" data-i18n="nav.cta">Essayer Producer 14 jours gratuits</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/fr/">Accueil</a> › <a href="/fr/blog">Blog</a> › <span>Trouver les accords d'une chanson</span>
+</div>
+
+<div class="page-header">
+  <h1>Trouver les accords d'une chanson (guide 2026)</h1>
+  <p>Au-delà des sites de grilles : comment fonctionne la détection, où elle échoue et comment la vérifier à l'oreille</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Publié le : 6 septembre 2026 · ~9 min de lecture</div>
+
+    <p>Vous avez trouvé la chanson que vous voulez jouer, et il vous faut maintenant les accords. Vous cherchez, et cinq pages différentes sortent pour le même morceau. L'une indique un capo à la 2<sup>e</sup> case, l'autre ne parle pas de capo du tout, et dans le refrain l'une met <em>Am</em> là où une autre met <em>F</em>. Toutes sont sorties de l'oreille de quelqu'un, et aucune ne regarde l'enregistrement lui-même. Vous commencez à jouer, quelque chose sonne de travers, et vous n'avez aucun moyen de savoir si l'erreur vient de vous ou de la page.</p>
+
+    <p>Ce guide compare les trois façons honnêtes d'obtenir les accords d'une chanson, explique ce que fait vraiment la détection automatique sous le capot et, surtout, montre <strong>quoi faire quand la détection semble fausse</strong>. Parce qu'aucune méthode n'est parfaite, et que travailler en gardant ça en tête vous mènera plus loin, et plus vite, que de faire aveuglément confiance à une grille d'accords.</p>
+
+    <div class="toc">
+      <strong>Sommaire</strong>
+      <ul>
+        <li><a href="#three-ways-to-get-chords">Trois façons d'obtenir les accords</a></li>
+        <li><a href="#how-chord-detection-works">Comment fonctionne la détection des accords</a></li>
+        <li><a href="#step-by-step">Pas à pas : trouver les accords</a></li>
+        <li><a href="#reading-the-chord-strip">Lire la bande d'accords</a></li>
+        <li><a href="#when-detection-looks-wrong">Quand la détection semble fausse</a></li>
+        <li><a href="#capo-key-and-transposing">Capo, tonalité et transposition</a></li>
+        <li><a href="#export-the-chord-sheet">Exporter la grille d'accords</a></li>
+        <li><a href="#what-each-plan-includes">Ce que contient chaque formule</a></li>
+        <li><a href="#frequently-asked-questions">Questions fréquentes</a></li>
+      </ul>
+    </div>
+
+    <h2 id="three-ways-to-get-chords">Trois façons d'obtenir les accords d'une chanson</h2>
+    <p>En pratique, vous avez trois options, et chacune se paie différemment.</p>
+
+    <h3>1. Les relever à l'oreille</h3>
+    <p>La voie la plus lente, et celle qui apprend le plus. Vous écoutez la basse, vous trouvez la fondamentale, puis vous décidez si c'est majeur ou mineur par-dessus. Ce que vous y gagnez, ce ne sont pas les accords : c'est <strong>une compétence que vous ne perdrez plus jamais</strong>. Le prix, c'est le temps : pour un débutant, une seule chanson peut avaler une soirée entière.</p>
+
+    <h3>2. Les sites d'archives de grilles</h3>
+    <p>Rapide, et souvent suffisant. Mais les archives alimentées par des contributions bénévoles ont trois problèmes chroniques : on sait rarement <strong>quel enregistrement</strong> a été relevé (album, version acoustique, live ?), les informations de capo et de tonalité manquent souvent, et la personne qui a écrit la page l'a relevée à l'oreille elle aussi. Pour les morceaux moins connus, il n'y a bien souvent aucune page.</p>
+
+    <h3>3. La détection automatique des accords</h3>
+    <p>Le logiciel écoute l'enregistrement lui-même et étale les accords sur une frise chronologique. C'est aussi rapide qu'un site d'archives, mais la couverture est illimitée : ça fonctionne sur <strong>n'importe quel fichier audio que vous avez</strong>, enregistrements live, reprises, prises de répétition, votre propre maquette inédite. En échange, ça demande de l'attention : faites confiance au résultat sans comprendre ce que le moteur a entendu, et vous apprendrez la mauvaise chose.</p>
+
+    <table>
+      <thead>
+        <tr><th></th><th>À l'oreille</th><th>Site d'archives</th><th>Détection auto</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Rapidité</td><td>Lente</td><td>Rapide</td><td>Rapide</td></tr>
+        <tr><td>Disponible pour toutes les chansons ?</td><td>Oui</td><td>Non</td><td>Oui</td></tr>
+        <tr><td>Regarde votre enregistrement ?</td><td>Oui</td><td>Pas sûr</td><td>Oui</td></tr>
+        <tr><td>Fiabilité tonalité / capo</td><td>Élevée</td><td>Faible</td><td>Élevée</td></tr>
+        <tr><td>Est-ce que ça vous fait progresser ?</td><td>Beaucoup</td><td>Non</td><td>Si vous vérifiez</td></tr>
+      </tbody>
+    </table>
+
+    <p>Le meilleur résultat vient de les confronter : <strong>partez de la détection, vérifiez à l'oreille.</strong> Jouer la suite d'accords produite par le moteur vous épargne la partie la plus ingrate d'un relevé à zéro, tout en gardant votre oreille dans la boucle.</p>
+
+    <h2 id="how-chord-detection-works">Comment fonctionne la détection automatique des accords</h2>
+    <p>En bref : le logiciel découpe l'audio en fréquences, détermine <strong>lesquelles des douze notes sonnent</strong> à chaque instant, compare cet ensemble de notes aux formes d'accords connues, puis lisse le résultat dans le temps en le calant sur la grille rythmique. Il ne va donc pas chercher un titre dans une base de données : <em>il écoute l'enregistrement qu'on lui donne</em>. C'est pour ça qu'il fonctionne sur un morceau que personne n'a jamais relevé.</p>
+    <p>Pour la même raison, on peut prévoir où il va peiner :</p>
+    <ul>
+      <li><strong>Les mixages denses</strong> : dans les productions très empilées, l'harmonie se retrouve enfouie sous la batterie et les effets.</li>
+      <li><strong>La grosse distorsion</strong> : l'écrêtage ajoute des harmoniques qui n'étaient pas dans la note d'origine.</li>
+      <li><strong>Les voicings larges</strong> : en jazz, les 9<sup>es</sup>, 11<sup>es</sup> et 13<sup>es</sup> se tiennent à égale distance de plusieurs noms d'accords.</li>
+      <li><strong>Les accords avec basse étrangère</strong> : prendre la note de basse pour la fondamentale est la confusion classique (vus d'en bas, G/B et Bm se ressemblent).</li>
+      <li><strong>Les passages sans accord</strong> : pendant une intro de batterie ou un riff à une seule voix, il n'y a aucun accord à afficher. Une case vide n'est pas un bug.</li>
+    </ul>
+    <blockquote>La règle : traitez la détection comme <strong>un très bon premier jet</strong>. Elle vous offre 90 % de la chanson, et vérifier les 10 % restants est de toute façon la partie dont vous apprenez le plus.</blockquote>
+
+    <h2 id="step-by-step">Pas à pas : trouver les accords d'une chanson</h2>
+    <p><strong>1. Chargez la chanson.</strong> Glissez le fichier audio dans la fenêtre. MP3, WAV, FLAC, AAC et M4A s'ouvrent directement, sans conversion. L'analyse tourne sur votre propre ordinateur ; le fichier n'est envoyé nulle part.</p>
+    <p><strong>2. Regardez le repéreur d'accords.</strong> Dès la fin de l'analyse, le panneau <strong>Repéreur d'accords</strong> affiche trois accords : celui qui vient de passer à gauche, celui qui <strong>joue en ce moment</strong> en gros au milieu, et celui qui arrive à droite. Ils défilent tout seuls pendant la lecture.</p>
+    <p><strong>3. Agrandissez-le.</strong> Le bouton <strong>⤢</strong> dans le coin du panneau ouvre le repéreur d'accords sur toute la fenêtre. Quand vous êtes assis à votre instrument, vous êtes à un mètre de l'écran : la grande vue existe exactement pour ça.</p>
+    <p><strong>4. Choisissez piano ou guitare.</strong> Le sélecteur <strong>Piano | Guitare</strong> en bas change de vue. La vue guitare montre l'accord sous forme de positions de doigts sur le manche et marque d'un × les cordes à ne pas jouer.</p>
+    <p><strong>5. Basique ou Renversement.</strong> <strong>Basique</strong> donne la position la plus courante. <strong>Renversement</strong> affiche les renversements : pratique quand vous voulez déplacer la main le moins possible au piano, ou trouver sur la guitare une position plus proche de l'accord suivant.</p>
+    <p><strong>6. Avancez accord par accord.</strong> Les flèches <strong>‹ ›</strong> passent d'un accord à l'autre sans lancer la chanson, ce qui vous évite de rembobiner sans arrêt pendant que vous travaillez un enchaînement difficile.</p>
+
+    <img src="/assets/blog/voxomix-chord-finder-guitar-bm-web.png" alt="Le repéreur d'accords de VoxoMix en vue agrandie : en haut une forme d'onde et une bande d'accords (Em – Bm – Bm – A), au milieu l'accord en cours Bm affiché en grand avec Em et A de part et d'autre, et en dessous un diagramme de manche de guitare avec les positions de doigts d'un barré de Bm, plus les boutons Piano / Guitare" loading="lazy">
+
+    <h2 id="reading-the-chord-strip">Lire la bande d'accords : c'est là qu'est la vraie technique</h2>
+    <p>Ce qu'un repéreur d'accords a de plus précieux, ce n'est pas l'accord qu'il nomme, c'est qu'il <strong>vous montre le suivant à l'avance</strong>. Sur la vue ci-dessus, Bm est au milieu et A attend à droite. Cette seconde d'anticipation change votre jeu de deux façons :</p>
+    <ul>
+      <li><strong>Vous jouez à travers le changement au lieu de lui courir après.</strong> Réagir après avoir entendu un changement d'accord, c'est toujours trop tard ; le voir arriver vous laisse préparer la main.</li>
+      <li><strong>Vous apprenez une structure au lieu de mémoriser.</strong> Voir les mêmes quatre accords revenir sur la bande s'ancre bien mieux que de « retenir » la chanson.</li>
+    </ul>
+    <p>Un exercice utile : suivez la bande et jouez la chanson une fois en ne donnant <em>qu'un seul coup par changement d'accord</em>. Laissez complètement tomber le rythme et concentrez-vous uniquement sur le fait d'arriver au bon accord au bon moment. Une fois la suite d'accords en place, remettre le rythme est étonnamment facile. La méthode complète est dans notre <a href="/fr/blog/travailler-nimporte-quelle-chanson-guide">guide complet pour travailler n'importe quelle chanson</a>.</p>
+
+    <h2 id="when-detection-looks-wrong">Quand la détection semble fausse : une vérification en quatre temps</h2>
+    <p>Si un accord vous paraît faux, ne devinez pas : ouvrez le morceau et allez voir. Vous avez quatre gestes, dans cet ordre.</p>
+
+    <h3>1. Ralentissez</h3>
+    <p>Le bouton <strong>0,5x</strong> du panneau métronome fait passer la chanson à mi-vitesse sans toucher à la hauteur : seul le temps s'étire. Un changement d'accord qui file devient évident à vitesse réduite. Nous avons expliqué pourquoi ça marche et comment bien s'en servir dans <a href="/fr/blog/ralentir-une-chanson-sans-changer-la-hauteur">ralentir une chanson sans changer la hauteur</a>.</p>
+
+    <h3>2. Isolez l'harmonie</h3>
+    <p>C'est le geste le plus efficace. Comme la chanson est séparée en canaux, vous pouvez appuyer sur <strong>S</strong> (solo) sur le canal <strong>Cordes</strong> ou <strong>Clavier</strong> : la batterie, la basse et la voix disparaissent, et il ne reste que l'instrument qui joue les accords. L'harmonie que vous n'entendiez pas dans un mixage chargé se retrouve à nu. Pour les autres usages de la séparation en canaux, voyez <a href="/fr/blog/supprimer-un-instrument-dune-chanson">comment supprimer un instrument d'une chanson</a>.</p>
+
+    <h3>3. Vérifiez la tonalité</h3>
+    <p>Le panneau <strong>Transposition</strong> donne la tonalité de la chanson (<em>mi mineur</em>, par exemple). Comparez l'accord qui vous fait douter aux accords diatoniques de cette tonalité. Un accord hors tonalité n'est pas forcément faux, mais il mérite un second regard.</p>
+
+    <h3>4. Tranchez à l'oreille</h3>
+    <p>Jouez l'accord par-dessus l'enregistrement. S'il ne se pose pas, essayez les trois solutions les plus probables : le <strong>relatif majeur ou mineur</strong> (Am ↔ C), un <strong>sus2 / sus4</strong> (quand la tierce est ambiguë), et <strong>le même accord sur une autre basse</strong> (comme G/B). Ces trois cas couvrent l'essentiel de ce que la détection automatique rate.</p>
+    <blockquote>Ça ressemble à de la correction d'erreurs, mais c'est en réalité l'entraînement de l'oreille le plus efficace qui soit : écouter en sachant ce que l'on cherche fait progresser bien plus vite qu'écouter dans le vide.</blockquote>
+
+    <h2 id="capo-key-and-transposing">Capo, tonalité et transposition</h2>
+    <p>La détection vous donne <strong>les vrais accords de l'enregistrement</strong>, pas les positions que voit un guitariste avec un capo. Quelqu'un qui joue une position de <em>ré</em> avec un capo à la 2<sup>e</sup> case joue en réalité un <em>mi</em>, et la détection vous dira <em>mi</em>. Les deux sont justes ; elles ne décrivent simplement pas la même chose.</p>
+    <p>Si les positions sont inconfortables pour vous, vous avez deux voies :</p>
+    <ul>
+      <li><strong>Déplacez la chanson.</strong> Utilisez <strong>−/+</strong> dans le panneau Transposition pour amener le morceau dans une tonalité où vous êtes à l'aise, puis <strong>Retour à la tonalité d'origine</strong> pour revenir. La transposition est disponible à partir de la formule Basic.</li>
+      <li><strong>Calculez le capo vous-même.</strong> Si la chanson est en mi et que vous voulez jouer des positions de ré, c'est un capo à la 2<sup>e</sup> case. La vraie tonalité donnée par la détection est exactement ce qu'il vous faut pour faire ce calcul.</li>
+    </ul>
+    <p>Si vous chantez, transposez sans hésiter : ramener dans votre tessiture une chanson écrite pour une autre voix est un bien meilleur usage d'une heure de travail que de se battre avec les aigus.</p>
+
+    <h2 id="export-the-chord-sheet">Exporter la grille d'accords en PDF</h2>
+    <p>Dans les formules <strong>Student</strong> et <strong>Producer</strong>, vous pouvez exporter la grille d'accords en PDF. Si vous enseignez, votre élève repart avec quelque chose entre les mains ; si vous travaillez seul, vous obtenez une feuille lisible à votre instrument, sans écran. La transcription des paroles est disponible à partir de la formule Basic : les chanteurs qui veulent les paroles et les accords ensemble peuvent donc utiliser les deux.</p>
+
+    <h2 id="what-each-plan-includes">Ce que contient chaque formule</h2>
+    <table>
+      <thead>
+        <tr><th>Fonctionnalité</th><th>Free</th><th>Basic</th><th>Student</th><th>Producer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Repéreur d'accords (piano)</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Repéreur d'accords (diagramme de guitare)</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Détection du BPM + métronome</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Transposition</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Transcription des paroles</td><td>—</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Export PDF (grille d'accords)</td><td>—</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Chansons / durée par mois</td><td>2 · 4 min</td><td>10 · 5 min</td><td>50 · 7 min</td><td>Illimité</td></tr>
+      </tbody>
+    </table>
+    <p>Pour trouver des accords, <strong>la formule gratuite suffit</strong> : le repéreur d'accords en vue piano, la détection du BPM et le métronome y sont tous disponibles. Les tarifs actuels et le comparatif complet se trouvent dans la <a href="/fr/#plans">section des formules</a>.</p>
+
+    <h2 id="frequently-asked-questions">Questions fréquentes</h2>
+    <h3>La détection automatique des accords est-elle fiable ?</h3>
+    <p>Sur les arrangements dépouillés, pop, rock et folk construits autour d'une guitare ou d'un piano, le résultat est en général assez bon pour jouer tout de suite. Les mixages denses, la grosse distorsion, les voicings larges du jazz et les accords avec basse étrangère sont les points où tous les moteurs de détection peinent. Traitez le résultat comme un très bon premier jet et laissez votre oreille trancher.</p>
+    <h3>Faut-il une connexion internet pour trouver les accords ?</h3>
+    <p>Non. Une fois connecté et votre licence vérifiée, l'analyse tourne entièrement sur votre propre ordinateur. La chanson n'est jamais envoyée sur un serveur : vous pouvez donc trouver des accords en avion ou dans une pièce sans réseau.</p>
+    <h3>Quelle formule inclut les diagrammes d'accords de guitare ?</h3>
+    <p>Le repéreur d'accords en vue piano est disponible dans la formule gratuite. La vue avec diagrammes de guitare est incluse dans les formules Student et Producer.</p>
+    <h3>Puis-je trouver les accords de mon propre enregistrement ou d'une reprise ?</h3>
+    <p>Oui. La détection ne cherche pas la chanson dans une base de données : elle analyse l'audio qu'on lui donne. Les enregistrements live, les reprises, les prises de répétition et vos propres maquettes inédites fonctionnent donc tous.</p>
+    <h3>Puis-je imprimer la grille d'accords ?</h3>
+    <p>Dans les formules Student et Producer, vous pouvez exporter la grille d'accords en PDF.</p>
+    <h3>Comment savoir dans quelle tonalité est une chanson ?</h3>
+    <p>À la fin de l'analyse, le panneau Transposition affiche la tonalité (mi mineur, par exemple). Depuis ce même panneau, vous pouvez déplacer la tonalité et revenir à l'original avec <em>Retour à la tonalité d'origine</em>.</p>
+
+    <h2>Conclusion</h2>
+    <p>Trouver des accords n'est plus un problème de recherche, c'est un problème de <strong>vérification</strong>. La détection automatique vous tend le squelette de la chanson en quelques secondes ; votre travail consiste à confronter ce squelette à votre oreille. Ralentissez, isolez l'harmonie, vérifiez la tonalité, jouez et écoutez. Faites cette boucle sur quelques chansons et deux choses arrivent en même temps : vous apprenez la chanson, et vous avez un peu moins besoin du logiciel la fois suivante.</p>
+    <p>Si vous voulez un tour d'horizon complet de chaque fonctionnalité, commencez par <a href="/fr/blog/comment-utiliser-voxomix">comment utiliser VoxoMix</a> ; et si vous vous demandez pourquoi tout ça tourne sur votre propre machine, voyez <a href="/fr/blog/separation-de-pistes-hors-ligne">la séparation de pistes hors ligne</a>.</p>
+
+    <div class="cta-box">
+      <p>Téléchargez VoxoMix gratuitement et relevez les accords de votre première chanson dès aujourd'hui.</p>
+      <a href="/fr/#download" class="btn-primary">Téléchargement gratuit</a>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p>Appli de séparation de pistes par IA pour les musiciens.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Produit</h4>
+        <a href="/fr/#features" data-i18n="nav.features">Fonctionnalités</a>
+        <a href="/fr/#plans" data-i18n="footer.pricing">Tarifs</a>
+        <a href="/fr/blog">Blog</a>
+        <a href="/fr/hakkimizda" data-i18n="nav.about">À propos</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Mentions légales</h4>
+        <a href="/en/kullanim-sartlari">Conditions d'utilisation</a>
+        <a href="/en/gizlilik">Politique de confidentialité</a>
+        <a href="/en/teslimat-iade">Livraison et retours</a>
+        <a href="/en/mesafeli-satis">Contrat de vente à distance</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=12"></script>
+</body>
+</html>
+<!-- translated: en -> fr | date: 2026-09-06 | translator: blog-translator -->

@@ -8,13 +8,15 @@ TODAY = '2026-08-02'
 
 # post-key -> {lang: slug}
 POSTS = {
+  'chords':  {'tr':'sarkinin-akorlarini-bulma','en':'how-to-find-the-chords-of-a-song','es':'como-encontrar-los-acordes-de-una-cancion','fr':'trouver-les-accords-dune-chanson','de':'akkorde-eines-songs-herausfinden','it':'trovare-gli-accordi-di-una-canzone'},
+  'instrument': {'tr':'sarkidan-enstruman-ayirma','en':'how-to-remove-an-instrument-from-a-song','es':'como-quitar-un-instrumento-de-una-cancion','fr':'supprimer-un-instrument-dune-chanson','de':'instrument-aus-einem-song-entfernen','it':'rimuovere-uno-strumento-da-una-canzone'},
   'pillar':  {'tr':'sarkiyla-pratik-yapma-rehberi','en':'practice-any-song-complete-guide','es':'como-practicar-con-cualquier-cancion','fr':'travailler-nimporte-quelle-chanson-guide','de':'mit-jedem-song-zu-hause-ueben','it':'esercitarsi-con-qualsiasi-canzone-guida'},
   'slow':    {'tr':'sarki-hizini-dusurme-ses-bozulmadan','en':'slow-down-song-without-changing-pitch','es':'ralentizar-cancion-sin-cambiar-el-tono','fr':'ralentir-une-chanson-sans-changer-la-hauteur','de':'song-verlangsamen-ohne-tonhoehe','it':'rallentare-una-canzone-senza-cambiare-tono'},
   'offline': {'tr':'cevrimdisi-stem-ayirma','en':'offline-stem-separation','es':'separacion-de-pistas-sin-conexion','fr':'separation-de-pistes-hors-ligne','de':'offline-stem-trennung','it':'separazione-tracce-offline'},
   'howto':   {'tr':'voxomix-nasil-kullanilir','en':'how-to-use-voxomix','es':'como-usar-voxomix','fr':'comment-utiliser-voxomix','de':'voxomix-verwenden','it':'come-usare-voxomix'},
 }
-POST_MOD = {'pillar':'2026-07-17','slow':'2026-07-17','offline':'2026-07-17','howto':'2026-07-13'}
-POST_PRIO = {'pillar':'0.9','slow':'0.8','offline':'0.8','howto':'0.8'}
+POST_MOD = {'chords':'2026-09-06','instrument':'2026-09-06','pillar':'2026-07-17','slow':'2026-07-17','offline':'2026-07-17','howto':'2026-07-13'}
+POST_PRIO = {'chords':'0.8','instrument':'0.8','pillar':'0.9','slow':'0.8','offline':'0.8','howto':'0.8'}
 
 def base(lang): return B + ('' if lang=='tr' else '/'+lang)
 
@@ -33,12 +35,12 @@ for lang in ['tr','en','es','fr','de','it']:
     U(base(lang)+'/hakkimizda', mod, 'monthly', '0.6')
 # Blog indexes
 for lang in ['tr','en','es','fr','de','it']:
-    mod = '2026-08-02'
+    mod = '2026-09-06'
     U(base(lang)+'/blog/', mod, 'weekly', '0.7')
 # Blog posts
 for key, langs in POSTS.items():
     for lang in ['tr','en','es','fr','de','it']:
-        mod = POST_MOD[key] if lang in ('tr','en') else TODAY
+        mod = POST_MOD[key] if (lang in ('tr','en') or key in ('chords','instrument')) else TODAY
         U(f"{base(lang)}/blog/{langs[lang]}", mod, 'monthly', POST_PRIO[key])
 # Legal (tr + en only)
 for slug in ['kullanim-sartlari','gizlilik','mesafeli-satis','teslimat-iade']:
