@@ -109,6 +109,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://voxomix.com/blog/sarkidan-vokal-ayirma</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/en/blog/how-to-remove-vocals-from-a-song</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/es/blog/como-quitar-la-voz-de-una-cancion</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/fr/blog/supprimer-la-voix-dune-chanson</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/de/blog/gesang-aus-einem-song-entfernen</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://voxomix.com/it/blog/rimuovere-la-voce-da-una-canzone</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://voxomix.com/blog/sarkinin-akorlarini-bulma</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>

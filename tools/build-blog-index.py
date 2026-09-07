@@ -12,6 +12,9 @@ LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
+    {'key': 'vocals',  'read': 8,
+     'slug': {'es': 'como-quitar-la-voz-de-una-cancion', 'fr': 'supprimer-la-voix-dune-chanson', 'de': 'gesang-aus-einem-song-entfernen', 'it': 'rimuovere-la-voce-da-una-canzone'},
+     'date': {'es': '7 de septiembre de 2026', 'fr': '7 septembre 2026', 'de': '7. September 2026', 'it': '7 settembre 2026'}},
     {'key': 'chords',  'read': 9,
      'slug': {'es': 'como-encontrar-los-acordes-de-una-cancion', 'fr': 'trouver-les-accords-dune-chanson', 'de': 'akkorde-eines-songs-herausfinden', 'it': 'trovare-gli-accordi-di-una-canzone'},
      'date': {'es': '6 de septiembre de 2026', 'fr': '6 septembre 2026', 'de': '6. September 2026', 'it': '6 settembre 2026'}},
@@ -34,6 +37,7 @@ POSTS = [
 
 # category-key -> per-lang label
 CAT = {
+    'vocals':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'chords':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'instrument': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'pillar':  {'es': 'Guía completa', 'fr': 'Guide complet', 'de': 'Kompletter Guide', 'it': 'Guida completa'},
