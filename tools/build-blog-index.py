@@ -12,6 +12,9 @@ LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
+    {'key': 'key',     'read': 8,
+     'slug': {'es': 'como-cambiar-el-tono-de-una-cancion', 'fr': 'changer-la-tonalite-dune-chanson', 'de': 'tonart-eines-songs-aendern', 'it': 'cambiare-la-tonalita-di-una-canzone'},
+     'date': {'es': '16 de septiembre de 2026', 'fr': '16 septembre 2026', 'de': '16. September 2026', 'it': '16 settembre 2026'}},
     {'key': 'vocals',  'read': 8,
      'slug': {'es': 'como-quitar-la-voz-de-una-cancion', 'fr': 'supprimer-la-voix-dune-chanson', 'de': 'gesang-aus-einem-song-entfernen', 'it': 'rimuovere-la-voce-da-una-canzone'},
      'date': {'es': '7 de septiembre de 2026', 'fr': '7 septembre 2026', 'de': '7. September 2026', 'it': '7 settembre 2026'}},
@@ -37,6 +40,7 @@ POSTS = [
 
 # category-key -> per-lang label
 CAT = {
+    'key':     {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'vocals':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'chords':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'instrument': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},

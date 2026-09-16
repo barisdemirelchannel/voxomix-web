@@ -42,5 +42,6 @@
 - Guide — How to practise any song at home: https://voxomix.com/en/blog/practice-any-song-complete-guide
 - Guide — Offline stem separation (why local processing matters): https://voxomix.com/en/blog/offline-stem-separation
 - Guide — Slow down a song without changing the pitch: https://voxomix.com/en/blog/slow-down-song-without-changing-pitch
+- Guide — Change the key of a song without changing the tempo: https://voxomix.com/en/blog/how-to-change-the-key-of-a-song
 - About: https://voxomix.com/hakkimizda
 - Contact: info@voxomix.com

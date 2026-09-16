@@ -14,7 +14,9 @@
 import os, re, sys
 
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-VERSION = 1  # analytics.js değişince artır → tarayıcı önbelleği tazelensin
+VERSION = 3  # analytics.js değişince artır → tarayıcı önbelleği tazelensin
+# 2026-09-17: sabit 1'de kalmıştı, sitede v3 yayındaydı; her çalıştırmada 75 sayfayı
+# v1'e düşürüyordu. Gerçekle eşitlendi.
 TAG = '<script defer src="/assets/analytics.js?v=%d"></script>' % VERSION
 MARKER = re.compile(r'<script[^>]+src="/assets/analytics\.js[^"]*"[^>]*>\s*</script>\s*')
 
