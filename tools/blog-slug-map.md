@@ -14,6 +14,7 @@ URL kalıbı: TR = `https://voxomix.com/blog/<tr>` · diğerleri = `https://voxo
 | Şarkının akorlarını bulma | sarkinin-akorlarini-bulma | how-to-find-the-chords-of-a-song | como-encontrar-los-acordes-de-una-cancion | trouver-les-accords-dune-chanson | akkorde-eines-songs-herausfinden | trovare-gli-accordi-di-una-canzone |
 | Şarkıdan enstrüman ayırma | sarkidan-enstruman-ayirma | how-to-remove-an-instrument-from-a-song | como-quitar-un-instrumento-de-una-cancion | supprimer-un-instrument-dune-chanson | instrument-aus-einem-song-entfernen | rimuovere-uno-strumento-da-una-canzone |
 | Şarkının tonunu değiştirme | sarkinin-tonunu-degistirme | how-to-change-the-key-of-a-song | como-cambiar-el-tono-de-una-cancion | changer-la-tonalite-dune-chanson | tonart-eines-songs-aendern | cambiare-la-tonalita-di-una-canzone |
+| Şarkıyı karaoke yapma | sarkiyi-karaoke-yapma | how-to-make-a-karaoke-version-of-any-song | como-hacer-un-karaoke-de-cualquier-cancion | faire-une-version-karaoke-dune-chanson | karaoke-version-eines-songs-erstellen | fare-una-base-karaoke-da-una-canzone |
 
 ## og:locale
 tr→tr_TR · en→en_US · es→es_ES · fr→fr_FR · de→de_DE · it→it_IT
