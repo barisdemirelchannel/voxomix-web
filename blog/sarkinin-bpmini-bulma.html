@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Şarkının BPM'ini Bulma ve Metronomla Çalışma — VoxoMix</title>
+  <meta name="description" content="Bir şarkının BPM'ini 3 yolla bul (15 sn × 4, tap tempo, otomatik tespit), metronomu şarkıya kilitle ve yarı hızdan orijinal tempoya çık.">
+  <meta name="keywords" content="şarkının bpm'ini bulma, bpm bulma, metronomla çalışma, şarkının temposu, bpm nedir, metronom ile şarkı çalışma">
+  <link rel="canonical" href="https://voxomix.com/blog/sarkinin-bpmini-bulma">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-bpmini-bulma">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-find-the-bpm-of-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-saber-el-bpm-de-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/trouver-le-bpm-dune-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/bpm-eines-songs-herausfinden">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/trovare-i-bpm-di-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-bpmini-bulma">
+  <meta name="theme-color" content="#0e0e14">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:url" content="https://voxomix.com/blog/sarkinin-bpmini-bulma">
+  <meta property="og:title" content="Şarkının BPM'ini Bulma ve Metronomla Çalışma: Adım Adım Rehber (2026)">
+  <meta property="og:description" content="Şarkının temposunu tahmin etme: BPM'ini bul, metronomu şarkıya kilitle, yarı hızdan başlayıp adım adım orijinal tempoya çık.">
+  <meta property="og:image" content="https://voxomix.com/assets/blog/sarkinin-bpmini-bulma-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-10-07">
+  <meta property="article:modified_time" content="2026-10-07">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Şarkının BPM'ini Bulma ve Metronomla Çalışma: Adım Adım Rehber (2026)">
+  <meta name="twitter:description" content="Şarkının temposunu tahmin etme: BPM'ini bul, metronomu şarkıya kilitle, yarı hızdan başlayıp adım adım orijinal tempoya çık.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/blog/sarkinin-bpmini-bulma-og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Şarkının BPM'ini Bulma ve Metronomla Çalışma: Adım Adım Rehber (2026)",
+        "description": "Bir şarkının BPM'ini 3 yolla bul (15 sn × 4, tap tempo, otomatik tespit), metronomu şarkıya kilitle ve yarı hızdan orijinal tempoya çık.",
+        "image": "https://voxomix.com/assets/blog/sarkinin-bpmini-bulma-og.png",
+        "datePublished": "2026-10-07",
+        "dateModified": "2026-10-07",
+        "inLanguage": "tr",
+        "author": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "url": "https://voxomix.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://voxomix.com/assets/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://voxomix.com/blog/sarkinin-bpmini-bulma"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana Sayfa",
+            "item": "https://voxomix.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://voxomix.com/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Şarkının BPM'ini bulma",
+            "item": "https://voxomix.com/blog/sarkinin-bpmini-bulma"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Bir şarkının BPM'ini en hızlı nasıl bulurum?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Şarkıyı tempoyu otomatik bulan bir uygulamada aç; BPM birkaç saniyede görünür. Elinde araç yoksa 15 saniye boyunca vuruşları say ve 4 ile çarp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Uygulama BPM'i iki kat gösteriyor, hangisi doğru?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ayağınla vuruşu tut ve metronomu aç. Her ayak vuruşuna iki tık düşüyorsa sayı iki kat okunmuştur; yarısını kullan. VoxoMix'te ızgaranın yanındaki ½× ve 2× düğmeleriyle düzeltirsin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "BPM tespiti ve metronom ücretsiz mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. VoxoMix'in ücretsiz planında BPM tespiti, hız değiştirme ve metronom açıktır; ayda 2 şarkıyı 4 dakikaya kadar işleyebilirsin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Şarkıyı yavaşlatınca ton bozulur mu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. Hız değiştirme perdeyi korur; şarkı daha yavaş çalar ama daha pes duyulmaz. Metronom da yeni tempoya uyar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Metronomla mı çalışmalıyım, şarkıyla mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "İkisiyle de. Zor bölümü önce metronomla yavaş tempoda temizle, orijinal tempoya ulaşınca şarkının kendi davuluyla çal. Metronom zamanlamayı, şarkı hissi öğretir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Şarkım bilgisayardan dışarı çıkıyor mu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. VoxoMix şarkıyı kendi bilgisayarında analiz eder; dosya hiçbir sunucuya yüklenmez."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=3"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/#features" data-i18n="nav.features">Özellikler</a>
+    <a href="/#plans" data-i18n="nav.plans">Planlar</a>
+    <a href="/blog">Blog</a>
+    <a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a>
+  </div>
+  <a href="https://voxomix.com/en/blog/how-to-find-the-bpm-of-a-song" class="nav-lang" hreflang="en" onclick="try{localStorage.setItem('voxomix_site_lang','en')}catch(e){}">EN</a>
+  <a href="/#download" class="nav-cta" data-i18n="nav.cta">Producer'ı 14 Gün Ücretsiz Dene</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Ana Sayfa</a> › <a href="/blog">Blog</a> › <span>Şarkının BPM'ini bulma</span>
+</div>
+
+<div class="page-header">
+  <h1>Şarkının BPM'ini Bulma ve Metronomla Çalışma: Adım Adım Rehber (2026)</h1>
+  <p>Temposunu bil, metronomu şarkıya kilitle, yavaştan başlayıp orijinal hıza çık</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Yayın: 7 Ekim 2026 · Okuma süresi ~8 dk</div>
+
+    <p><strong>Kısa cevap:</strong> bir şarkının BPM'ini (dakikadaki vuruş sayısı) bulmanın üç yolu var: <strong>15 saniye boyunca vuruşları sayıp 4 ile çarpmak</strong>, <strong>vuruşlara eşlik ederek bir tap tempo düğmesine basmak</strong> ya da <strong>şarkıyı tempoyu otomatik bulan bir uygulamada açmak</strong>. BPM'i bulduktan sonra asıl iş başlar: metronomu şarkının temposuna kilitler, zor bölümü yarı hızda çalar ve hızı adım adım orijinal tempoya çıkarırsın.</p>
+
+    <p>Bu yazıda üç yöntemi karşılaştırıyor, bulduğun BPM'in doğru olup olmadığını nasıl kontrol edeceğini ve metronomla şarkı çalışmanın işe yarayan bir düzenini anlatıyoruz.</p>
+
+    <img src="/assets/blog/sarkinin-bpmini-bulma-kapak.jpg" alt="Akşam ışığında masasında kulaklıkla elektro gitar çalan bir müzisyen; dizüstü bilgisayar ekranında vuruş ızgaralı bir ses dalgası ve masada sarkaçlı metronom" width="1600" height="900">
+
+    <div class="toc">
+      <strong>İçindekiler</strong>
+      <ul>
+        <li><a href="#s1">BPM nedir ve müzisyen için neden önemli?</a></li>
+        <li><a href="#s2">Şarkının BPM'ini bulmanın üç yolu</a></li>
+        <li><a href="#s3">Adım adım: BPM'i bul, metronomu şarkıya kilitle</a></li>
+        <li><a href="#s4">Metronomla şarkı çalışmanın işe yarayan bir düzeni</a></li>
+        <li><a href="#s5">Otomatik BPM tespiti nerede zorlanır? Dürüst sınırlar</a></li>
+        <li><a href="#s6">Hangi planda ne var?</a></li>
+        <li><a href="#s7">Sıkça sorulan sorular</a></li>
+      </ul>
+    </div>
+
+    <h2 id="s1">BPM nedir ve müzisyen için neden önemli?</h2>
+
+    <p>BPM, İngilizce "beats per minute" ifadesinin kısaltmasıdır: bir dakikada kaç vuruş olduğunu söyler. 60 BPM saniyede bir vuruş demektir; 120 BPM saniyede iki vuruş. Pop ve rock şarkılarının çoğu kabaca 70 ile 140 BPM arasında gezinir, ama bu bir kural değildir.</p>
+
+    <p>Evde şarkı çalışan biri için BPM üç işe yarar:</p>
+
+    <ol>
+      <li><strong>Metronomu doğru ayarlamak.</strong> Şarkıyla aynı tempoda tıklayan bir metronom, nerede hızlandığını ya da geride kaldığını gösterir.</li>
+      <li><strong>İlerlemeni ölçmek.</strong> "Bu riffi geçen hafta 70'te çalabiliyordum, bugün 85'te temiz" demek, "biraz daha iyi oldu" demekten çok daha net bir hedeftir.</li>
+      <li><strong>Yavaş çalışmayı planlamak.</strong> Orijinal tempoyu bilirsen yarı hızdan başlayıp hangi adımlarla yukarı çıkacağını önceden belirlersin.</li>
+    </ol>
+
+    <p>Şarkı yavaşlatmak tek başına da işe yarar; bunu ayrıca <a href="/blog/sarki-hizini-dusurme-ses-bozulmadan">şarkı hızını ses bozulmadan düşürme rehberinde</a> anlattık. Burada odak, tempoyu bir sayıya bağlamak ve o sayıyla çalışmak.</p>
+
+    <h2 id="s2">Şarkının BPM'ini bulmanın üç yolu</h2>
+
+    <h3>1. Saymak: 15 saniye × 4</h3>
+
+    <p>En eski yöntemdir ve hiçbir araç gerektirmez. Şarkıyı çal, ayağınla vuruşu tut, bir saat ya da kronometre aç ve 15 saniye boyunca vuruşları say. Çıkan sayıyı 4 ile çarp. 15 saniyede 28 vuruş saydıysan şarkı yaklaşık 112 BPM'dir.</p>
+
+    <p>Kolaydır ama hata payı büyüktür: bir vuruşu kaçırmak sonucu 4 BPM kaydırır. Daha uzun sayarsan (30 saniye × 2) hata küçülür.</p>
+
+    <h3>2. Tap tempo: vuruşlara eşlik ederek basmak</h3>
+
+    <p>Birçok metronom uygulamasında ve dijital ses aracında "tap" düğmesi vardır. Şarkıyla birlikte her vuruşta düğmeye basarsın, araç basışların arasındaki süreden tempoyu hesaplar. Sekiz-on basıştan sonra sayı oturur.</p>
+
+    <p>Saymaktan hızlıdır, ama senin zamanlamana bağlıdır. Senkoplu ya da vuruşu belirsiz bir girişte yanlış yere basmak kolaydır.</p>
+
+    <h3>3. Otomatik tespit: şarkıyı bir uygulamada açmak</h3>
+
+    <p>Tempo tespit eden bir uygulama ses dosyasını analiz eder, vuruşları bulur ve BPM'i hesaplar. Senin sayman ya da basman gerekmez; sonuç da tek bir sayıdan ibaret değildir, vuruşların şarkı boyunca nerede durduğunu bir ızgarada görürsün.</p>
+
+    <table>
+      <thead>
+        <tr><th>Yöntem</th><th>Hız</th><th>Hata payı</th><th>Ne zaman uygun?</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Saymak (15 sn × 4)</td><td>Yavaş</td><td>Yüksek (±4 BPM)</td><td>Elinde hiçbir araç yokken</td></tr>
+        <tr><td>Tap tempo</td><td>Hızlı</td><td>Orta (senin zamanlamana bağlı)</td><td>Vuruşu net, sabit tempolu şarkılarda</td></tr>
+        <tr><td>Otomatik tespit</td><td>Çok hızlı</td><td>Düşük, ama yarım/iki kat karışabilir</td><td>Metronomla düzenli çalışacaksan</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="s3">Adım adım: BPM'i bul, metronomu şarkıya kilitle</h2>
+
+    <p>Aşağıdaki adımlar VoxoMix'te geçerli; mantık başka araçlarda da aynıdır.</p>
+
+    <h3>1. Şarkıyı aç</h3>
+
+    <p>Ses dosyanı pencereye sürükle. MP3, WAV, FLAC ve M4A dosyaları doğrudan açılır. Uygulama şarkıyı cihazının içinde analiz eder; dosyan hiçbir sunucuya yüklenmez.</p>
+
+    <h3>2. Tempo ızgarasında BPM'i oku</h3>
+
+    <p>Analiz bitince üstteki <strong>Tempo Grid</strong> şeridinde vuruşlar ızgaraya dizilir ve sağda şarkının BPM'i görünür (örneğin <strong>65 BPM</strong>). Ölçü numaraları ızgaranın üstünde akar; şarkının neresinde olduğunu oradan takip edersin.</p>
+
+    <img src="/assets/features/bpm.png" alt="VoxoMix Tempo Grid şeridi: ızgaraya dizilmiş vuruşlar, ölçü numaraları, ½× ve 2× düğmeleri ve 65 BPM göstergesi" width="2017" height="118" loading="lazy">
+
+    <h3>3. Yarım ya da iki kat çıktıysa düzelt</h3>
+
+    <p>Otomatik tespitte en sık görülen hata yanlış sayı değil, <strong>yarım ya da iki kat</strong> sayıdır. 140 BPM'lik hızlı bir şarkı 70 olarak, 65 BPM'lik bir balad 130 olarak okunabilir; ikisi de matematiksel olarak "doğru" vuruşlara oturur. Ayağınla tuttuğun vuruş ızgaradaki sayının yarısı ya da iki katıysa, ızgaranın yanındaki <strong>½×</strong> ve <strong>2×</strong> düğmeleriyle düzelt.</p>
+
+    <blockquote>Kontrol yöntemi: şarkıyı çal, ayağını vur ve metronomu aç. Metronom senin ayağınla aynı yerde tıklıyorsa sayı doğrudur. Her ayak vuruşuna iki tık düşüyorsa sayı iki kat okunmuştur.</blockquote>
+
+    <h3>4. Metronomu şarkıyla birlikte çal</h3>
+
+    <img src="/assets/blog/sarkinin-bpmini-bulma-1.jpg" alt="Kulaklıklı bir davulcunun evde akustik davul setinde çalıştığı, yanında dizüstü bilgisayarda vuruş ızgarasının göründüğü sahne" width="1600" height="900" loading="lazy">
+
+    <p><strong>Metronom</strong> panelindeki oynat düğmesine bas. Metronom şarkının temposuna kilitli tıklar; şarkıyla birlikte çaldığında tık sesi her vuruşun üstüne düşer. Böylece şarkının içinde tempo kayması varsa (canlı çalınmış kayıtlarda olur) duyarsın, kendi çalışında hızlandığın yerleri de.</p>
+
+    <h3>5. Zor bölümü yarı hızda çal</h3>
+
+    <p>Metronom panelindeki <strong>0.5x</strong> düğmesi şarkıyı yarı hıza indirir; ton bozulmaz, metronom da yeni tempoya uyar. 65 BPM'lik bir şarkı 32-33 BPM civarına iner. <strong>−</strong> ve <strong>+</strong> düğmeleriyle tempoyu adım adım değiştirir, <strong>Reset to Original</strong> ile orijinal tempoya dönersin.</p>
+
+    <img src="/assets/features/tempo.png" alt="VoxoMix Metronome paneli: 65 BPM, − ve + düğmeleri, Reset to Original, 0.5x, 1x ve 2x hız düğmeleri ve oynat düğmesi" width="662" height="477" loading="lazy">
+
+    <h3>6. Kendi partini metronomla birlikte çal</h3>
+
+    <p>Davulcuysan <strong>Davul</strong> kanalını sustur ve şarkının geri kalanına metronomla birlikte eşlik et. Gitarist ya da basçıysan kendi enstrümanını kıs. Kanalları susturmanın ve kendi partini çalmanın ayrıntılarını <a href="/blog/sarkidan-enstruman-ayirma">şarkıdan enstrüman ayırma rehberinde</a> anlattık.</p>
+
+    <h2 id="s4">Metronomla şarkı çalışmanın işe yarayan bir düzeni</h2>
+
+    <p>BPM'i bilmek tek başına seni daha iyi çalan biri yapmaz. Aşağıdaki düzen, sayıyı bir çalışma planına çevirir:</p>
+
+    <ol>
+      <li><strong>Zor bölümü seç.</strong> Şarkının tamamını değil, takıldığın 4-8 ölçüyü çalış.</li>
+      <li><strong>Temiz çalabildiğin tempoyu bul.</strong> Yarı hızdan başla. Üç kez üst üste hatasız çalabildiğin en yüksek tempo, bugünkü başlangıç noktandır.</li>
+      <li><strong>Küçük adımlarla çık.</strong> Her temiz turdan sonra tempoyu birkaç BPM artır. Hata yaptığın anda bir adım geri dön.</li>
+      <li><strong>Rakamı not et.</strong> Gün sonunda ulaştığın tempoyu yaz. Ertesi gün bir-iki adım aşağıdan başla.</li>
+      <li><strong>Orijinal tempoya ulaşınca metronomu kapat.</strong> Şarkının kendi davuluyla çal. Metronomla çalışmak zamanlamayı öğretir; şarkıyla çalmak ise his kazandırır.</li>
+    </ol>
+
+    <p>Bu düzen yalnızca tempo için değil, akor değişimleri için de işe yarar. Şarkının akorlarını çıkarmak istersen <a href="/blog/sarkinin-akorlarini-bulma">şarkının akorlarını bulma rehberine</a> bakabilirsin. Tüm pratik akışını tek yerde görmek istersen <a href="/blog/sarkiyla-pratik-yapma-rehberi">şarkıyla pratik yapma rehberi</a> iyi bir başlangıç.</p>
+
+    <img src="/assets/blog/sarkinin-bpmini-bulma-2.jpg" alt="Ahşap bir masada sarkaçlı metronomun ve gitar sapının yakın çekimi; sıcak, loş ışık" width="1600" height="900" loading="lazy">
+
+    <h2 id="s5">Otomatik BPM tespiti nerede zorlanır? Dürüst sınırlar</h2>
+
+    <p>Tempo tespiti çoğu şarkıda doğru sonuç verir, ama bazı durumlarda kendi kulağınla kontrol etmen gerekir:</p>
+
+    <ul>
+      <li><strong>Yarım / iki kat karışıklığı.</strong> Yukarıda anlattığımız gibi, en sık hata budur. Ayağınla kontrol et.</li>
+      <li><strong>6/8 ve half-time şarkılar.</strong> 6/8'lik bir şarkıda ayak çoğu zaman ölçüde iki kez vurur, tespit ise sekizlikleri sayabilir; half-time hisli bir parçada davul yavaş duyulur ama tempo hızlıdır. İkisinde de yarım/iki kat farkı doğal olarak çıkar: metronomu ½× ya da 2× ile hangi vuruşla çalışmak istiyorsan ona göre ayarla.</li>
+      <li><strong>Tempo değişen şarkılar.</strong> Bazı şarkılar ortada yavaşlar ya da hızlanır; tek bir sayı tüm şarkıyı anlatmaz. Izgarada vuruşların aralığının değiştiği yeri görürsün.</li>
+      <li><strong>Serbest tempolu girişler.</strong> Davulsuz, rubato bir girişte vuruş yoktur; ızgara asıl tempoyu şarkı oturduktan sonra yakalar.</li>
+      <li><strong>Canlı kayıtlar.</strong> İnsan çaldığı için tempo hafifçe oynar. Bu hata değil, kaydın doğası.</li>
+      <li><strong>Süre sınırı.</strong> İşlenebilen şarkı süresi plana göre değişir: ücretsiz planda 4 dakika, Basic'te 5, Student'ta 7, Producer'da sınırsız.</li>
+    </ul>
+
+    <h2 id="s6">Hangi planda ne var?</h2>
+
+    <table>
+      <thead>
+        <tr><th>Özellik</th><th>Free</th><th>Basic</th><th>Student</th><th>Producer</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Aylık şarkı</td><td>2</td><td>10</td><td>50</td><td>Sınırsız</td></tr>
+        <tr><td>Maks. süre</td><td>4 dk</td><td>5 dk</td><td>7 dk</td><td>Sınırsız</td></tr>
+        <tr><td><strong>BPM tespiti, hız değiştirme + metronom</strong></td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr>
+        <tr><td>Kanal ayırma</td><td>4</td><td>6</td><td>6+</td><td>6+</td></tr>
+        <tr><td>Ton değiştirme</td><td>—</td><td>✔</td><td>✔</td><td>✔</td></tr>
+        <tr><td>Akort aracı</td><td>—</td><td>—</td><td>✔</td><td>✔</td></tr>
+        <tr><td>Kayıt kanalı</td><td>—</td><td>—</td><td>✔</td><td>✔</td></tr>
+      </tbody>
+    </table>
+
+    <p>Fiyatlar: Basic 2,99 $/ay · Student 8,99 $/ay · Producer 13,99 $/ay; yıllık faturada indirim var. Producer planını 14 gün ücretsiz deneyebilirsin. BPM tespiti ve metronom <strong>ücretsiz planda</strong> açıktır; bu yazıdaki adımların tamamını ücretsiz planla deneyebilirsin.</p>
+
+    <p>VoxoMix macOS (M1–M5) ve Windows 10/11 üzerinde çalışır; analiz tamamen kendi bilgisayarında yapılır, şarkın hiçbir sunucuya yüklenmez.</p>
+
+    <h2 id="s7">Sıkça sorulan sorular</h2>
+
+    <h3>Bir şarkının BPM'ini en hızlı nasıl bulurum?</h3>
+
+    <p>Şarkıyı tempoyu otomatik bulan bir uygulamada aç; BPM birkaç saniyede görünür. Elinde araç yoksa 15 saniye boyunca vuruşları say ve 4 ile çarp.</p>
+
+    <h3>Uygulama BPM'i iki kat gösteriyor, hangisi doğru?</h3>
+
+    <p>Ayağınla vuruşu tut ve metronomu aç. Her ayak vuruşuna iki tık düşüyorsa sayı iki kat okunmuştur; yarısını kullan. VoxoMix'te ızgaranın yanındaki ½× ve 2× düğmeleriyle düzeltirsin.</p>
+
+    <h3>BPM tespiti ve metronom ücretsiz mi?</h3>
+
+    <p>Evet. VoxoMix'in ücretsiz planında BPM tespiti, hız değiştirme ve metronom açıktır; ayda 2 şarkıyı 4 dakikaya kadar işleyebilirsin.</p>
+
+    <h3>Şarkıyı yavaşlatınca ton bozulur mu?</h3>
+
+    <p>Hayır. Hız değiştirme perdeyi korur; şarkı daha yavaş çalar ama daha pes duyulmaz. Metronom da yeni tempoya uyar.</p>
+
+    <h3>Metronomla mı çalışmalıyım, şarkıyla mı?</h3>
+
+    <p>İkisiyle de. Zor bölümü önce metronomla yavaş tempoda temizle, orijinal tempoya ulaşınca şarkının kendi davuluyla çal. Metronom zamanlamayı, şarkı hissi öğretir.</p>
+
+    <h3>Şarkım bilgisayardan dışarı çıkıyor mu?</h3>
+
+    <p>Hayır. VoxoMix şarkıyı kendi bilgisayarında analiz eder; dosya hiçbir sunucuya yüklenmez.</p>
+
+    <h2>Sonuç</h2>
+
+    <p>Şarkının temposunu tahmin etmek yerine bilmek, çalışmanı ölçülebilir hale getirir. Üç şeyi hatırla: <strong>BPM'i bul ve yarım/iki kat hatasını ayağınla kontrol et</strong>, <strong>zor bölümü yarı hızda metronomla temizle</strong> ve <strong>küçük adımlarla orijinal tempoya çık</strong>. Orijinal tempoya ulaştığında metronomu kapat ve şarkının kendisiyle çal.</p>
+
+    <p>Bu hafta takıldığın o bölümle başla ve bugünkü temponu not et.</p>
+
+    <div class="cta-box">
+      <p>VoxoMix'i ücretsiz indir: BPM tespiti ve metronom ücretsiz planda açık.</p>
+      <a href="/#download" class="btn-primary">Ücretsiz İndir</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p>Müzisyenler için AI destekli stem ayrıştırma uygulaması.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Ürün</h4>
+        <a href="/#features" data-i18n="nav.features">Özellikler</a>
+        <a href="/#plans" data-i18n="footer.pricing">Fiyatlandırma</a>
+        <a href="/blog">Blog</a>
+        <a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Yasal</h4>
+        <a href="/kullanim-sartlari">Kullanım Şartları</a>
+        <a href="/gizlilik">Gizlilik Sözleşmesi</a>
+        <a href="/teslimat-iade">Teslimat ve İade</a>
+        <a href="/mesafeli-satis">Mesafeli Satış Sözleşmesi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. Tüm hakları saklıdır.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=12"></script>
+</body>
+</html>
