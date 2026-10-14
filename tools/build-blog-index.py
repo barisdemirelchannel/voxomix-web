@@ -12,6 +12,12 @@ LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
+    {'key': 'bpm', 'read': 8,
+     'slug': {'es': 'como-saber-el-bpm-de-una-cancion', 'fr': 'trouver-le-bpm-dune-chanson', 'de': 'bpm-eines-songs-herausfinden', 'it': 'trovare-i-bpm-di-una-canzone'},
+     'date': {'es': '14 de octubre de 2026', 'fr': '14 octobre 2026', 'de': '14. Oktober 2026', 'it': '14 ottobre 2026'}},
+    {'key': 'karaoke', 'read': 8,
+     'slug': {'es': 'como-hacer-un-karaoke-de-cualquier-cancion', 'fr': 'faire-une-version-karaoke-dune-chanson', 'de': 'karaoke-version-eines-songs-erstellen', 'it': 'fare-una-base-karaoke-da-una-canzone'},
+     'date': {'es': '14 de octubre de 2026', 'fr': '14 octobre 2026', 'de': '14. Oktober 2026', 'it': '14 ottobre 2026'}},
     {'key': 'key',     'read': 8,
      'slug': {'es': 'como-cambiar-el-tono-de-una-cancion', 'fr': 'changer-la-tonalite-dune-chanson', 'de': 'tonart-eines-songs-aendern', 'it': 'cambiare-la-tonalita-di-una-canzone'},
      'date': {'es': '16 de septiembre de 2026', 'fr': '16 septembre 2026', 'de': '16. September 2026', 'it': '16 settembre 2026'}},
@@ -40,6 +46,8 @@ POSTS = [
 
 # category-key -> per-lang label
 CAT = {
+    'bpm':     {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
+    'karaoke': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'key':     {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'vocals':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'chords':  {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},

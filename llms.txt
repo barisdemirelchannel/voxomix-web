@@ -43,5 +43,7 @@
 - Guide — Offline stem separation (why local processing matters): https://voxomix.com/en/blog/offline-stem-separation
 - Guide — Slow down a song without changing the pitch: https://voxomix.com/en/blog/slow-down-song-without-changing-pitch
 - Guide — Change the key of a song without changing the tempo: https://voxomix.com/en/blog/how-to-change-the-key-of-a-song
+- Guide — Find the BPM of a song and practise with a metronome: https://voxomix.com/en/blog/how-to-find-the-bpm-of-a-song
+- Guide — Make a karaoke version of any song: https://voxomix.com/en/blog/how-to-make-a-karaoke-version-of-any-song
 - About: https://voxomix.com/hakkimizda
 - Contact: info@voxomix.com
