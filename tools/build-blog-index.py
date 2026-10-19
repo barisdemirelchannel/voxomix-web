@@ -12,6 +12,9 @@ LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
+    {'key': 'sarkinin_piyano_akorlari', 'read': 7,
+     'slug': {'es': 'como-sacar-los-acordes-de-piano-de-una-cancion', 'fr': 'trouver-les-accords-piano-dune-chanson', 'de': 'klavierakkorde-eines-songs-herausfinden', 'it': 'trovare-gli-accordi-per-pianoforte-di-una-canzone'},
+     'date': {'es': '19 de octubre de 2026', 'fr': '19 octobre 2026', 'de': '19. Oktober 2026', 'it': '19 ottobre 2026'}},
     {'key': 'bpm', 'read': 8,
      'slug': {'es': 'como-saber-el-bpm-de-una-cancion', 'fr': 'trouver-le-bpm-dune-chanson', 'de': 'bpm-eines-songs-herausfinden', 'it': 'trovare-i-bpm-di-una-canzone'},
      'date': {'es': '14 de octubre de 2026', 'fr': '14 octobre 2026', 'de': '14. Oktober 2026', 'it': '14 ottobre 2026'}},
@@ -46,6 +49,7 @@ POSTS = [
 
 # category-key -> per-lang label
 CAT = {
+    'sarkinin_piyano_akorlari': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'bpm':     {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'karaoke': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'key':     {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
