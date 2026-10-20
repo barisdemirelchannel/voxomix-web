@@ -20,7 +20,7 @@ POSTS = {
   'offline': {'tr':'cevrimdisi-stem-ayirma','en':'offline-stem-separation','es':'separacion-de-pistas-sin-conexion','fr':'separation-de-pistes-hors-ligne','de':'offline-stem-trennung','it':'separazione-tracce-offline'},
   'howto':   {'tr':'voxomix-nasil-kullanilir','en':'how-to-use-voxomix','es':'como-usar-voxomix','fr':'comment-utiliser-voxomix','de':'voxomix-verwenden','it':'come-usare-voxomix'},
 }
-POST_MOD = {'sarkinin_piyano_akorlari':'2026-10-19','bpm':'2026-10-14','karaoke':'2026-10-14','key':'2026-09-16','vocals':'2026-09-07','chords':'2026-09-06','instrument':'2026-09-06','pillar':'2026-07-17','slow':'2026-07-17','offline':'2026-07-17','howto':'2026-09-07'}
+POST_MOD = {'sarkinin_piyano_akorlari':'2026-10-19','bpm':'2026-10-20','karaoke':'2026-10-14','key':'2026-09-16','vocals':'2026-09-07','chords':'2026-09-06','instrument':'2026-09-06','pillar':'2026-07-17','slow':'2026-07-17','offline':'2026-07-17','howto':'2026-09-07'}
 POST_PRIO = {'sarkinin_piyano_akorlari':'0.8','bpm':'0.8','karaoke':'0.8','key':'0.8','vocals':'0.8','chords':'0.8','instrument':'0.8','pillar':'0.9','slow':'0.8','offline':'0.8','howto':'0.8'}
 
 def base(lang): return B + ('' if lang=='tr' else '/'+lang)
