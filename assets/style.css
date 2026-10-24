@@ -136,34 +136,18 @@ nav {
   padding: 150px 24px 64px;
   position: relative;
 }
-/* Laptop maketi (25.10, kullanıcı: "ana sayfada dalga çubuklarının olduğu yerde laptopta programımız olsun").
-   HTML'e dokunmadan iki sözde öğeyle: ::before ekran (çerçeve + kamera + uygulama görüntüsü + cam parlaması),
-   ::after gövde. Yüzdeler kapsayıcı GENİŞLİĞİNE göre (margin-top da genişlikten hesaplanır) — ekran ve gövde
-   her genişlikte birbirine yapışık kalır. W = ekran genişliği %50, ekran yüksekliği H = W / 1.538 ≈ %32.5; ekran tam ortada. */
+/* Laptop maketi (25.10, kullanıcı: "ana sayfada dalga çubuklarının olduğu yerde laptopta programımız olsun;
+   tam sığsın, akorlar da görünsün, hafif açılı dursun"). Tek görsel: assets/hero-laptop.webp — app-screenshot.png'den
+   16:10 ekran (pencere çubuğu, ilk dört kanal, Akor bulucu / Metronom / Ton) + hafif sağa dönük laptop + gölge.
+   Üreten betik: tools/hero-laptop.py. HTML'e dokunmaz; 6 dilde birden. Oran 1400×976 (1.434).
+   Yüzdeler kapsayıcı genişliğine göre (margin-top da genişlikten): W = %54 → yükseklik ≈ %37.7, dikeyde ortada. */
 .hero::before {
   content: ""; position: absolute; z-index: 0; pointer-events: none;
-  right: 24px; top: 50%; margin-top: -16.25%;
-  width: 50%; aspect-ratio: 16 / 10.4;
-  border: clamp(7px, .9vw, 12px) solid #0c0c0e; border-radius: 14px 14px 4px 4px;
-  background:
-    radial-gradient(circle, #2b2b30 0 1.6px, transparent 2.2px) center top / 12px 12px no-repeat,
-    linear-gradient(118deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,.02) 34%, transparent 35%),
-    url("hero-laptop-ekran.jpg") center top / cover no-repeat,
-    #18181f;
-  background-origin: border-box, content-box, content-box, border-box;
-  background-clip: border-box;
-  box-shadow: 0 0 0 1.5px #3a3a40, 0 40px 90px -30px rgba(139,108,255,.35), 0 30px 60px -20px rgba(0,0,0,.8);
+  right: 0; top: 50%; margin-top: -16.8%;
+  width: 54%; aspect-ratio: 1400 / 976;
+  background: url("hero-laptop.webp") center / contain no-repeat;
 }
-.hero::after {
-  content: ""; position: absolute; z-index: 0; pointer-events: none;
-  right: calc(24px - 4%); top: 50%; margin-top: 16.25%;
-  width: 58%; height: clamp(10px, 1.1vw, 15px);
-  border-radius: 2px 2px 16px 16px / 2px 2px 100% 100%;
-  background:
-    linear-gradient(#1c1c20, #2a2a2f) center top / 17% 38% no-repeat,
-    linear-gradient(180deg, #8a8a92 0%, #55555c 40%, #2a2a2f 100%);
-  box-shadow: 0 18px 30px -12px rgba(0,0,0,.9);
-}
+.hero::after { content: none; }
 .hero > div { max-width: 45%; position: relative; z-index: 1; }
 .hero { overflow-x: clip; }   /* dar masaüstünde gövdenin kenarı sayfayı yatay kaydırmasın */
 @media (min-width: 1025px) {
@@ -173,9 +157,7 @@ nav {
 @media (max-width: 1024px) {
   .hero { flex-direction: column; align-items: flex-start; }
   .hero > div { max-width: 760px; }
-  .hero::before, .hero::after { position: relative; right: auto; top: auto; margin: 0 auto; }
-  .hero::before { order: 2; margin-top: 48px; width: min(600px, 88%); }
-  .hero::after { order: 3; width: min(690px, 100%); }
+  .hero::before { position: relative; right: auto; top: auto; order: 2; margin: 44px auto 0; width: min(680px, 100%); }
 }
 
 /* rozet yerine stüdyo etiketi: kırmızı "kayıt" noktası + küçük büyük harf */
