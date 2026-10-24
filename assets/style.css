@@ -137,14 +137,14 @@ nav {
   position: relative;
 }
 /* Laptop maketi (25.10, kullanıcı: "ana sayfada dalga çubuklarının olduğu yerde laptopta programımız olsun;
-   tam sığsın, akorlar da görünsün, hafif açılı dursun"). Tek görsel: assets/hero-laptop.webp — app-screenshot.png'den
-   16:10 ekran (pencere çubuğu, ilk dört kanal, Akor bulucu / Metronom / Ton) + hafif sağa dönük laptop + gölge.
-   Üreten betik: tools/hero-laptop.py. HTML'e dokunmaz; 6 dilde birden. Oran 1400×976 (1.434).
-   Yüzdeler kapsayıcı genişliğine göre (margin-top da genişlikten): W = %54 → yükseklik ≈ %37.7, dikeyde ortada. */
+   tam sığsın, akorlar da görünsün, hafif açılı dursun"). Tek görsel: assets/hero-laptop.webp — kullanıcının verdiği MacBook çerçevesine (tools/macbook-cerceve.webp)
+   app-screenshot.png'den ekran oturtulur (pencere çubuğu, ilk dört kanal, Akor bulucu / Metronom / Ton).
+   Üreten betik: tools/hero-laptop.py. HTML'e dokunmaz; 6 dilde birden. Oran 1400×807 (1.735).
+   Yüzdeler kapsayıcı genişliğine göre (margin-top da genişlikten): W = %54 → yükseklik ≈ %31.1, dikeyde ortada. */
 .hero::before {
   content: ""; position: absolute; z-index: 0; pointer-events: none;
-  right: 0; top: 50%; margin-top: -16.8%;
-  width: 54%; aspect-ratio: 1400 / 976;
+  right: 0; top: 50%; margin-top: -14.2%;
+  width: 54%; aspect-ratio: 1400 / 807;
   background: url("hero-laptop.webp") center / contain no-repeat;
 }
 .hero::after { content: none; }
