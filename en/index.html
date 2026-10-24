@@ -110,9 +110,40 @@
   </div>
 </section>
 
-<!-- PROMO BANNER -->
-<div style="max-width:900px;margin:0 auto;padding:0 24px 80px;">
-  <img src="/assets/promo-banner.png" alt="VoxoMix - Separate Music Into Stems" style="width:100%;border-radius:20px;box-shadow:0 24px 80px rgba(108,92,231,0.25);">
+<!-- REKLAM FİLMLERİ (dikey 9:16) -->
+<style>
+  /* Reklam filmleri — dikey 9:16 şerit (tanıtım görselinin yerine, 25.10.2026) */
+  .vx-reels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .vx-reels figure { margin: 0; }
+  .vx-reels video {
+    width: 100%; aspect-ratio: 9 / 16; display: block; background: #0e0e14;
+    border-radius: 16px; border: 1px solid #2a2938;
+    box-shadow: 0 18px 60px rgba(108,92,231,0.22);
+  }
+  @media (max-width: 860px) {
+    .vx-reels { display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+                gap: 14px; padding-bottom: 10px; -webkit-overflow-scrolling: touch; }
+    .vx-reels figure { flex: 0 0 68%; scroll-snap-align: center; }
+  }
+</style>
+<div style="max-width:980px;margin:0 auto;padding:0 24px 80px;">
+  <div class="vx-reels">
+    <figure>
+      <video controls preload="none" playsinline poster="/assets/video/r1-all-features-en.jpg" title="VoxoMix — Lyrics, word by word">
+        <source src="/assets/video/r1-all-features-en.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <figure>
+      <video controls preload="none" playsinline poster="/assets/video/r6-vocal-remix-en.jpg" title="VoxoMix — Every instrument on its own">
+        <source src="/assets/video/r6-vocal-remix-en.mp4" type="video/mp4">
+      </video>
+    </figure>
+    <figure>
+      <video controls preload="none" playsinline poster="/assets/video/r7-guitar-riff-remix-en.jpg" title="VoxoMix — Drag it into your track">
+        <source src="/assets/video/r7-guitar-riff-remix-en.mp4" type="video/mp4">
+      </video>
+    </figure>
+  </div>
 </div>
 
 <!-- FEATURES -->
