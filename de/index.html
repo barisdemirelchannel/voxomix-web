@@ -144,6 +144,10 @@
       </video>
     </figure>
   </div>
+  <script>
+    /* Oynatıcı sesi %50'de başlasın (HTML'de volume özniteliği yok, JS ile verilir) */
+    document.querySelectorAll('.vx-reels video').forEach(function (v) { v.volume = 0.5; });
+  </script>
 </div>
 
 <!-- FEATURES -->
