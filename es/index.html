@@ -113,7 +113,7 @@
 <!-- REKLAM FİLMLERİ (dikey 9:16) -->
 <style>
   /* Reklam filmleri — dikey 9:16 şerit (tanıtım görselinin yerine, 25.10.2026) */
-  .vx-reels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .vx-reels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .vx-reels figure { margin: 0; }
   .vx-reels video {
     width: 100%; aspect-ratio: 9 / 16; display: block; background: #0e0e14;
@@ -123,11 +123,16 @@
   @media (max-width: 860px) {
     .vx-reels { display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
                 gap: 14px; padding-bottom: 10px; -webkit-overflow-scrolling: touch; }
-    .vx-reels figure { flex: 0 0 68%; scroll-snap-align: center; }
+    .vx-reels figure { flex: 0 0 min(68%, 280px); scroll-snap-align: center; }
   }
 </style>
-<div style="max-width:980px;margin:0 auto;padding:0 24px 80px;">
+<div style="max-width:1148px;margin:0 auto;padding:0 24px 80px;">
   <div class="vx-reels">
+    <figure>
+      <video controls preload="none" playsinline poster="/assets/video/r3-guitar-recording-en.jpg" title="VoxoMix — See the chords, play along">
+        <source src="/assets/video/r3-guitar-recording-en.mp4" type="video/mp4">
+      </video>
+    </figure>
     <figure>
       <video controls preload="none" playsinline poster="/assets/video/r1-all-features-en.jpg" title="VoxoMix — Lyrics, word by word">
         <source src="/assets/video/r1-all-features-en.mp4" type="video/mp4">
