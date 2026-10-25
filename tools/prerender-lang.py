@@ -86,28 +86,28 @@ META = {
 # ayrıca çevrilir (yoksa /es//fr//de//it/ sayfalarında İngilizce alt kalırdı).
 FEATURE_ALTS = {
   'bpm': {
-    'es': 'Rejilla de tempo de VoxoMix: los BPM de la canción se detectan automáticamente, los pulsos se colocan en una rejilla, con botones de media y doble velocidad y un indicador de 65 BPM',
-    'fr': 'Grille de tempo de VoxoMix : le BPM de la chanson est détecté automatiquement, les temps sont alignés sur une grille, avec des boutons demi et double vitesse et un affichage de 65 BPM',
-    'de': 'Tempo-Raster von VoxoMix: Das BPM des Songs wird automatisch erkannt, die Beats liegen auf einem Raster, mit Tasten für halbe und doppelte Geschwindigkeit und einer 65-BPM-Anzeige',
-    'it': 'Griglia del tempo di VoxoMix: i BPM della canzone vengono rilevati automaticamente, i battiti sono disposti su una griglia, con pulsanti per metà e doppia velocità e un indicatore di 65 BPM',
+    'es': 'Rejilla de tempo de VoxoMix: los BPM de la canción se detectan automáticamente, los pulsos se colocan en una rejilla, con botones de media y doble velocidad y un indicador de 103 BPM',
+    'fr': 'Grille de tempo de VoxoMix : le BPM de la chanson est détecté automatiquement, les temps sont alignés sur une grille, avec des boutons demi et double vitesse et un affichage de 103 BPM',
+    'de': 'Tempo-Raster von VoxoMix: Das BPM des Songs wird automatisch erkannt, die Beats liegen auf einem Raster, mit Tasten für halbe und doppelte Geschwindigkeit und einer 103-BPM-Anzeige',
+    'it': 'Griglia del tempo di VoxoMix: i BPM della canzone vengono rilevati automaticamente, i battiti sono disposti su una griglia, con pulsanti per metà e doppia velocità e un indicatore di 103 BPM',
   },
   'chords': {
-    'es': 'Buscador de acordes de VoxoMix: el acorde que suena mostrado en grande como B7, los acordes anterior y siguiente al lado, las notas resaltadas en un teclado de piano y un selector entre posiciones de piano y de guitarra',
-    'fr': "Recherche d'accords de VoxoMix : l'accord joué affiché en grand (B7), les accords précédent et suivant à côté, les notes surlignées sur un clavier de piano et un sélecteur entre positions de piano et de guitare",
-    'de': 'Akkordfinder von VoxoMix: der gespielte Akkord groß als B7, davor und danach die Nachbarakkorde, die Töne auf einer Klaviatur hervorgehoben und ein Umschalter zwischen Klavier- und Gitarrengriffen',
-    'it': 'Ricerca accordi di VoxoMix: l\'accordo suonato mostrato in grande come B7, gli accordi precedente e successivo accanto, le note evidenziate su una tastiera di pianoforte e un selettore tra posizioni di piano e di chitarra',
+    'es': 'Buscador de acordes de VoxoMix: el acorde que suena mostrado en grande como Gmaj7, los acordes anterior y siguiente al lado, las notas resaltadas en un teclado de piano y un selector entre posiciones de piano y de guitarra',
+    'fr': "Recherche d'accords de VoxoMix : l'accord joué affiché en grand (Gmaj7), les accords précédent et suivant à côté, les notes surlignées sur un clavier de piano et un sélecteur entre positions de piano et de guitare",
+    'de': 'Akkordfinder von VoxoMix: der gespielte Akkord groß als Gmaj7, davor und danach die Nachbarakkorde, die Töne auf einer Klaviatur hervorgehoben und ein Umschalter zwischen Klavier- und Gitarrengriffen',
+    'it': 'Ricerca accordi di VoxoMix: l\'accordo suonato mostrato in grande come Gmaj7, gli accordi precedente e successivo accanto, le note evidenziate su una tastiera di pianoforte e un selettore tra posizioni di piano e di chitarra',
   },
   'tempo': {
-    'es': 'Panel de metrónomo de VoxoMix: indicador de 65 BPM con botones de más y menos y opciones de velocidad 0,5x, 1x y 2x',
-    'fr': 'Panneau métronome de VoxoMix : affichage 65 BPM avec boutons plus et moins et options de vitesse 0,5x, 1x et 2x',
-    'de': 'Metronom-Panel von VoxoMix: 65-BPM-Anzeige mit Plus- und Minus-Tasten und den Geschwindigkeiten 0,5x, 1x und 2x',
-    'it': 'Pannello metronomo di VoxoMix: indicatore 65 BPM con pulsanti più e meno e opzioni di velocità 0,5x, 1x e 2x',
+    'es': 'Panel de metrónomo de VoxoMix: indicador de 103 BPM con botones de más y menos y opciones de velocidad 0,5x, 1x y 2x',
+    'fr': 'Panneau métronome de VoxoMix : affichage 103 BPM avec boutons plus et moins et options de vitesse 0,5x, 1x et 2x',
+    'de': 'Metronom-Panel von VoxoMix: 103-BPM-Anzeige mit Plus- und Minus-Tasten und den Geschwindigkeiten 0,5x, 1x und 2x',
+    'it': 'Pannello metronomo di VoxoMix: indicatore 103 BPM con pulsanti più e meno e opzioni di velocità 0,5x, 1x e 2x',
   },
   'record': {
-    'es': 'Pista de grabación de VoxoMix: graba tu propia toma sobre la canción, escúchate por los auriculares, con la forma de onda grabada y botones de borrar y descargar',
-    'fr': "Piste d'enregistrement de VoxoMix : enregistrez votre prise par-dessus la chanson, suivez-vous au casque, avec la forme d'onde enregistrée et des boutons supprimer et télécharger",
-    'de': 'Aufnahmespur von VoxoMix: Nimm deinen eigenen Take über den Song auf, hör dich über Kopfhörer mit, mit aufgenommener Wellenform und Tasten zum Löschen und Herunterladen',
-    'it': 'Traccia di registrazione di VoxoMix: registra la tua esecuzione sopra la canzone, ascoltati in cuffia, con la forma d\'onda registrata e i pulsanti elimina e scarica',
+    'es': 'Pista de grabación de VoxoMix: graba tu propia toma sobre la canción, escúchate por los auriculares, con botones de grabar, borrar y descargar',
+    'fr': "Piste d'enregistrement de VoxoMix : enregistrez votre prise par-dessus la chanson, suivez-vous au casque, avec les boutons enregistrer, supprimer et télécharger",
+    'de': 'Aufnahmespur von VoxoMix: Nimm deinen eigenen Take über den Song auf, hör dich über Kopfhörer mit, mit Tasten zum Aufnehmen, Löschen und Herunterladen',
+    'it': 'Traccia di registrazione di VoxoMix: registra la tua esecuzione sopra la canzone, ascoltati in cuffia, con i pulsanti registra, elimina e scarica',
   },
 }
 
