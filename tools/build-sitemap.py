@@ -4,10 +4,11 @@
 import os
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 B = 'https://voxomix.com'
-TODAY = '2026-11-02'
+TODAY = '2026-11-07'
 
 # post-key -> {lang: slug}
 POSTS = {
+  'sarkinin_sozlerini_cikar': {'tr':'sarkinin-sozlerini-cikarma', 'en':'how-to-transcribe-the-lyrics-of-a-song', 'es':'como-sacar-la-letra-de-una-cancion', 'fr':'transcrire-les-paroles-dune-chanson', 'de':'songtext-eines-songs-transkribieren', 'it':'trascrivere-il-testo-di-una-canzone'},
   'sarkinin_bir_bolumunu_do': {'tr':'sarkinin-bir-bolumunu-donguye-alma', 'en':'how-to-loop-a-section-of-a-song', 'es':'como-repetir-una-parte-de-una-cancion-en-bucle', 'fr':'boucler-un-passage-dune-chanson', 'de':'songabschnitt-in-der-schleife-ueben', 'it':'ripetere-una-parte-di-una-canzone-in-loop'},
   'sarkidan_bas_ayirma': {'tr':'sarkidan-bas-ayirma', 'en':'how-to-isolate-the-bass-from-a-song', 'es':'como-sacar-el-bajo-de-una-cancion', 'fr':'isoler-la-basse-dune-chanson', 'de':'bass-aus-einem-song-isolieren', 'it':'isolare-il-basso-di-una-canzone'},
   'sarkinin_piyano_akorlari': {'tr':'sarkinin-piyano-akorlarini-bulma', 'en':'how-to-find-the-piano-chords-of-a-song', 'es':'como-sacar-los-acordes-de-piano-de-una-cancion', 'fr':'trouver-les-accords-piano-dune-chanson', 'de':'klavierakkorde-eines-songs-herausfinden', 'it':'trovare-gli-accordi-per-pianoforte-di-una-canzone'},
@@ -22,8 +23,8 @@ POSTS = {
   'offline': {'tr':'cevrimdisi-stem-ayirma','en':'offline-stem-separation','es':'separacion-de-pistas-sin-conexion','fr':'separation-de-pistes-hors-ligne','de':'offline-stem-trennung','it':'separazione-tracce-offline'},
   'howto':   {'tr':'voxomix-nasil-kullanilir','en':'how-to-use-voxomix','es':'como-usar-voxomix','fr':'comment-utiliser-voxomix','de':'voxomix-verwenden','it':'come-usare-voxomix'},
 }
-POST_MOD = {'sarkinin_bir_bolumunu_do':'2026-11-02','sarkidan_bas_ayirma':'2026-11-02','sarkinin_piyano_akorlari':'2026-10-19','bpm':'2026-10-20','karaoke':'2026-10-14','key':'2026-09-16','vocals':'2026-09-07','chords':'2026-09-06','instrument':'2026-09-06','pillar':'2026-07-17','slow':'2026-07-17','offline':'2026-07-17','howto':'2026-09-07'}
-POST_PRIO = {'sarkinin_bir_bolumunu_do':'0.8','sarkidan_bas_ayirma':'0.8','sarkinin_piyano_akorlari':'0.8','bpm':'0.8','karaoke':'0.8','key':'0.8','vocals':'0.8','chords':'0.8','instrument':'0.8','pillar':'0.9','slow':'0.8','offline':'0.8','howto':'0.8'}
+POST_MOD = {'sarkinin_sozlerini_cikar':'2026-11-07','sarkinin_bir_bolumunu_do':'2026-11-02','sarkidan_bas_ayirma':'2026-11-02','sarkinin_piyano_akorlari':'2026-10-19','bpm':'2026-10-20','karaoke':'2026-10-14','key':'2026-09-16','vocals':'2026-09-07','chords':'2026-09-06','instrument':'2026-09-06','pillar':'2026-07-17','slow':'2026-07-17','offline':'2026-07-17','howto':'2026-09-07'}
+POST_PRIO = {'sarkinin_sozlerini_cikar':'0.8','sarkinin_bir_bolumunu_do':'0.8','sarkidan_bas_ayirma':'0.8','sarkinin_piyano_akorlari':'0.8','bpm':'0.8','karaoke':'0.8','key':'0.8','vocals':'0.8','chords':'0.8','instrument':'0.8','pillar':'0.9','slow':'0.8','offline':'0.8','howto':'0.8'}
 
 def base(lang): return B + ('' if lang=='tr' else '/'+lang)
 
@@ -47,7 +48,7 @@ for lang in ['tr','en','es','fr','de','it']:
 # Blog posts
 for key, langs in POSTS.items():
     for lang in ['tr','en','es','fr','de','it']:
-        mod = POST_MOD[key] if (lang in ('tr','en') or key in ('sarkinin_bir_bolumunu_do','sarkidan_bas_ayirma','sarkinin_piyano_akorlari','bpm','karaoke','key','vocals','chords','instrument','howto')) else TODAY
+        mod = POST_MOD[key] if (lang in ('tr','en') or key in ('sarkinin_sozlerini_cikar','sarkinin_bir_bolumunu_do','sarkidan_bas_ayirma','sarkinin_piyano_akorlari','bpm','karaoke','key','vocals','chords','instrument','howto')) else TODAY
         U(f"{base(lang)}/blog/{langs[lang]}", mod, 'monthly', POST_PRIO[key])
 # Legal (tr + en only)
 for slug in ['kullanim-sartlari','gizlilik','mesafeli-satis','teslimat-iade']:

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songtext aus einem Song transkribieren — VoxoMix</title>
+  <meta name="description" content="Songtext transkribieren direkt auf deinem Computer: Gesang trennen, die App schreibt den Text mit Zeitmarken, unklare Zeilen prüfst du per Schleife.">
+  <meta name="keywords" content="Songtext transkribieren, Songtext herausfinden, Liedtext aus einem Song, Songtext aus Audio transkribieren, Songtext und Akkorde, Text eines Liedes herausfinden">
+  <link rel="canonical" href="https://voxomix.com/de/blog/songtext-eines-songs-transkribieren">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-sozlerini-cikarma">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-transcribe-the-lyrics-of-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-sacar-la-letra-de-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/transcrire-les-paroles-dune-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/songtext-eines-songs-transkribieren">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/trascrivere-il-testo-di-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-sozlerini-cikarma">
+  <meta name="theme-color" content="#0e0e14">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:url" content="https://voxomix.com/de/blog/songtext-eines-songs-transkribieren">
+  <meta property="og:title" content="Songtext transkribieren und jede Zeile überprüfen: so geht&#x27;s">
+  <meta property="og:description" content="Den Liedtext aus einem Song bekommen, ohne ihn mühsam nach Gehör abzutippen: Stimme isolieren, Text mit Zeitmarken erhalten, unklare Zeilen korrigieren.">
+  <meta property="og:image" content="https://voxomix.com/assets/blog/sarkinin-sozlerini-cikarma-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-11-07">
+  <meta property="article:modified_time" content="2026-11-07">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Songtext transkribieren und jede Zeile überprüfen: so geht&#x27;s">
+  <meta name="twitter:description" content="Den Liedtext aus einem Song bekommen, ohne ihn mühsam nach Gehör abzutippen: Stimme isolieren, Text mit Zeitmarken erhalten, unklare Zeilen korrigieren.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/blog/sarkinin-sozlerini-cikarma-og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Songtext transkribieren und jede Zeile überprüfen: so geht's",
+        "description": "Songtext transkribieren direkt auf deinem Computer: Gesang trennen, die App schreibt den Text mit Zeitmarken, unklare Zeilen prüfst du per Schleife.",
+        "image": "https://voxomix.com/assets/blog/sarkinin-sozlerini-cikarma-og.png",
+        "datePublished": "2026-11-07",
+        "dateModified": "2026-11-07",
+        "inLanguage": "de",
+        "author": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "url": "https://voxomix.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://voxomix.com/assets/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://voxomix.com/de/blog/songtext-eines-songs-transkribieren"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://voxomix.com/de/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://voxomix.com/de/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Songtext eines Songs transkribieren",
+            "item": "https://voxomix.com/de/blog/songtext-eines-songs-transkribieren"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kann ich den Songtext aus einer MP3-Datei herausfinden?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Öffne die MP3 in VoxoMix und trenne sie; die App transkribiert dann den Gesangs-Stem und zeigt den Songtext mit Zeitmarken im Fenster Songtext & Akkorde an."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wird der Song für die Transkription irgendwo hochgeladen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. Trennung und Songtext-Transkription laufen auf deinem eigenen Computer, die Audiodatei wird also nicht an einen Server gesendet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche Sprachen versteht die Songtext-Transkription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sie nutzt ein mehrsprachiges Sprachmodell, das die Sprache des Songs automatisch erkennt. Klarer Gesang liefert in jeder Sprache die besten Ergebnisse."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie genau ist die automatische Songtext-Transkription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Das hängt von der Aufnahme ab. Eine klare Leadstimme wird meist gut transkribiert; starke Effekte, schneller Rap und sich überlagernde Backing Vocals führen zu mehr Fehlern. Prüfe unklare Zeilen deshalb, indem du sie in einer Schleife abspielst und verlangsamst."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ist die Songtext-Transkription kostenlos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Songtexte sind ab dem Basic-Tarif ($2.99/Monat) enthalten. Der kostenlose Tarif umfasst Trennung, Klavierakkorde, BPM und das Metronom. Mit der 14-tägigen Producer-Testphase kannst du den Songtext vorher ausprobieren."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kann ich Songtext und Akkorde zusammen ausdrucken?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, ab dem Student-Tarif kannst du für dein eigenes Üben ein PDF-Akkordblatt exportieren, auf dem die Akkorde über dem Text stehen."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=3"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/de/" class="nav-logo">
+    <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/de/#features" data-i18n="nav.features">Funktionen</a>
+    <a href="/de/#plans" data-i18n="nav.plans">Tarife</a>
+    <a href="/de/blog">Blog</a>
+    <a href="/de/hakkimizda" data-i18n="nav.about">Über uns</a>
+  </div>
+  <a href="https://voxomix.com/blog/sarkinin-sozlerini-cikarma" class="nav-lang" hreflang="tr" onclick="try{localStorage.setItem('voxomix_site_lang','tr')}catch(e){}">TR</a>
+  <a href="/de/#download" class="nav-cta" data-i18n="nav.cta">Producer 14 Tage kostenlos testen</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/de/">Startseite</a> › <a href="/de/blog">Blog</a> › <span>Songtext eines Songs transkribieren</span>
+</div>
+
+<div class="page-header">
+  <h1>Songtext transkribieren und jede Zeile überprüfen: so geht&#x27;s</h1>
+  <p>Stimme isolieren, Transkript mit Zeitmarken erhalten und unklare Zeilen nach Gehör prüfen</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Veröffentlicht: 7. November 2026 · ca. 8 Min. Lesezeit</div>
+
+    <p><strong>Kurz gesagt:</strong> Um einen Songtext zu transkribieren, <strong>trennst du zuerst den Gesang</strong> von der Band. Danach läuft ein Spracherkennungsmodell über diese Gesangsspur, sodass jedes Wort einen <strong>Zeitstempel</strong> bekommt. In VoxoMix passiert das nach dem Aufteilen des Songs auf deinem eigenen Computer: Öffne <strong>Songtext</strong>, und die Wörter laufen synchron zur Wiedergabe mit. Anschließend prüfst du die Zeilen, die unklar klingen, indem du sie in einer Schleife abspielst und verlangsamst.</p>
+
+    <p>Im Folgenden erfährst du, warum ein Songtext im fertigen Mix so schwer zu verstehen ist, was die Software eigentlich macht, wie du Schritt für Schritt vorgehst und wie du das Transkript ganz einfach korrigierst, damit du sicher mitsingen oder mitspielen kannst.</p>
+
+    <img src="/assets/blog/sarkinin-sozlerini-cikarma-kapak.jpg" alt="Eine Person mit Kopfhörern sitzt im Abendlicht zu Hause am Schreibtisch und schreibt den Text des Songs, den sie gerade hört, von Hand in ein Notizbuch; daneben zeigt der Bildschirm eines Laptops farbige Audio-Wellenformen" width="1600" height="900">
+
+    <div class="toc">
+      <strong>Inhalt</strong>
+      <ul>
+        <li><a href="#s1">Warum ist ein Songtext nach Gehör so schwer zu verstehen?</a></li>
+        <li><a href="#s2">Wie funktioniert die automatische Songtext-Transkription?</a></li>
+        <li><a href="#s3">Schritt für Schritt: Songtext transkribieren in VoxoMix</a></li>
+        <li><a href="#s4">Wie prüfst und korrigierst du das Transkript?</a></li>
+        <li><a href="#s5">Songtext und Akkorde auf einem Bildschirm</a></li>
+        <li><a href="#s6">Häufige Fehler</a></li>
+        <li><a href="#s7">Was ist in welchem Tarif enthalten?</a></li>
+        <li><a href="#faq">Häufig gestellte Fragen</a></li>
+      </ul>
+    </div>
+
+    <h2 id='s1'>Warum ist ein Songtext nach Gehör so schwer zu verstehen?</h2>
+
+    <p>Wer den Text eines Songs nach Gehör aufschreibt, ist meistens damit beschäftigt, anzuhalten, zurückzuspulen und zu raten. Dass es schwieriger ist, als es klingt, hat mehrere Gründe:</p>
+
+    <ul>
+      <li><strong>Die Stimme geht im Mix unter.</strong> Gitarren, Keyboards und Becken liegen im selben Frequenzbereich wie die Konsonanten. Dadurch werden genau die „t“-, „s“- und „k“-Laute verdeckt, die Wörter verständlich machen.</li>
+      <li><strong>Sänger dehnen und verbiegen Wörter.</strong> Ein langer Ton kann aus einer Silbe drei machen, und in hohen Lagen verändern Vokale ihre Form.</li>
+      <li><strong>Backing Vocals überlagern die Leadstimme.</strong> Harmonien und Dopplungen liegen direkt auf der Hauptmelodie, sodass zwei Phrasen zu einer verschwimmen.</li>
+      <li><strong>Dein Gehirn füllt die Lücken.</strong> Ist ein Wort unklar, hörst du das nächstbeste Wort, das du schon kennst. So entstehen Verhörer, und wenn du eine Zeile wochenlang falsch gesungen hast, wirst du sie nur schwer wieder los.</li>
+    </ul>
+
+    <p>Die erste Lösung ist dieselbe, die auch ein Toningenieur wählen würde: Alles entfernen, was nicht Stimme ist. Wenn du mehr über diesen Schritt allein wissen willst, lies unseren Leitfaden <a href='/de/blog/gesang-aus-einem-song-entfernen'>Gesang aus einem Song entfernen</a>. Dieselbe Trennung, die für Karaoke die Stimme entfernt, liefert dir die Stimme auch einzeln.</p>
+
+    <h2 id='s2'>Wie funktioniert die automatische Songtext-Transkription?</h2>
+
+    <p>Ein automatischer Songtext-Transkribierer erledigt drei Aufgaben nacheinander:</p>
+
+    <ol>
+      <li><strong>Trennung.</strong> Ein KI-Modell zerlegt den Song in Stems: Gesang, Schlagzeug, Bass, Gitarre, Klavier und den Rest. Die Transkription arbeitet mit dem <strong>Gesangs-Stem</strong>, nicht mit dem kompletten Mix, sodass die Band die Wörter nicht mehr überdeckt.</li>
+      <li><strong>Spracherkennung.</strong> Ein mehrsprachiges Sprachmodell hört sich den Gesangs-Stem an und schreibt auf, was es hört. Die Sprache des Songs erkennt es selbst, du musst also keine auswählen.</li>
+      <li><strong>Timing.</strong> Jedes Wort bekommt eine Start- und Endzeit. Deshalb folgt der Liedtext der Musik, und du kannst per Klick zu einer Zeile springen.</li>
+    </ol>
+
+    <p>In VoxoMix laufen alle drei Schritte <strong>auf deinem Computer</strong>. Die Songdatei wird weder für die Trennung noch für die Transkription auf einen Server hochgeladen. Das ist wichtig für alle, die an unveröffentlichten Songs, Demos oder eigenen Texten arbeiten: Die Wörter verlassen nie dein Gerät. Warum lokale Verarbeitung so wichtig ist, erklären wir ausführlicher im Beitrag <a href='/de/blog/offline-stem-trennung'>Offline-Stem-Trennung</a>.</p>
+
+    <img src="/assets/blog/sarkinin-sozlerini-cikarma-1.jpg" alt="Laptop-Bildschirm mit der Wellenform einer Gesangsspur und darunter Textbalken, die Zeile für Zeile weiterlaufen; daneben auf dem Schreibtisch ein Studiomikrofon und ein Kopfhörer" width="1600" height="900" loading="lazy">
+
+    <blockquote>Gut zu wissen: Die Transkription startet im Hintergrund, sobald die Trennung abgeschlossen ist. Oft ist der Songtext deshalb schon fertig, wenn du den Song öffnest. Die Spracherkennung ist der aufwendigste Analyseschritt, daher kann der erste Durchlauf auf einem langsameren Computer bei einem Song in voller Länge eine Minute oder länger dauern.</blockquote>
+
+    <h2 id='s3'>Schritt für Schritt: Songtext transkribieren in VoxoMix</h2>
+
+    <ol>
+      <li><strong>Song hinzufügen.</strong> Zieh die MP3 (oder eine andere Audiodatei) in VoxoMix und starte die Trennung.</li>
+      <li><strong>Analyse abwarten.</strong> Sobald die Stems fertig sind, analysiert die App Beats, Akkorde, Tonart und Songtext. In der Zwischenzeit kannst du an einem anderen Song weiterarbeiten.</li>
+      <li><strong>Songtext öffnen.</strong> Klick im Player auf <strong>Songtext</strong>. Das Fenster <strong>Songtext &amp; Akkorde</strong> öffnet sich mit dem Transkript.</li>
+      <li><strong>Mitlesen.</strong> Drück auf Play. Die gerade gesungene Zeile wird hervorgehoben, und bereits gesungene Wörter werden markiert, während der Song weiterläuft. Bei langen Instrumentalteilen siehst du einen kurzen Musik-Platzhalter statt einer hängenden Zeile.</li>
+      <li><strong>Zu einer Zeile springen.</strong> Klick auf eine beliebige Zeile, und die Wiedergabe springt direkt dorthin. So spielst du eine Phrase, bei der du unsicher bist, am schnellsten noch einmal ab.</li>
+      <li><strong>Bei Bedarf neu analysieren.</strong> Wirkt das Transkript nicht stimmig, nutze <strong>Songtext neu analysieren</strong>, um die Analyse erneut laufen zu lassen.</li>
+    </ol>
+
+    <p>Auf dem Mac ist die VoxoMix-Oberfläche ab v1.3.4 auf Deutsch verfügbar; die hier genannten Bezeichnungen sind die deutschen. Die Windows-Version (1.3.2) zeigt noch die englischen Bezeichnungen „Song Lyrics“, „Lyrics &amp; Chords“ und „Re-analyze lyrics“.</p>
+
+    <h2 id='s4'>Wie prüfst und korrigierst du das Transkript?</h2>
+
+    <p>Kein Transkribierer erwischt jedes Wort richtig, und ein Mensch auch nicht. Klarer Pop-Gesang klappt meist gut; Fehler tauchen vor allem bei geflüsterten Zeilen, starken Effekten, schnellem Rap, Schreien und dichten Backing Vocals auf. Betrachte das Transkript als soliden ersten Entwurf und prüfe es so:</p>
+
+    <ol>
+      <li><strong>Hör den Song einmal mit dem Text auf dem Bildschirm durch.</strong> Markiere die Zeilen, bei denen das Gelesene und das Gehörte nicht übereinstimmen.</li>
+      <li><strong>Schalte den Gesangs-Stem solo.</strong> Schalte Schlagzeug, Bass und Gitarre stumm und hör dir nur die Stimme an. Viele „unklare“ Wörter sind ohne Band plötzlich eindeutig.</li>
+      <li><strong>Spiel die Zeile in einer Schleife ab.</strong> Setz eine A–B-Schleife um die Phrase, damit sie sich von selbst wiederholt. Wie das geht, zeigt unser Leitfaden <a href='/de/blog/songabschnitt-in-der-schleife-ueben'>einen Songabschnitt in der Schleife üben</a>.</li>
+      <li><strong>Verlangsame sie.</strong> Senk das Tempo mit dem Schieberegler; die Tonhöhe bleibt gleich, die Stimme klingt also nicht tief und verwaschen. Mehr dazu in <a href='/de/blog/song-verlangsamen-ohne-tonhoehe'>einen Song verlangsamen, ohne die Tonhöhe zu verändern</a>.</li>
+      <li><strong>Vergleiche mit einer offiziellen Quelle</strong>, wenn es eine gibt, etwa den Veröffentlichungsnotizen des Künstlers oder einem lizenzierten Songtext-Dienst. Nutze dein Transkript, um herauszufinden, wo dich deine Ohren getäuscht haben, nicht, um mit dem Künstler zu streiten.</li>
+    </ol>
+
+    <p>Schreib deine korrigierte Fassung in ein Notizbuch oder eine Textdatei. Die Zeilen selbst zu prüfen ist außerdem ein gutes Gehörtraining: Nach ein paar Songs verstehst du Wörter in einem vollen Mix deutlich leichter.</p>
+
+    <h2 id='s5'>Songtext und Akkorde auf einem Bildschirm</h2>
+
+    <p>Das Fenster <strong>Songtext &amp; Akkorde</strong> zeigt die erkannten Akkorde in derselben Ansicht wie den Text, sodass du siehst, welcher Akkord auf welche Zeile fällt. Das hilft in drei typischen Situationen:</p>
+
+    <ul>
+      <li><strong>Ein Cover singen.</strong> Dreh den Originalgesang leiser, lass die Band laufen und sing vom mitlaufenden Songtext ab. Unser <a href='/de/blog/karaoke-version-eines-songs-erstellen'>Karaoke-Leitfaden</a> führt dich durch das komplette Setup.</li>
+      <li><strong>Dich selbst auf Gitarre oder Klavier begleiten.</strong> Lies den Akkord über der Zeile und spiel, während du singst. Wenn du tiefer in die Akkordseite einsteigen willst, lies <a href='/de/blog/akkorde-eines-songs-herausfinden'>die Akkorde eines Songs herausfinden</a>.</li>
+      <li><strong>Den Song an deinen Stimmumfang anpassen.</strong> Liegt die Melodie zu hoch oder zu tief, transponiere sie zuerst; siehe <a href='/de/blog/tonart-eines-songs-aendern'>die Tonart eines Songs ändern</a>.</li>
+    </ul>
+
+    <p>Im Student-Tarif kannst du außerdem ein <strong>PDF-Akkordblatt</strong> exportieren, auf dem die Akkorde über dem Text stehen, bereit zum Ausdrucken oder für dein Tablet.</p>
+
+    <img src="/assets/blog/sarkinin-sozlerini-cikarma-2.jpg" alt="Schreibtisch von oben mit einem aufgeschlagenen Notizbuch voller handgeschriebener Songtexte, einem Stift, einem Kopfhörer und einem Laptop, der Audio in getrennte Wellenform-Spuren aufgeteilt zeigt" width="1600" height="900" loading="lazy">
+
+    <h2 id='s6'>Häufige Fehler</h2>
+
+    <ul>
+      <li><strong>Dem ersten Entwurf blind vertrauen.</strong> Prüfe jede Zeile, die du vor Publikum singen willst.</li>
+      <li><strong>Den kompletten Mix transkribieren.</strong> Ohne Trennung überdeckt die Band die Konsonanten; arbeite immer mit dem Gesangs-Stem.</li>
+      <li><strong>Backing Vocals ignorieren.</strong> Singen zwei Stimmen unterschiedliche Wörter, schalte den Gesang solo und hör genau hin, welche die Leadstimme ist.</li>
+      <li><strong>Mit einem Tool verlangsamen, das die Tonhöhe verändert.</strong> Eine tiefere, langsamere Stimme ist schwerer zu verstehen, nicht leichter.</li>
+      <li><strong>Den Songtext veröffentlichen.</strong> Songtexte sind urheberrechtlich geschützt. Ein Transkript für dein eigenes Üben ist das eine; wer es für andere postet oder ausdruckt, braucht die Erlaubnis der Rechteinhaber.</li>
+    </ul>
+
+    <h2 id='s7'>Was ist in welchem Tarif enthalten?</h2>
+
+    <p>Die Songtext-Transkription ist Teil der kostenpflichtigen Tarife. Die folgenden Preise stammen von der VoxoMix-Tarifseite am 7. November 2026:</p>
+
+    <table style='width:100%;border-collapse:collapse;margin:18px 0;font-size:15px'>
+      <thead><tr><th style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>Tarif</th><th style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>Enthalten</th></tr></thead>
+      <tbody>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Free ($0)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>2 Songs pro Monat, 4-Kanal-Trennung, Klavier-Akkorderkennung, BPM und Metronom. Songtexte sind nicht enthalten.</td></tr>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Basic ($2.99/Monat)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>10 Songs pro Monat, 6-Kanal-Trennung, <strong>Songtext-Transkription</strong>, Transponieren und MP3-Export.</td></tr>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Student ($8.99/Monat)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>50 Songs pro Monat, Klavier- und Gitarrenakkorde, Stimmgerät und Export als <strong>PDF-Akkordblatt</strong>.</td></tr>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Producer ($13.99/Monat)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>unbegrenzt viele Songs, verlustfreies WAV, MIDI und Stapelexport.</td></tr>
+      </tbody>
+    </table>
+
+    <p>Mit der <strong>14-tägigen Producer-Testphase</strong> kannst du jede Funktion ausprobieren, auch den Songtext. Für die Testphase brauchst du eine Karte, und sie läuft als Producer weiter, wenn du nicht vor ihrem Ende kündigst; kündigen kannst du jederzeit. VoxoMix läuft auf dem Mac (Apple Silicon) und unter Windows 10/11. Für die erste Anmeldung und die Lizenzprüfung ist eine Internetverbindung nötig; Trennung und Transkription selbst laufen auf deinem Computer. Wenn du die Songtext-Transkription zum ersten Mal nutzt, wird das Modell einmalig heruntergeladen; danach funktioniert sie ohne Internet.</p>
+
+    <h2 id="faq">Häufig gestellte Fragen</h2>
+
+    <h3>Kann ich den Songtext aus einer MP3-Datei herausfinden?</h3>
+    <p>Ja. Öffne die MP3 in VoxoMix und trenne sie; die App transkribiert dann den Gesangs-Stem und zeigt den Songtext mit Zeitmarken im Fenster Songtext &amp; Akkorde an.</p>
+    <h3>Wird der Song für die Transkription irgendwo hochgeladen?</h3>
+    <p>Nein. Trennung und Songtext-Transkription laufen auf deinem eigenen Computer, die Audiodatei wird also nicht an einen Server gesendet.</p>
+    <h3>Welche Sprachen versteht die Songtext-Transkription?</h3>
+    <p>Sie nutzt ein mehrsprachiges Sprachmodell, das die Sprache des Songs automatisch erkennt. Klarer Gesang liefert in jeder Sprache die besten Ergebnisse.</p>
+    <h3>Wie genau ist die automatische Songtext-Transkription?</h3>
+    <p>Das hängt von der Aufnahme ab. Eine klare Leadstimme wird meist gut transkribiert; starke Effekte, schneller Rap und sich überlagernde Backing Vocals führen zu mehr Fehlern. Prüfe unklare Zeilen deshalb, indem du sie in einer Schleife abspielst und verlangsamst.</p>
+    <h3>Ist die Songtext-Transkription kostenlos?</h3>
+    <p>Songtexte sind ab dem Basic-Tarif ($2.99/Monat) enthalten. Der kostenlose Tarif umfasst Trennung, Klavierakkorde, BPM und das Metronom. Mit der 14-tägigen Producer-Testphase kannst du den Songtext vorher ausprobieren.</p>
+    <h3>Kann ich Songtext und Akkorde zusammen ausdrucken?</h3>
+    <p>Ja, ab dem Student-Tarif kannst du für dein eigenes Üben ein PDF-Akkordblatt exportieren, auf dem die Akkorde über dem Text stehen.</p>
+
+    <h2>Fazit</h2>
+
+    <p>Um den Liedtext aus einem Song zu bekommen, musst du nicht mehr zwanzigmal dieselben fünf Sekunden zurückspulen. <strong>Trenn den Gesang</strong>, lass die App ein <strong>Transkript mit Zeitmarken</strong> schreiben und spiel nur die Zeilen, bei denen du unsicher bist, <strong>in der Schleife und verlangsamt</strong> ab. Am Ende hast du einen Songtext, auf den du dich verlassen kannst, und ein Gehör, das ein bisschen schärfer ist als vorher.</p>
+
+    <p>Fang mit dem Song an, den du als Nächstes singen willst: Öffne ihn, lies einmal mit und korrigiere die zwei Zeilen, die du schon immer falsch verstanden hast.</p>
+
+    <div class="cta-box">
+      <p>Lade VoxoMix herunter und teste Songtext-Transkription, Akkorde und Stems mit der Producer-Testphase 14 Tage kostenlos.</p>
+      <a href="/de/#download" class="btn-primary">Kostenlos herunterladen</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p>KI-gestützte Spurtrennungs-App für Musiker.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Produkt</h4>
+        <a href="/de/#features" data-i18n="nav.features">Funktionen</a>
+        <a href="/de/#plans" data-i18n="footer.pricing">Preise</a>
+        <a href="/de/blog">Blog</a>
+        <a href="/de/hakkimizda" data-i18n="nav.about">Über uns</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Rechtliches</h4>
+        <a href="/en/kullanim-sartlari">Nutzungsbedingungen</a>
+        <a href="/en/gizlilik">Datenschutzerklärung</a>
+        <a href="/en/teslimat-iade">Lieferung &amp; Rückgabe</a>
+        <a href="/en/mesafeli-satis">Fernabsatzvertrag</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=12"></script>
+</body>
+</html>

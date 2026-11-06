@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Transcribe Lyrics From a Song — VoxoMix</title>
+  <meta name="description" content="Transcribe the lyrics of any song on your own computer: separate the vocals, let the app write the words with timings, then check unclear lines by looping them.">
+  <meta name="keywords" content="transcribe lyrics from a song, lyrics transcription, get lyrics from audio, transcribe song lyrics from audio, lyrics and chords together, find the words of a song">
+  <link rel="canonical" href="https://voxomix.com/en/blog/how-to-transcribe-the-lyrics-of-a-song">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-sozlerini-cikarma">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-transcribe-the-lyrics-of-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-sacar-la-letra-de-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/transcrire-les-paroles-dune-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/songtext-eines-songs-transkribieren">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/trascrivere-il-testo-di-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-sozlerini-cikarma">
+  <meta name="theme-color" content="#0e0e14">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://voxomix.com/en/blog/how-to-transcribe-the-lyrics-of-a-song">
+  <meta property="og:title" content="How to Transcribe the Lyrics of a Song (and Check Every Line)">
+  <meta property="og:description" content="Get the words of a song without typing them out by ear: isolate the voice, get a timed transcript, then fix the lines that sound unclear.">
+  <meta property="og:image" content="https://voxomix.com/assets/blog/sarkinin-sozlerini-cikarma-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-11-07">
+  <meta property="article:modified_time" content="2026-11-07">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Transcribe the Lyrics of a Song (and Check Every Line)">
+  <meta name="twitter:description" content="Get the words of a song without typing them out by ear: isolate the voice, get a timed transcript, then fix the lines that sound unclear.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/blog/sarkinin-sozlerini-cikarma-og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Transcribe the Lyrics of a Song (and Check Every Line)",
+        "description": "Transcribe the lyrics of any song on your own computer: separate the vocals, let the app write the words with timings, then check unclear lines by looping them.",
+        "image": "https://voxomix.com/assets/blog/sarkinin-sozlerini-cikarma-og.png",
+        "datePublished": "2026-11-07",
+        "dateModified": "2026-11-07",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "url": "https://voxomix.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://voxomix.com/assets/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://voxomix.com/en/blog/how-to-transcribe-the-lyrics-of-a-song"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://voxomix.com/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://voxomix.com/en/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Transcribe the lyrics of a song",
+            "item": "https://voxomix.com/en/blog/how-to-transcribe-the-lyrics-of-a-song"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I get the lyrics of a song from an MP3 file?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Open the MP3 in VoxoMix and separate it; the app then transcribes the vocal stem and shows the lyrics with timings in the Lyrics & Chords window."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the song uploaded anywhere for transcription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Separation and lyrics transcription run on your own computer, so the audio file is not sent to a server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which languages does the lyrics transcription understand?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It uses a multilingual speech model that detects the song's language automatically. Clear vocals give the best results in any language."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is automatic lyrics transcription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the recording. Clear lead vocals usually transcribe well; heavy effects, fast rap and overlapping backing vocals cause more mistakes, so check unclear lines by looping and slowing them down."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is lyrics transcription free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lyrics are included from the Basic plan ($2.99/month). The free plan covers separation, piano chords, BPM and the metronome. The 14-day Producer trial lets you try lyrics first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I print the lyrics with chords?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, on the Student plan and above you can export a PDF chord sheet with the chords placed over the lyrics, for your own practice."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=3"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/en/" class="nav-logo">
+    <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/en/#features" data-i18n="nav.features">Features</a>
+    <a href="/en/#plans" data-i18n="nav.plans">Plans</a>
+    <a href="/en/blog">Blog</a>
+    <a href="/en/hakkimizda" data-i18n="nav.about">About</a>
+  </div>
+  <a href="https://voxomix.com/blog/sarkinin-sozlerini-cikarma" class="nav-lang" hreflang="tr" onclick="try{localStorage.setItem('voxomix_site_lang','tr')}catch(e){}">TR</a>
+  <a href="/en/#download" class="nav-cta" data-i18n="nav.cta">Try Producer Free for 14 Days</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/en/">Home</a> › <a href="/en/blog">Blog</a> › <span>Transcribe the lyrics of a song</span>
+</div>
+
+<div class="page-header">
+  <h1>How to Transcribe the Lyrics of a Song (and Check Every Line)</h1>
+  <p>Isolate the voice, get a timed transcript, then check the unclear lines by ear</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Published: 7 November 2026 · ~8 min read</div>
+
+    <p><strong>Short answer:</strong> to transcribe the lyrics of a song, first <strong>separate the vocals</strong> from the band, then run a speech-recognition model over that vocal track so each word gets a <strong>timestamp</strong>. In VoxoMix this happens on your own computer after the song is split: open <strong>Song Lyrics</strong> and the words scroll along with playback. Then check the lines that sound unclear by looping and slowing them down.</p>
+
+    <p>Below: why lyrics are hard to hear in a full mix, what the software actually does, a step-by-step walkthrough, and a simple way to correct the transcript so you can sing or play along with confidence.</p>
+
+    <img src="/assets/blog/sarkinin-sozlerini-cikarma-kapak.jpg" alt="A person wearing headphones sits at a home desk in evening light, writing the lyrics of the song they are listening to by hand in a notebook; the laptop beside them shows coloured audio waveforms" width="1600" height="900">
+
+    <div class="toc">
+      <strong>Contents</strong>
+      <ul>
+        <li><a href="#s1">Why are lyrics so hard to catch by ear?</a></li>
+        <li><a href="#s2">How does automatic lyrics transcription work?</a></li>
+        <li><a href="#s3">Step by step: transcribing lyrics in VoxoMix</a></li>
+        <li><a href="#s4">How do you check and correct the transcript?</a></li>
+        <li><a href="#s5">Lyrics and chords on one screen</a></li>
+        <li><a href="#s6">Common mistakes</a></li>
+        <li><a href="#s7">What&#x27;s in each plan?</a></li>
+        <li><a href="#faq">Frequently asked questions</a></li>
+      </ul>
+    </div>
+
+    <h2 id='s1'>Why are lyrics so hard to catch by ear?</h2>
+
+    <p>Writing down the words of a song by ear usually means pausing, rewinding and guessing. There are a few reasons it is harder than it sounds:</p>
+
+    <ul>
+      <li><strong>The voice is buried in the mix.</strong> Guitars, keys and cymbals sit in the same frequency range as consonants, so the "t", "s" and "k" sounds that make words clear get masked.</li>
+      <li><strong>Singers stretch and bend words.</strong> A long note can turn one syllable into three, and vowels change shape at high pitch.</li>
+      <li><strong>Backing vocals overlap the lead.</strong> Harmonies and doubles land on top of the main line, so two phrases blur into one.</li>
+      <li><strong>Your brain fills the gaps.</strong> When a word is unclear, you hear the nearest word you already know. That is how misheard lyrics are born, and once you have sung one wrong for weeks, it is hard to unlearn.</li>
+    </ul>
+
+    <p>The first fix is the same one a sound engineer would use: get rid of everything that is not the voice. If you want to know more about that step on its own, see our guide on <a href='/en/blog/how-to-remove-vocals-from-a-song'>how to remove vocals from a song</a>. The same separation that removes the voice for karaoke can also give you the voice on its own.</p>
+
+    <h2 id='s2'>How does automatic lyrics transcription work?</h2>
+
+    <p>An automatic lyrics transcriber does three jobs in a row:</p>
+
+    <ol>
+      <li><strong>Separation.</strong> An AI model splits the song into stems: vocals, drums, bass, guitar, piano and the rest. Transcription works on the <strong>vocal stem</strong>, not on the full mix, so the band no longer covers the words.</li>
+      <li><strong>Speech recognition.</strong> A multilingual speech model listens to the vocal stem and writes down what it hears. It detects the language of the song by itself, so you do not have to pick one.</li>
+      <li><strong>Timing.</strong> Each word gets a start and end time. That is what lets the lyrics follow the music and lets you jump to a line by clicking it.</li>
+    </ol>
+
+    <p>In VoxoMix all three steps run <strong>on your computer</strong>. The song file is not uploaded to a server for separation or transcription. That matters for anyone working on unreleased songs, demos or their own lyrics: the words never leave your machine. If you want the longer explanation of why local processing matters, read <a href='/en/blog/offline-stem-separation'>offline stem separation</a>.</p>
+
+    <img src="/assets/blog/sarkinin-sozlerini-cikarma-1.jpg" alt="A laptop screen showing a vocal waveform with bars of lyrics advancing line by line beneath it; a studio microphone and headphones on the desk beside it" width="1600" height="900" loading="lazy">
+
+    <blockquote>Good to know: transcription starts in the background as soon as separation finishes, so the lyrics are often ready by the time you open the song. Speech recognition is the heaviest analysis step, so on a slower computer the first pass can take a minute or more for a full-length song.</blockquote>
+
+    <h2 id='s3'>Step by step: transcribing lyrics in VoxoMix</h2>
+
+    <ol>
+      <li><strong>Add the song.</strong> Drag the MP3 (or another audio file) into VoxoMix and start the separation.</li>
+      <li><strong>Wait for the analysis.</strong> After the stems are ready, the app analyses beats, chords, key and lyrics. You can keep working on another song in the meantime.</li>
+      <li><strong>Open the lyrics.</strong> In the player, click <strong>Song Lyrics</strong>. The <strong>Lyrics &amp; Chords</strong> window opens with the transcript.</li>
+      <li><strong>Follow along.</strong> Press play. The line being sung lights up, and the words that have already been sung are marked as the song moves on. During long instrumental parts you see a short music placeholder instead of a stuck line.</li>
+      <li><strong>Jump to a line.</strong> Click any line to move playback straight to it. This is the fastest way to replay a phrase you are not sure about.</li>
+      <li><strong>Re-analyze if needed.</strong> If the transcript looks off, use <strong>Re-analyze lyrics</strong> to run the analysis again.</li>
+    </ol>
+
+    <p>Since v1.3.4 on Mac, the VoxoMix interface is available in English, Turkish, Spanish, French, German and Italian, so these labels appear in your language.</p>
+
+    <h2 id='s4'>How do you check and correct the transcript?</h2>
+
+    <p>No transcriber gets every word right, and a person does not either. Clear pop vocals usually come out well; whispered lines, heavy effects, fast rap, screaming and thick backing vocals are where mistakes appear. Treat the transcript as a strong first draft and check it like this:</p>
+
+    <ol>
+      <li><strong>Listen through once with the lyrics on screen.</strong> Mark the lines where what you read and what you hear disagree.</li>
+      <li><strong>Solo the vocal stem.</strong> Mute drums, bass and guitar and listen to the voice alone. Many "unclear" words become obvious without the band.</li>
+      <li><strong>Loop the line.</strong> Set an A–B loop around the phrase so it repeats on its own. Our guide on <a href='/en/blog/how-to-loop-a-section-of-a-song'>looping a section of a song</a> shows how.</li>
+      <li><strong>Slow it down.</strong> Lower the speed with the slider; the pitch stays the same, so the voice does not turn deep and muddy. More on that in <a href='/en/blog/slow-down-song-without-changing-pitch'>slowing down a song without changing the pitch</a>.</li>
+      <li><strong>Compare with an official source</strong> when one exists, such as the artist's release notes or a licensed lyrics service. Use your transcript to find where your ears went wrong, not to argue with the artist.</li>
+    </ol>
+
+    <p>Write your corrected version in a notebook or text file. Checking the lines yourself is also a good ear-training exercise: after a few songs you start hearing words through a full mix much more easily.</p>
+
+    <h2 id='s5'>Lyrics and chords on one screen</h2>
+
+    <p>The <strong>Lyrics &amp; Chords</strong> window shows the detected chords in the same view as the words, so you can see which chord falls on which line. That is useful in three common situations:</p>
+
+    <ul>
+      <li><strong>Singing a cover.</strong> Turn the original vocal down, keep the band, and sing from the scrolling lyrics. Our <a href='/en/blog/how-to-make-a-karaoke-version-of-any-song'>karaoke guide</a> walks through the full setup.</li>
+      <li><strong>Accompanying yourself on guitar or piano.</strong> Read the chord above the line and play while you sing. To go deeper into the chord side, see <a href='/en/blog/how-to-find-the-chords-of-a-song'>how to find the chords of a song</a>.</li>
+      <li><strong>Moving the song to your range.</strong> If the melody sits too high or too low, transpose it first; see <a href='/en/blog/how-to-change-the-key-of-a-song'>how to change the key of a song</a>.</li>
+    </ul>
+
+    <p>On the Student plan you can also export a <strong>PDF chord sheet</strong> with the chords placed over the lyrics, ready to print or put on a tablet.</p>
+
+    <img src="/assets/blog/sarkinin-sozlerini-cikarma-2.jpg" alt="Top-down view of a desk with an open notebook full of handwritten lyrics, a pencil, headphones and a laptop showing audio split into separate waveform lanes" width="1600" height="900" loading="lazy">
+
+    <h2 id='s6'>Common mistakes</h2>
+
+    <ul>
+      <li><strong>Trusting the first draft completely.</strong> Check every line you plan to sing in front of people.</li>
+      <li><strong>Transcribing the full mix.</strong> Without separation the band covers the consonants; always work from the vocal stem.</li>
+      <li><strong>Ignoring backing vocals.</strong> If two voices sing different words, solo the vocal and listen for which one is the lead.</li>
+      <li><strong>Slowing down with a tool that changes the pitch.</strong> A lower, slower voice is harder to understand, not easier.</li>
+      <li><strong>Publishing the lyrics.</strong> Song lyrics are protected by copyright. A transcript for your own practice is one thing; posting or printing it for others needs the rights holder's permission.</li>
+    </ul>
+
+    <h2 id='s7'>What's in each plan?</h2>
+
+    <p>Lyrics transcription is part of the paid plans. Prices below are from the VoxoMix plans page on 7 November 2026:</p>
+
+    <table style='width:100%;border-collapse:collapse;margin:18px 0;font-size:15px'>
+      <thead><tr><th style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>Plan</th><th style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>What's included</th></tr></thead>
+      <tbody>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Free ($0)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>2 songs a month, 4-channel separation, piano chord finder, BPM and metronome. Lyrics are not included.</td></tr>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Basic ($2.99/month)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>10 songs a month, 6-channel separation, <strong>lyrics transcription</strong>, transpose and MP3 export.</td></tr>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Student ($8.99/month)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>50 songs a month, piano and guitar chords, tuner and <strong>PDF chord sheet</strong> export.</td></tr>
+        <tr><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'><strong>Producer ($13.99/month)</strong></td><td style='border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top'>unlimited songs, lossless WAV, MIDI and batch export.</td></tr>
+      </tbody>
+    </table>
+
+    <p>You can try every feature, lyrics included, with the <strong>14-day Producer trial</strong>. The trial asks for a card and continues as Producer unless you cancel before it ends; you can cancel at any time. VoxoMix runs on Mac (Apple Silicon) and Windows 10/11. An internet connection is needed for the first sign-in and licence check; the separation and transcription themselves run on your computer. The first time you use lyrics transcription, the model is downloaded once; after that it works offline.</p>
+
+    <h2 id="faq">Frequently asked questions</h2>
+
+    <h3>Can I get the lyrics of a song from an MP3 file?</h3>
+    <p>Yes. Open the MP3 in VoxoMix and separate it; the app then transcribes the vocal stem and shows the lyrics with timings in the Lyrics &amp; Chords window.</p>
+    <h3>Is the song uploaded anywhere for transcription?</h3>
+    <p>No. Separation and lyrics transcription run on your own computer, so the audio file is not sent to a server.</p>
+    <h3>Which languages does the lyrics transcription understand?</h3>
+    <p>It uses a multilingual speech model that detects the song&#x27;s language automatically. Clear vocals give the best results in any language.</p>
+    <h3>How accurate is automatic lyrics transcription?</h3>
+    <p>It depends on the recording. Clear lead vocals usually transcribe well; heavy effects, fast rap and overlapping backing vocals cause more mistakes, so check unclear lines by looping and slowing them down.</p>
+    <h3>Is lyrics transcription free?</h3>
+    <p>Lyrics are included from the Basic plan ($2.99/month). The free plan covers separation, piano chords, BPM and the metronome. The 14-day Producer trial lets you try lyrics first.</p>
+    <h3>Can I print the lyrics with chords?</h3>
+    <p>Yes, on the Student plan and above you can export a PDF chord sheet with the chords placed over the lyrics, for your own practice.</p>
+
+    <h2>Conclusion</h2>
+
+    <p>Getting the words of a song no longer means rewinding the same five seconds twenty times. <strong>Separate the vocals</strong>, let the app write a <strong>timed transcript</strong>, then <strong>loop and slow down</strong> only the lines you are unsure about. You end up with lyrics you can trust and an ear that is a little sharper than before.</p>
+
+    <p>Start with the song you want to sing next: open it, read along once, and fix the two lines you have always misheard.</p>
+
+    <div class="cta-box">
+      <p>Download VoxoMix and try lyrics transcription, chords and stems free for 14 days with the Producer trial.</p>
+      <a href="/en/#download" class="btn-primary">Download Free</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p>AI-powered stem separation app for musicians.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Product</h4>
+        <a href="/en/#features" data-i18n="nav.features">Features</a>
+        <a href="/en/#plans" data-i18n="footer.pricing">Pricing</a>
+        <a href="/en/blog">Blog</a>
+        <a href="/en/hakkimizda" data-i18n="nav.about">About</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <a href="/en/kullanim-sartlari">Terms of Use</a>
+        <a href="/en/gizlilik">Privacy Policy</a>
+        <a href="/en/teslimat-iade">Delivery &amp; Returns</a>
+        <a href="/en/mesafeli-satis">Distance Sales Agreement</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=12"></script>
+</body>
+</html>

@@ -19,6 +19,7 @@ URL kalıbı: TR = `https://voxomix.com/blog/<tr>` · diğerleri = `https://voxo
 | Şarkının piyano akorlarını bulma (kulaktan) | sarkinin-piyano-akorlarini-bulma | how-to-find-the-piano-chords-of-a-song | como-sacar-los-acordes-de-piano-de-una-cancion | trouver-les-accords-piano-dune-chanson | klavierakkorde-eines-songs-herausfinden | trovare-gli-accordi-per-pianoforte-di-una-canzone |
 | Şarkının bir bölümünü döngüye alma (A–B tekrar) | sarkinin-bir-bolumunu-donguye-alma | how-to-loop-a-section-of-a-song | como-repetir-una-parte-de-una-cancion-en-bucle | boucler-un-passage-dune-chanson | songabschnitt-in-der-schleife-ueben | ripetere-una-parte-di-una-canzone-in-loop |
 | Şarkıdan bas ayırma (bas partisini kulaktan çıkarma) | sarkidan-bas-ayirma | how-to-isolate-the-bass-from-a-song | como-sacar-el-bajo-de-una-cancion | isoler-la-basse-dune-chanson | bass-aus-einem-song-isolieren | isolare-il-basso-di-una-canzone |
+| Şarkının sözlerini çıkarma (söz dökümü + akorlar) | sarkinin-sozlerini-cikarma | how-to-transcribe-the-lyrics-of-a-song | como-sacar-la-letra-de-una-cancion | transcrire-les-paroles-dune-chanson | songtext-eines-songs-transkribieren | trascrivere-il-testo-di-una-canzone |
 
 ## og:locale
 tr→tr_TR · en→en_US · es→es_ES · fr→fr_FR · de→de_DE · it→it_IT
