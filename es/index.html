@@ -342,6 +342,7 @@
     <button id="btn-yearly" onclick="setBilling('yearly')" data-i18n-toggle-yearly="Yıllık — %20 İndirim|Yearly — 20% Off">Yearly — 20% Off</button>
   </div>
   <div class="plan-billing-note" id="billing-note" style="display:none" data-i18n-note-tr="Yıllık faturalanır — aylık eşdeğer fiyat gösterilmektedir." data-i18n-note-en="Billed annually — monthly equivalent shown."></div>
+  <p style="max-width:760px;margin:0 auto 26px;font-size:12.5px;color:#8b8b9e;line-height:1.55;text-align:center;" data-i18n="plans.taxNote">Los precios están en dólares estadounidenses. El IVA o impuesto sobre ventas aplicable se calcula en el pago: verás el total con impuestos antes de confirmar.</p>
   <div class="plans-grid">
     <div class="plan-card">
       <div class="plan-name" data-i18n="plan.free.name">Gratis</div>
@@ -501,7 +502,7 @@
   </div>
 </footer>
 
-<script src="/assets/i18n.js?v=12"></script>
+<script src="/assets/i18n.js?v=13"></script>
 <script>
   function toggleFaq(btn) {
     const item = btn.closest('.faq-item');

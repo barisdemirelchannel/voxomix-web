@@ -50,6 +50,7 @@ const translations = {
 
     'plans.label': 'Fiyatlandırma',
     'plans.h2': 'Sana Uygun Planı Seç',
+    'plans.taxNote': 'Fiyatlar ABD doları cinsindendir. Geçerli KDV/satış vergisi ödeme sayfasında hesaplanır; vergiler dâhil toplam tutarı onaylamadan önce görürsünüz.',
     'trial.title': 'Producer\'ı 14 Gün Ücretsiz Dene',
     'trial.desc': 'Tüm Producer özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Producer\'a geçer, istediğin an iptal edebilirsin.',
     'trial.btn': 'Ücretsiz İndir ve Başla',
@@ -223,6 +224,7 @@ const translations = {
 
     'plans.label': 'Pricing',
     'plans.h2': 'Choose Your Plan',
+    'plans.taxNote': 'Prices are in US dollars. Any applicable VAT or sales tax is calculated at checkout — you see the total including taxes before you confirm.',
     'trial.title': 'Try Producer Free for 14 Days',
     'trial.desc': 'All Producer features free for 14 days. Download the app and add your card — it converts to Producer automatically on day 14, cancel anytime.',
     'trial.btn': 'Download & Start Free',
@@ -396,6 +398,7 @@ const translations = {
 
     'plans.label': 'Precios',
     'plans.h2': 'Elige tu plan',
+    'plans.taxNote': 'Los precios están en dólares estadounidenses. El IVA o impuesto sobre ventas aplicable se calcula en el pago: verás el total con impuestos antes de confirmar.',
     'trial.title': 'Prueba Producer gratis 14 días',
     'trial.desc': 'Todas las funciones de Producer gratis durante 14 días. Descarga la app y añade tu tarjeta: se convierte en Producer automáticamente el día 14 y puedes cancelar cuando quieras.',
     'trial.btn': 'Descargar y empezar gratis',
@@ -569,6 +572,7 @@ const translations = {
 
     'plans.label': 'Tarifs',
     'plans.h2': 'Choisissez votre offre',
+    'plans.taxNote': 'Les prix sont en dollars américains. La TVA ou taxe de vente applicable est calculée au moment du paiement : vous voyez le total taxes comprises avant de confirmer.',
     'trial.title': 'Essayer Producer 14 jours gratuits',
     'trial.desc': 'Toutes les fonctions Producer gratuites pendant 14 jours. Téléchargez l\'app et ajoutez votre carte : le passage à Producer est automatique au 14e jour, annulable à tout moment.',
     'trial.btn': 'Télécharger et commencer gratuitement',
@@ -742,6 +746,7 @@ const translations = {
 
     'plans.label': 'Preise',
     'plans.h2': 'Wähle deinen Tarif',
+    'plans.taxNote': 'Die Preise verstehen sich in US-Dollar. Die geltende Mehrwertsteuer wird beim Bezahlvorgang berechnet — du siehst den Gesamtbetrag inklusive Steuern, bevor du bestätigst.',
     'trial.title': 'Producer 14 Tage kostenlos testen',
     'trial.desc': 'Alle Producer-Funktionen 14 Tage kostenlos. Lade die App herunter und gib deine Karte an — am 14. Tag wird automatisch auf Producer umgestellt, jederzeit kündbar.',
     'trial.btn': 'Herunterladen & kostenlos starten',
@@ -915,6 +920,7 @@ const translations = {
 
     'plans.label': 'Prezzi',
     'plans.h2': 'Scegli il tuo piano',
+    'plans.taxNote': 'I prezzi sono in dollari statunitensi. L\'IVA o l\'imposta sulle vendite applicabile viene calcolata al momento del pagamento: vedi il totale con le imposte prima di confermare.',
     'trial.title': 'Prova Producer gratis 14 giorni',
     'trial.desc': 'Tutte le funzioni di Producer gratis per 14 giorni. Scarica l\'app e aggiungi la carta: diventa Producer automaticamente il 14° giorno e puoi disdire quando vuoi.',
     'trial.btn': 'Scarica e inizia gratis',

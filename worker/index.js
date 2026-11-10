@@ -104,6 +104,25 @@ function redirect(url, extra = {}) {
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
+
+    /* --- HTTPS zorunlu ----------------------------------------------------
+     * Cloudflare'in "Always Use HTTPS" anahtarı kapalı olduğu için düz HTTP
+     * isteği buraya kadar geliyordu (ölçüldü: http://voxomix.com → 200).
+     * HSTS başlığı ancak tarayıcı siteyi BİR KEZ https'ten gördükten sonra
+     * korur; ilk ziyaret http'den gelirse araya girilebilir. Bu yüzden
+     * yönlendirmeyi panel anahtarına bırakmayıp burada, depoda tutuyoruz.
+     * Şemayı iki kaynaktan okuyoruz: `cf-visitor` ziyaretçinin Cloudflare'e
+     * bağlandığı gerçek şemayı verir, `url.protocol` ise yedek. */
+    const visitorScheme = (() => {
+      try { return JSON.parse(request.headers.get('cf-visitor') || '{}').scheme; }
+      catch (e) { return null; }
+    })();
+    const isLocal = url.hostname === 'localhost' || url.hostname === '127.0.0.1';
+    if (!isLocal && (visitorScheme === 'http' || url.protocol === 'http:')) {
+      url.protocol = 'https:';
+      return Response.redirect(url.toString(), 301);
+    }
+
     const match = url.pathname.match(/^\/download\/([a-z0-9]+)\/?$/i);
 
     if (match) {
