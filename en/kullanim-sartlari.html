@@ -70,7 +70,7 @@
     <h2>4. Subscription and Payment</h2>
     <p>Pricing, automatic renewal, cancellation and right-of-withdrawal conditions for paid plans are set out in detail in the <a href="/en/mesafeli-satis">Distance Sales Agreement</a>. In summary:</p>
     <ul>
-      <li>Payments are securely collected through the PCI-DSS compliant iyzico payment infrastructure; your card details are not stored by VoxoMix.</li>
+      <li>Payments are securely collected through PCI-DSS compliant payment infrastructure — iyzico for purchases made from Türkiye, Polar (polar.sh, Merchant of Record) for purchases made from outside Türkiye; your card details are never seen or stored by VoxoMix.</li>
       <li>Unless cancelled, subscriptions renew automatically at the end of the period.</li>
       <li>You may cancel your subscription at any time from the Profile page in the app or via info@voxomix.com; cancellation takes effect at the end of the current paid period, and your access for that period is not interrupted.</li>
       <li>As this is a digital-content service, if performance begins with the user's consent, the right of withdrawal cannot be exercised under Law No. 6502.</li>
@@ -106,7 +106,9 @@
     <p>The Service operates on the following third-party infrastructures:</p>
     <ul>
       <li><strong>Supabase:</strong> Authentication of user accounts and storage of profile/subscription data.</li>
-      <li><strong>iyzico:</strong> Secure processing of payment transactions.</li>
+      <li><strong>iyzico:</strong> Secure processing of payment transactions (Türkiye).</li>
+      <li><strong>Polar (polar.sh):</strong> Payment, invoicing and Merchant of Record service for international subscriptions.</li>
+      <li><strong>Cloudflare:</strong> Hosting, delivery and security of the voxomix.com website.</li>
     </ul>
     <p>These services' own terms of use and privacy policies apply.</p>
 

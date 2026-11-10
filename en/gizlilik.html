@@ -47,7 +47,7 @@
 
 <div class="section" style="padding-top:0">
   <div class="legal-content">
-    <div class="date">Last updated: 8 August 2026</div>
+    <div class="date">Last updated: 10 November 2026</div>
     <p style="font-size:13px;color:#888;"><em>This English text is an unofficial translation provided for convenience. The Turkish version of this policy is the legally binding one; in case of any discrepancy, the <a href="/gizlilik">Turkish version</a> prevails.</em></p>
 
     <h2>1. Data Controller</h2>
@@ -57,7 +57,7 @@
     <p>The following data may be collected while you use our service:</p>
     <ul>
       <li><strong>Account information:</strong> Email address, first and last name (during sign-up)</li>
-      <li><strong>Payment information:</strong> Subscription plan and payment date (card details are processed by iyzico and are not stored by us)</li>
+      <li><strong>Payment information:</strong> Subscription plan and payment date (card details are processed by the payment provider — iyzico in Türkiye, Polar outside Türkiye — and are never seen or stored by us)</li>
       <li><strong>Usage data:</strong> Number of songs uploaded, features used</li>
       <li><strong>Technical data:</strong> Operating system, app version</li>
     </ul>
@@ -77,14 +77,19 @@
     <p>The VoxoMix desktop application processes the music files you upload <strong>only on your local computer</strong>. Your audio files are never sent to or stored on any external server.</p>
 
     <h2>5. Third-Party Services</h2>
+    <p>We rely on the providers below to deliver the service. Each processes only the data its own purpose requires; <strong>your music files are sent to none of them</strong> (see Section 4).</p>
     <table>
       <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
-      <tr><td>Supabase</td><td>Authentication and profile data</td><td>supabase.com/privacy</td></tr>
-      <tr><td>iyzico</td><td>Payment processing</td><td>iyzico.com/gizlilik-politikasi</td></tr>
+      <tr><td>Supabase</td><td>Authentication and profile/subscription data</td><td>supabase.com/privacy</td></tr>
+      <tr><td>iyzico</td><td>Payment processing — Türkiye</td><td>iyzico.com/gizlilik-politikasi</td></tr>
+      <tr><td>Polar (polar.sh)</td><td>Payment and invoicing — international subscriptions; <strong>Merchant of Record</strong></td><td>polar.sh/legal/privacy</td></tr>
+      <tr><td>Google Analytics 4</td><td>Website measurement — <strong>only with your explicit consent</strong> (see Section 9)</td><td>policies.google.com/privacy</td></tr>
+      <tr><td>Cloudflare</td><td>Website hosting, delivery and security</td><td>cloudflare.com/privacypolicy</td></tr>
+      <tr><td>Hostinger</td><td>Email infrastructure for info@voxomix.com</td><td>hostinger.com/privacy-policy</td></tr>
     </table>
 
     <h2>6. Data Security</h2>
-    <p>Industry-standard encryption (SSL/TLS) and security measures are applied to protect your data. Your payment information is processed on iyzico's PCI-DSS compliant infrastructure.</p>
+    <p>Industry-standard encryption (SSL/TLS) and security measures are applied to protect your data. Your payment information is processed on PCI-DSS compliant payment infrastructure: iyzico for purchases made from Türkiye, Polar for purchases made from outside Türkiye.</p>
 
     <h2>7. Data Retention Period</h2>
     <p>Your account data is retained while your account is active and for 2 years after the account is deleted. Payment records are kept for 10 years as required by law.</p>
@@ -94,17 +99,22 @@
     <ul>
       <li>To learn whether your personal data is being processed</li>
       <li>To request information if it has been processed</li>
-      <li>To request the deletion or destruction of your data</li>
-      <li>To request the correction of your data</li>
-      <li>To object to processing</li>
+      <li>To learn the purpose of processing and whether the data is used in line with that purpose</li>
+      <li>To know the third parties, in Türkiye or abroad, to whom the data is transferred</li>
+      <li>To request correction if the data is incomplete or inaccurate</li>
+      <li>To request deletion or destruction of the data within the conditions of Article 7 of the KVKK</li>
+      <li>To request that correction, deletion and destruction requests be notified to the third parties to whom the data was transferred</li>
+      <li>To object to an adverse outcome produced solely by automated analysis of the processed data</li>
+      <li>To claim compensation if you suffer loss because your data was processed unlawfully</li>
     </ul>
-    <p>To exercise these rights, you may contact <a href="mailto:info@voxomix.com">info@voxomix.com</a>.</p>
+    <p>To exercise these rights, you may contact <a href="mailto:info@voxomix.com">info@voxomix.com</a>. Your request is answered free of charge within <strong>30 days</strong> at the latest. If you are not satisfied with the outcome, you may lodge a complaint with the <strong>Turkish Personal Data Protection Board (KVKK Kurulu)</strong>.</p>
 
     <h2>9. Cookies and Site Measurement</h2>
     <p>Our website stores a small amount of information in your browser that is required for it to work (your language preference and the cookie choice described below). These are not used for advertising or tracking.</p>
     <p>Beyond that, we use <strong>Google Analytics 4</strong> to understand how the site is used. This measurement runs <strong>only with your explicit consent</strong>: unless you select “Accept” in the banner shown on your first visit, no analytics cookie is set and no request is sent to Google.</p>
     <p>If you consent, the data processed is: the pages you visit, the source you arrived from, approximate location (country/city level), device and browser information, and interactions such as download and button clicks. This data is processed by <strong>Google (Google Ireland Limited / Google LLC)</strong> and may be stored on servers outside your country. Your name, email address and account details are <strong>not</strong> included in this measurement.</p>
     <p><strong>An important distinction:</strong> this measurement applies to the voxomix.com website only. The <strong>VoxoMix desktop app</strong> does not send your music files to any server for analysis; stem separation, chord, tempo and lyrics processing all happen on your computer.</p>
+    <p><strong>Server-side download counter:</strong> to measure how often the download link is clicked, our server stores only a <strong>timestamp</strong> — no IP address, country, device or browser information is recorded. Because this count cannot be linked to any person, it runs independently of cookie consent.</p>
     <p data-vx-consent-block hidden>You can change your cookie choice at any time: <button type="button" data-vx-consent-reset>Change my cookie preference</button></p>
 
     <h2>10. Commercial Electronic Messages and Marketing</h2>
@@ -113,7 +123,24 @@
     <p><strong>Opt-out:</strong> You may exercise your right to refuse free of charge at any time via the link at the bottom of every commercial email, by sending a request to <a href="mailto:info@voxomix.com">info@voxomix.com</a>, or through İYS. Your refusal request is processed within 3 business days at the latest.</p>
     <p>Note: <strong>Informational emails relating to the operation of the service</strong> — such as subscription renewal, payment confirmation, email verification and password reset — are not commercial electronic messages and are therefore sent independently of this consent.</p>
 
-    <h2>11. Contact</h2>
+    <h2>11. Users in the EEA, the United Kingdom and Switzerland (GDPR)</h2>
+    <p>If you are located in the European Economic Area (EEA), the United Kingdom or Switzerland, you have the rights set out in the <strong>General Data Protection Regulation (GDPR)</strong> in addition to the KVKK rights above. The data controller is <strong>Barış Demirel</strong>; contact: <a href="mailto:info@voxomix.com">info@voxomix.com</a>.</p>
+    <p><strong>Legal bases for processing (GDPR Art. 6):</strong></p>
+    <table>
+      <tr><th>Purpose</th><th>Legal basis</th></tr>
+      <tr><td>Creating your account, providing the subscription, payment and invoicing</td><td>Performance of a contract — Art. 6(1)(b)</td></tr>
+      <tr><td>Analytics cookies and commercial emails</td><td>Consent — Art. 6(1)(a)</td></tr>
+      <tr><td>Security, prevention of abuse, improving the service</td><td>Legitimate interests — Art. 6(1)(f)</td></tr>
+      <tr><td>Keeping tax and accounting records</td><td>Legal obligation — Art. 6(1)(c)</td></tr>
+    </table>
+    <p><strong>Your rights:</strong> access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), <strong>data portability</strong> (Art. 20), objection (Art. 21), and, where processing is based on consent, the right to <strong>withdraw your consent at any time</strong> (Art. 7(3) — withdrawal does not affect the lawfulness of processing carried out before it). You can withdraw your cookie consent with one click using the button in Section 9 above.</p>
+    <p>Send requests to <a href="mailto:info@voxomix.com">info@voxomix.com</a>; they are answered free of charge within <strong>one month</strong>. You also have the <strong>right to lodge a complaint with the data protection authority of your country</strong> (Art. 77).</p>
+    <p><strong>Where data is processed:</strong> your data is processed in Türkiye and on the servers of the providers listed in Section 5 (including the EU, the United Kingdom and the United States). Where those providers transfer data outside the EEA, <strong>Standard Contractual Clauses (SCCs)</strong> or equivalent safeguards apply.</p>
+    <p><strong>Automated decision-making:</strong> we do not carry out solely automated decision-making or profiling that produces legal effects concerning you.</p>
+    <p><strong>Retention:</strong> the periods stated in Section 7 apply.</p>
+    <p><strong>Children:</strong> the service is not directed at persons under 13. If the digital age of consent in your country is higher (it may be up to 16 under GDPR Art. 8), parental or guardian consent is required before creating an account.</p>
+
+    <h2>12. Contact</h2>
     <p>For questions about our privacy policy:<br>
     <strong>Email:</strong> <a href="mailto:info@voxomix.com">info@voxomix.com</a><br>
     <strong>Address:</strong> Esentepe Mah. Şehit Mehmet Mikdat Uluünlü Sk. Propa Plus Residence No:26 D:26, Şişli / İstanbul</p>

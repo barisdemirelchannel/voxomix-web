@@ -69,7 +69,7 @@
     <h2>4. Abonelik ve Ödeme</h2>
     <p>Ücretli planlara ilişkin fiyatlandırma, otomatik yenileme, iptal ve cayma hakkı koşulları <a href="/mesafeli-satis">Mesafeli Satış Sözleşmesi</a>'nde ayrıntılı olarak düzenlenmiştir. Özetle:</p>
     <ul>
-      <li>Ödemeler, PCI-DSS uyumlu iyzico ödeme altyapısı üzerinden güvenli şekilde tahsil edilir; kart bilgileriniz VoxoMix tarafından saklanmaz.</li>
+      <li>Ödemeler, PCI-DSS uyumlu ödeme altyapıları üzerinden güvenli şekilde tahsil edilir — Türkiye'den yapılan satın alımlarda iyzico, yurt dışından yapılan satın alımlarda Polar (polar.sh, kayıtlı satıcı); kart bilgileriniz VoxoMix tarafından görülmez ve saklanmaz.</li>
       <li>Abonelikler, iptal edilmediği sürece dönem sonunda otomatik olarak yenilenir.</li>
       <li>Aboneliğinizi uygulama içindeki Profil sayfasından veya info@voxomix.com üzerinden istediğiniz zaman iptal edebilirsiniz; iptal, mevcut ödenmiş dönemin sonunda etkili olur ve o döneme ait erişiminiz kesintiye uğramaz.</li>
       <li>Dijital içerik niteliği taşıyan bu hizmette, ifaya kullanıcının onayıyla başlanması halinde 6502 sayılı Kanun uyarınca cayma hakkı kullanılamaz.</li>
@@ -105,7 +105,9 @@
     <p>Hizmet, aşağıdaki üçüncü taraf altyapıları üzerinden çalışır:</p>
     <ul>
       <li><strong>Supabase:</strong> Kullanıcı hesabı kimlik doğrulaması ve profil/abonelik verilerinin saklanması.</li>
-      <li><strong>iyzico:</strong> Ödeme işlemlerinin güvenli şekilde gerçekleştirilmesi.</li>
+      <li><strong>iyzico:</strong> Ödeme işlemlerinin güvenli şekilde gerçekleştirilmesi (Türkiye).</li>
+      <li><strong>Polar (polar.sh):</strong> Yurt dışı aboneliklerde ödeme, faturalama ve kayıtlı satıcı (Merchant of Record) hizmeti.</li>
+      <li><strong>Cloudflare:</strong> voxomix.com web sitesinin barındırılması, dağıtımı ve güvenliği.</li>
     </ul>
     <p>Bu hizmetlerin kendi kullanım şartları ve gizlilik politikaları geçerlidir.</p>
 
