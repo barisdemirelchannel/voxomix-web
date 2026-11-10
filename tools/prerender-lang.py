@@ -11,7 +11,7 @@ WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LANGS = sys.argv[1:] or ['es', 'fr', 'de']
 ALL = ['tr', 'en', 'es', 'fr', 'de', 'it']
 LOCALE = {'tr': 'tr_TR', 'en': 'en_US', 'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
-# Yasal sayfa slug'ları — Türkçe dışında hep İngilizce (/en/) gösterilir.
+# Yasal sayfa slug'ları (bilgi amaçlı; üretimi tools/build-legal-lang.py yapar).
 LEGAL = ['kullanim-sartlari', 'gizlilik', 'mesafeli-satis', 'teslimat-iade']
 
 # ---- i18n.js'ten bir dilin sözlüğünü oku ----
@@ -145,10 +145,11 @@ def build(page_key, src_name, out_name, suffix, lang):
     m = META[page_key][lang]
     p = open(f"{WEB}/en/{src_name}", encoding="utf-8").read()
 
-    # 1) Link öneki /en/ -> /LANG/  (sonra yasal olanları /en/'e geri al)
+    # 1) Link öneki /en/ -> /LANG/
+    # 10.11.2026: yasal sayfalar artık her dilde var (tools/build-legal-lang.py),
+    # bu yüzden onları /en/'e geri alan eski döngü KALDIRILDI. AB'de sözleşme
+    # öncesi bilgilendirmenin teklifin dilinde olması aranıyor.
     p = p.replace('/en/', f'/{lang}/')
-    for slug in LEGAL:
-        p = p.replace(f'/{lang}/{slug}', f'/en/{slug}')
 
     # 2) html lang
     p = re.sub(r'<html lang="en">', f'<html lang="{lang}">', p, count=1)

@@ -53,22 +53,22 @@
     es: {
       body: 'Nos gustaría usar cookies analíticas para entender cómo se usa este sitio. Si las rechazas, no se instala ninguna cookie ni se envía ningún dato.',
       note: 'La app de VoxoMix funciona sin conexión en cualquier caso: tus archivos de música nunca salen de tu ordenador.',
-      ok: 'Aceptar', no: 'Rechazar', more: 'Política de privacidad', privacy: '/en/gizlilik.html'
+      ok: 'Aceptar', no: 'Rechazar', more: 'Política de privacidad', privacy: '/es/gizlilik.html'
     },
     fr: {
       body: "Nous souhaitons utiliser des cookies de mesure d'audience pour comprendre l'usage du site. Si vous refusez, aucun cookie n'est déposé et aucune donnée n'est envoyée.",
       note: "L'application VoxoMix fonctionne hors ligne dans tous les cas — vos fichiers audio ne quittent jamais votre ordinateur.",
-      ok: 'Accepter', no: 'Refuser', more: 'Politique de confidentialité', privacy: '/en/gizlilik.html'
+      ok: 'Accepter', no: 'Refuser', more: 'Politique de confidentialité', privacy: '/fr/gizlilik.html'
     },
     de: {
       body: 'Wir möchten Analyse-Cookies verwenden, um zu verstehen, wie diese Website genutzt wird. Wenn du ablehnst, werden keine Cookies gesetzt und keine Daten gesendet.',
       note: 'Die VoxoMix-App funktioniert ohnehin offline — deine Musikdateien verlassen deinen Computer nie.',
-      ok: 'Akzeptieren', no: 'Ablehnen', more: 'Datenschutz', privacy: '/en/gizlilik.html'
+      ok: 'Akzeptieren', no: 'Ablehnen', more: 'Datenschutz', privacy: '/de/gizlilik.html'
     },
     it: {
       body: 'Vorremmo usare cookie di analisi per capire come viene usato il sito. Se rifiuti, non viene installato alcun cookie e non viene inviato alcun dato.',
       note: "L'app VoxoMix funziona comunque offline — i tuoi file musicali non lasciano mai il tuo computer.",
-      ok: 'Accetta', no: 'Rifiuta', more: 'Informativa sulla privacy', privacy: '/en/gizlilik.html'
+      ok: 'Accetta', no: 'Rifiuta', more: 'Informativa sulla privacy', privacy: '/it/gizlilik.html'
     }
   }[LANG];
 

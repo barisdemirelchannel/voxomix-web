@@ -50,10 +50,10 @@ for key, langs in POSTS.items():
     for lang in ['tr','en','es','fr','de','it']:
         mod = POST_MOD[key] if (lang in ('tr','en') or key in ('sarkinin_sozlerini_cikar','sarkinin_bir_bolumunu_do','sarkidan_bas_ayirma','sarkinin_piyano_akorlari','bpm','karaoke','key','vocals','chords','instrument','howto')) else TODAY
         U(f"{base(lang)}/blog/{langs[lang]}", mod, 'monthly', POST_PRIO[key])
-# Legal (tr + en only)
+# Legal — 10.11.2026'dan beri 6 dilde (tools/build-legal-lang.py üretiyor)
 for slug in ['kullanim-sartlari','gizlilik','mesafeli-satis','teslimat-iade']:
-    U(f"{B}/{slug}", '2026-07-05', 'yearly', '0.3')
-    U(f"{B}/en/{slug}", '2026-07-05', 'yearly', '0.3')
+    for lang in ['tr','en','es','fr','de','it']:
+        U(f"{base(lang)}/{slug}", '2026-11-10', 'yearly', '0.3')
 
 out = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(rows) + "\n</urlset>\n"
 open(f"{WEB}/sitemap.xml","w",encoding="utf-8").write(out)
