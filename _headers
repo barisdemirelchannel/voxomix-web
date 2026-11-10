@@ -1,0 +1,12 @@
+# Güvenlik başlıkları — 10.11.2026 denetiminde eklendi.
+# CSP'nin script/style kısmı BİLEREK YOK: ana sayfada satır içi script'ler var,
+# katı bir CSP'yi ölçmeden eklemek siteyi kırar. Burada yalnız çerçeveleme
+# kısıtlanıyor (frame-ancestors), o hiçbir script/style'ı etkilemez.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Content-Security-Policy: frame-ancestors 'none'
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Cross-Origin-Opener-Policy: same-origin

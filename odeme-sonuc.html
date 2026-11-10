@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ödeme Sonucu — VoxoMix</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://voxomix.com/odeme-sonuc">
   <link rel="stylesheet" href="assets/style.css">
   <script defer src="/assets/analytics.js?v=3"></script>
 </head>
@@ -25,7 +27,12 @@
 <script>
   const params = new URLSearchParams(window.location.search);
   const status = params.get('status');
-  const plan = params.get('plan');
+  // plan URL'den gelir, yani ziyaretçi uydurabilir. Bilinen plan adlarının
+  // dışındaki hiçbir değeri ekrana yazmıyoruz: aksi hâlde resmî alan adında
+  // "Planınız <istediğin metin> oldu" diye ikna edici bir sahte onay üretilebilir.
+  const GECERLI_PLANLAR = ['basic', 'student', 'producer'];
+  const planHam = (params.get('plan') || '').toLowerCase().trim();
+  const plan = GECERLI_PLANLAR.includes(planHam) ? planHam : null;
   const iconEl = document.getElementById('result-icon');
   const titleEl = document.getElementById('result-title');
   const descEl = document.getElementById('result-desc');
