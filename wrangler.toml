@@ -7,8 +7,13 @@ compatibility_date = "2025-01-01"
 [assets]
 directory = "."
 binding = "ASSETS"
-# Varsayılan davranış korunuyor: bir istek statik dosyayla eşleşiyorsa Worker
-# hiç çalışmaz. Yalnız /download/* gibi eşleşmeyen yollar Worker'a düşer.
+# ⚠️ 10.11.2026'da DEĞİŞTİ: eskiden varsayılan davranış vardı (istek statik
+# dosyayla eşleşiyorsa Worker hiç çalışmazdı). Bu yüzden Worker'a eklenen
+# http→https yönlendirmesi HTML sayfalarında hiç tetiklenmedi: /gizlilik düz
+# HTTP üzerinden 200 dönmeye devam etti. Artık her istek önce Worker'dan
+# geçiyor; Worker şemayı denetledikten sonra env.ASSETS.fetch(request) ile
+# dosyayı sunuyor, yani _headers ve statik sunum davranışı aynı kalıyor.
+run_worker_first = true
 
 # İndirme sayacı (2026-08-08'de oluşturuldu). Anahtar biçimi: dl:YYYY-MM-DD:os:surum
 # Okumak için:  npx wrangler kv key list --binding DOWNLOADS --remote
