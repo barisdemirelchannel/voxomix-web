@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <script>/*tema*/(function(){var r=document.documentElement,D="dark",K="voxomix_theme";function paint(d){var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d?"#08080a":"#faf8f4";}try{if(localStorage.getItem(K)===D){r.setAttribute("data-theme",D);}}catch(e){}paint(r.getAttribute("data-theme")===D);document.addEventListener("click",function(e){var b=e.target&&e.target.closest?e.target.closest("#theme-toggle"):null;if(!b)return;var dark=r.getAttribute("data-theme")===D;if(dark){r.removeAttribute("data-theme");}else{r.setAttribute("data-theme",D);}try{localStorage.setItem(K,dark?"light":D);}catch(x){}paint(!dark);});})();</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ödeme Sonucu — VoxoMix</title>
@@ -14,14 +15,14 @@
 <nav>
   <a href="/" class="nav-logo">
     <img src="assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
-    <span>Voxo<span style="color:#a78bfa;">Mix</span></span>
+    <span>Voxo<span style="color:var(--link);">Mix</span></span>
   </a>
 </nav>
 
 <div class="section" style="padding-top:120px; text-align:center; min-height:50vh;">
   <div id="result-icon" style="font-size:64px; margin-bottom:24px;"></div>
   <h1 id="result-title" style="margin-bottom:16px;"></h1>
-  <p id="result-desc" style="color:#9a9aa6; max-width:480px; margin:0 auto;"></p>
+  <p id="result-desc" style="color:var(--muted); max-width:480px; margin:0 auto;"></p>
 </div>
 
 <script>

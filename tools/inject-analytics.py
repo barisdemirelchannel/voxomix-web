@@ -14,9 +14,11 @@
 import os, re, sys
 
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-VERSION = 3  # analytics.js değişince artır → tarayıcı önbelleği tazelensin
-# 2026-09-17: sabit 1'de kalmıştı, sitede v3 yayındaydı; her çalıştırmada 75 sayfayı
-# v1'e düşürüyordu. Gerçekle eşitlendi.
+VERSION = 4  # analytics.js değişince artır → tarayıcı önbelleği tazelensin
+# ⚠️ BU SABİTİ GÜNCELLEMEYİ UNUTMA. İki kez başımıza geldi:
+# 2026-09-17: sabit 1'de kalmıştı, site v3'teydi → her çalıştırma 75 sayfayı v1'e düşürdü.
+# 2026-11-14: sabit 3'te kalmıştı, site v4'teydi → 127 sayfa v3'e düştü.
+# Tekrarlamasın diye artık düşürmeyi reddediyor (aşağıdaki guard).
 TAG = '<script defer src="/assets/analytics.js?v=%d"></script>' % VERSION
 MARKER = re.compile(r'<script[^>]+src="/assets/analytics\.js[^"]*"[^>]*>\s*</script>\s*')
 
@@ -27,7 +29,7 @@ check_only = '--check' in sys.argv
 added, updated, ok, missing = [], [], 0, []
 
 for root, dirs, files in os.walk(WEB):
-    dirs[:] = [d for d in dirs if d not in ('.git', '.wrangler', 'node_modules', '.claude')]
+    dirs[:] = [d for d in dirs if d not in ('.git', '.wrangler', 'node_modules', '.claude', 'tools')]
     for name in sorted(files):
         if not name.endswith('.html') or name in SKIP:
             continue
@@ -36,6 +38,13 @@ for root, dirs, files in os.walk(WEB):
         src = open(path, encoding='utf-8').read()
 
         found = MARKER.search(src)
+        # Guard: sayfada DAHA YENİ bir sürüm varsa bu araç bayat demektir — düşürme, dur.
+        if found:
+            cur = re.search(r'analytics\.js\?v=(\d+)', found.group(0))
+            if cur and int(cur.group(1)) > VERSION:
+                sys.exit('!! %s sayfası v%s kullanıyor, bu araç v%d yazacaktı.\n'
+                         '   tools/inject-analytics.py içindeki VERSION sabitini %s yap ve tekrar çalıştır.'
+                         % (rel, cur.group(1), VERSION, cur.group(1)))
         if found and found.group(0).strip() == TAG:
             ok += 1
             continue
