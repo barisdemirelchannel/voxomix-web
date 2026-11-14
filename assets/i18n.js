@@ -127,7 +127,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Yakında',
-    'download.version': 'v1.2.2 • Ücretsiz • İndirmek için kayıt gerekmez',
+    'download.version': 'Ücretsiz • İndirmek için kayıt gerekmez',
 
     'how.label': 'Nasıl Çalışır',
     'how.h2': '3 Adımda Hazır',
@@ -302,7 +302,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Coming soon',
-    'download.version': 'v1.2.2 • Free • No signup required',
+    'download.version': 'Free • No signup required',
 
     'badge.popular': 'Most Popular',
 
@@ -477,7 +477,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Próximamente',
-    'download.version': 'v1.2.2 • Gratis • Sin registro para descargar',
+    'download.version': 'Gratis • Sin registro para descargar',
 
     'how.label': 'Cómo funciona',
     'how.h2': 'Listo en 3 pasos',
@@ -652,7 +652,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Bientôt disponible',
-    'download.version': 'v1.2.2 • Gratuit • Aucune inscription pour télécharger',
+    'download.version': 'Gratuit • Aucune inscription pour télécharger',
 
     'how.label': 'Comment ça marche',
     'how.h2': 'Prêt en 3 étapes',
@@ -827,7 +827,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Demnächst',
-    'download.version': 'v1.2.2 • Kostenlos • Keine Anmeldung zum Herunterladen',
+    'download.version': 'Kostenlos • Keine Anmeldung zum Herunterladen',
 
     'how.label': 'Wie es funktioniert',
     'how.h2': 'In 3 Schritten bereit',
@@ -1002,7 +1002,7 @@ const translations = {
     'download.win': 'Windows',
     'download.win-sub': 'Windows 10/11 • .exe',
     'download.win-badge': 'Prossimamente',
-    'download.version': 'v1.2.2 • Gratis • Nessuna registrazione per scaricare',
+    'download.version': 'Gratis • Nessuna registrazione per scaricare',
 
     'how.label': 'Come funziona',
     'how.h2': 'Pronto in 3 passi',
