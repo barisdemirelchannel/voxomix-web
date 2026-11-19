@@ -49,6 +49,8 @@
   --shot-bg: #0b0a12;         /* görseller koyu arayüz; iki temada da koyu çerçeve */
   --link: #5b3fd1;
   --on-teal: #04231e;
+  --badge-dot: #1a9d52;       /* hero etiketindeki nokta: "çalışıyor" yeşili */
+  --badge-dot-soft: rgba(26,157,82,.18);
   --cta-bg: #6c4ae0;          /* menekşe dolgulu CTA (deneme kutusu) */
   --cta-ink: #ffffff;
   --trial-bg: linear-gradient(90deg, rgba(108,74,224,.12), rgba(168,85,247,.09));
@@ -95,6 +97,8 @@
   --dl-from: #1e1e21; --dl-to: #18181b;
   --dl-from-h: #232327; --dl-to-h: #1b1b1f;
   --link: #a78bfa;
+  --badge-dot: #4fd06a;       /* koyuda kanal yeşili yeterince parlak */
+  --badge-dot-soft: rgba(79,208,106,.16);
   --cta-bg: #6c5ce7;
   --cta-ink: #ffffff;
   --trial-bg: linear-gradient(90deg, rgba(108,92,231,.18), rgba(168,85,247,.12));
@@ -243,7 +247,8 @@ nav {
 }
 .hero-badge::before {
   content: ""; width: 8px; height: 8px; border-radius: 50%; flex: none;
-  background: var(--st-kayit); box-shadow: 0 0 0 4px rgba(240,84,106,.16);
+  /* 19.11: kırmızıydı, Barış "çevrimdışı/kapalı" hissi verdiğini söyledi → yeşil. */
+  background: var(--badge-dot); box-shadow: 0 0 0 4px var(--badge-dot-soft);
 }
 
 .hero h1 {
@@ -251,10 +256,12 @@ nav {
   font-weight: 700; line-height: 1.02; letter-spacing: -0.045em;
   margin-bottom: 24px;
 }
-/* vurgu kelimesi: renk değil, italik serif */
+/* 19.11 (Barış: "yazı fontu tek karakter olsun, kalın olan karakter güzel"):
+   vurgu kelimesi artık ayrı bir yazı tipi değil — başlığın kendi kalın yazısıyla
+   aynı. Span HTML'de duruyor (i18n metni onu taşıyor), sadece stili nötrlendi. */
 .hero h1 span {
-  color: var(--text); font-family: var(--serif); font-style: italic; font-weight: 400;
-  letter-spacing: -0.02em;
+  color: inherit; font-family: inherit; font-style: normal; font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 .hero p {
