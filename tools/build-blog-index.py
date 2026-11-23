@@ -12,6 +12,9 @@ LOCALE = {'es': 'es_ES', 'fr': 'fr_FR', 'de': 'de_DE', 'it': 'it_IT'}
 
 # Kart sırası = EN index sırası. (topic, slug-per-lang, category-key, read, date-per-lang)
 POSTS = [
+    {'key': 'sarkinin_gitar_akorlarin', 'read': 7,
+     'slug': {'es': 'como-sacar-los-acordes-de-guitarra-de-una-cancion', 'fr': 'trouver-les-accords-guitare-dune-chanson', 'de': 'gitarrenakkorde-eines-songs-herausfinden', 'it': 'trovare-gli-accordi-per-chitarra-di-una-canzone'},
+     'date': {'es': '23 de noviembre de 2026', 'fr': '23 novembre 2026', 'de': '23. November 2026', 'it': '23 novembre 2026'}},
     {'key': 'kanal_ayirma_programi_na', 'read': 8,
      'slug': {'es': 'como-elegir-un-programa-para-separar-pistas', 'fr': 'choisir-un-logiciel-de-separation-de-pistes', 'de': 'stem-splitter-software-auswaehlen', 'it': 'scegliere-un-programma-per-separare-le-tracce'},
      'date': {'es': '23 de noviembre de 2026', 'fr': '23 novembre 2026', 'de': '23. November 2026', 'it': '23 novembre 2026'}},
@@ -61,6 +64,7 @@ POSTS = [
 
 # category-key -> per-lang label
 CAT = {
+    'sarkinin_gitar_akorlarin': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'kanal_ayirma_programi_na': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'sarkinin_sozlerini_cikar': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},
     'sarkinin_bir_bolumunu_do': {'es': 'Guía', 'fr': 'Guide', 'de': 'Guide', 'it': 'Guida'},

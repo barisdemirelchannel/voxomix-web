@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>/*tema*/(function(){var r=document.documentElement,D="dark",K="voxomix_theme";function paint(d){var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d?"#08080a":"#faf8f4";}try{if(localStorage.getItem(K)===D){r.setAttribute("data-theme",D);}}catch(e){}paint(r.getAttribute("data-theme")===D);document.addEventListener("click",function(e){var b=e.target&&e.target.closest?e.target.closest("#theme-toggle"):null;if(!b)return;var dark=r.getAttribute("data-theme")===D;if(dark){r.removeAttribute("data-theme");}else{r.setAttribute("data-theme",D);}try{localStorage.setItem(K,dark?"light":D);}catch(x){}paint(!dark);});})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo sacar los acordes de guitarra de una canción — VoxoMix</title>
+  <meta name="description" content="Saca los acordes de guitarra de una canción: localiza el bajo, distingue mayor de menor, lee el diagrama, ajusta el capo y tócala junto a la grabación.">
+  <meta name="keywords" content="acordes guitarra, acordes de guitarra, sacar los acordes de guitarra de una canción, sacar acordes de oído guitarra, acordes de canciones para guitarra, cómo leer acordes de guitarra, acordes de guitarra con capo">
+  <link rel="canonical" href="https://voxomix.com/es/blog/como-sacar-los-acordes-de-guitarra-de-una-cancion">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-gitar-akorlarini-bulma">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-find-the-guitar-chords-of-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-sacar-los-acordes-de-guitarra-de-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/trouver-les-accords-guitare-dune-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/gitarrenakkorde-eines-songs-herausfinden">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/trovare-gli-accordi-per-chitarra-di-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-gitar-akorlarini-bulma">
+  <meta name="theme-color" content="#faf8f4">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://voxomix.com/es/blog/como-sacar-los-acordes-de-guitarra-de-una-cancion">
+  <meta property="og:title" content="Cómo sacar los acordes de guitarra de una canción: oído, diagrama y capo">
+  <meta property="og:description" content="Empieza por el oído, lee el diagrama, calcula el capo y ralentiza el cambio difícil. Así se saca una canción con la guitarra, paso a paso.">
+  <meta property="og:image" content="https://voxomix.com/assets/blog/sarkinin-gitar-akorlarini-bulma-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-11-23">
+  <meta property="article:modified_time" content="2026-11-23">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cómo sacar los acordes de guitarra de una canción: oído, diagrama y capo">
+  <meta name="twitter:description" content="Empieza por el oído, lee el diagrama, calcula el capo y ralentiza el cambio difícil. Así se saca una canción con la guitarra, paso a paso.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/blog/sarkinin-gitar-akorlarini-bulma-og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Cómo sacar los acordes de guitarra de una canción: oído, diagrama y capo",
+        "description": "Saca los acordes de guitarra de una canción: localiza el bajo, distingue mayor de menor, lee el diagrama, ajusta el capo y tócala junto a la grabación.",
+        "image": "https://voxomix.com/assets/blog/sarkinin-gitar-akorlarini-bulma-og.png",
+        "datePublished": "2026-11-23",
+        "dateModified": "2026-11-23",
+        "inLanguage": "es",
+        "author": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "url": "https://voxomix.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://voxomix.com/assets/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://voxomix.com/es/blog/como-sacar-los-acordes-de-guitarra-de-una-cancion"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://voxomix.com/es/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://voxomix.com/es/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Acordes de guitarra",
+            "item": "https://voxomix.com/es/blog/como-sacar-los-acordes-de-guitarra-de-una-cancion"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la forma más fácil de sacar los acordes de guitarra de una canción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ábrela en una aplicación que detecte acordes, sigue el nombre y la digitación y confirma de oído las partes difíciles, ralentizadas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por dónde empiezo a sacar acordes de guitarra de oído?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Por la nota del bajo. Búscala en las cuerdas graves y prueba su acorde mayor y su menor. Mejor con un tema lento y de pocos acordes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué los acordes de la pantalla no coinciden con los de internet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Suele deberse al capo: la detección da el acorde que suena y un cifrado de internet puede indicar las formas con capo. Si todo difiere un semitono, quizá la grabación tenga otra afinación."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿VoxoMix genera tablaturas de guitarra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Muestra el nombre del acorde y su digitación, pero no crea tablaturas de solos ni riffs. Esos puedes sacarlos de oído, aislando y ralentizando la guitarra."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El plan Free incluye diagramas de guitarra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La vista de guitarra está en Student y Producer, y puedes probarla con la prueba de 14 días de Producer. El plan Free incluye el Buscador de acordes para piano."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Mi canción sale de mi equipo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La separación y el análisis se hacen en tu Mac (Apple Silicon) o tu PC con Windows 10/11, sin subir la canción. Se necesita internet para el primer inicio de sesión y la verificación de la licencia, y el modelo de letras se descarga una vez, al usar la transcripción por primera vez."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=4"></script>
+</head>
+<body>
+
+<nav>
+  <a href="/es/" class="nav-logo">
+    <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+    <span>Voxo<span style="color:var(--link);">Mix</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="/es/#features" data-i18n="nav.features">Funciones</a>
+    <a href="/es/#plans" data-i18n="nav.plans">Planes</a>
+    <a href="/es/blog">Blog</a>
+    <a href="/es/hakkimizda" data-i18n="nav.about">Nosotros</a>
+  </div>
+  <a href="https://voxomix.com/blog/sarkinin-gitar-akorlarini-bulma" class="nav-lang" hreflang="tr" onclick="try{localStorage.setItem('voxomix_site_lang','tr')}catch(e){}">TR</a>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Tema" data-i18n-aria="nav.theme">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+  <a href="/es/#download" class="nav-cta" data-i18n="nav.cta">Prueba Producer gratis 14 días</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/es/">Inicio</a> › <a href="/es/blog">Blog</a> › <span>Acordes de guitarra</span>
+</div>
+
+<div class="page-header">
+  <h1>Cómo sacar los acordes de guitarra de una canción: oído, diagrama y capo</h1>
+  <p>De la nota del bajo al diagrama, y del cálculo del capo a tocar sobre la grabación, paso a paso</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Publicado: 23 de noviembre de 2026 · Lectura ~8 min</div>
+
+<p><strong>Respuesta rápida:</strong> para sacar los acordes de guitarra de una canción, busca la <strong>nota del bajo</strong> en las cuerdas graves, decide de oído si el acorde es <strong>mayor o menor</strong> y compruébalo tocando sobre la grabación. Un buscador automático te facilita el trabajo: muestra el acorde y una digitación mientras suena el tema, pero la última palabra la tiene tu oído.</p>
+
+    <p>Te servirá si una canción no aparece en las webs de acordes, si la versión disponible no te convence o si quieres aprender a sacarla por tu cuenta. Primero lo haremos con la guitarra y después en VoxoMix, nuestra aplicación.</p>
+
+    <img src="/assets/blog/sarkinin-gitar-akorlarini-bulma-kapak.jpg" alt="Músico tocando una guitarra acústica en una sala de música doméstica con luz cálida, junto a un portátil con ondas de sonido de colores" width="1600" height="900">
+
+    <div class="toc">
+      <strong>Contenido</strong>
+      <ul>
+        <li><a href="#s1">¿Por qué es distinto sacar acordes en la guitarra?</a></li>
+        <li><a href="#s2">¿Cómo se sacan los acordes de oído?</a></li>
+        <li><a href="#s3">¿Cómo sacar los acordes de guitarra de una canción con VoxoMix?</a></li>
+        <li><a href="#s4">¿Cómo se lee el diagrama de acordes?</a></li>
+        <li><a href="#s5">¿Cómo se calculan los acordes con capo?</a></li>
+        <li><a href="#s6">¿Cómo simplificar los acordes difíciles?</a></li>
+        <li><a href="#s7">¿Cuándo puede fallar la detección automática?</a></li>
+        <li><a href="#s8">¿Cómo encajar los acordes en la canción?</a></li>
+        <li><a href="#s9">¿Qué incluye cada plan?</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <h2 id="s1">¿Por qué es distinto sacar acordes en la guitarra?</h2>
+
+    <p>Porque un mismo acorde se puede tocar en varias zonas del mástil, mientras que en el piano cada nota tiene un único lugar. Hay dos preguntas: <strong>¿qué acorde suena?</strong> y <strong>¿dónde lo voy a tocar?</strong> La primera la responde la grabación; la segunda la decides tú.</p>
+
+    <p>El capo (o capotraste) lo complica más: si el guitarrista lo usó, la forma que pisaba y el acorde que oyes no coinciden. Esto no ocurre al <a href="/es/blog/como-sacar-los-acordes-de-piano-de-una-cancion">sacar los acordes de piano</a>. La lógica general está en la guía para <a href="/es/blog/como-encontrar-los-acordes-de-una-cancion">encontrar los acordes de una canción</a>.</p>
+
+    <h2 id="s2">¿Cómo se sacan los acordes de oído?</h2>
+
+    <p>Te bastan la guitarra, la canción y estos tres pasos.</p>
+
+    <h3>1. Localiza la nota del bajo</h3>
+
+    <p>Escucha el sonido más grave del acorde y recorre, traste a traste, la sexta o la quinta cuerda hasta dar con él. Cuando coinciden, desaparece la sensación de choque. El bajo suele ser la raíz, la nota que da nombre al acorde.</p>
+
+    <h3>2. ¿Mayor o menor?</h3>
+
+    <p>Si la raíz es A, toca A (la mayor) y luego Am (la menor) sobre la canción: el que encaje es tu acorde. El mayor suele sonar más luminoso y el menor, más oscuro. Si ninguno convence, quizá el bajo no sea la raíz; la detección automática puede orientarte.</p>
+
+    <h3>3. Compruébalo con la canción</h3>
+
+    <p>Toca la secuencia completa junto a la grabación y, si algo roza, vuelve a ese cambio. Cuando un pasaje rápido se te escape, <a href="/es/blog/ralentizar-cancion-sin-cambiar-el-tono">ralentízalo sin cambiar el tono</a>.</p>
+
+    <h2 id="s3">¿Cómo sacar los acordes de guitarra de una canción con VoxoMix?</h2>
+
+    <p>Activa la vista de guitarra y sigue los acordes mientras suena. El audio se procesa en tu equipo y la canción no se sube a ningún servidor.</p>
+
+    <ol>
+      <li><strong>Abre la canción.</strong> Añade el archivo y espera a que terminen la separación y el análisis.</li>
+      <li><strong>Elige la vista de guitarra.</strong> En el <strong>Buscador de acordes</strong>, el botón <strong>Guitarra</strong> muestra cada acorde con su digitación. Disponible en los planes Student y Producer.</li>
+      <li><strong>Reproduce el tema.</strong> El acorde actual aparece en el centro, con el anterior y el siguiente a los lados; el diagrama lo sigue.</li>
+      <li><strong>Agranda la vista.</strong> El botón <strong>Ampliar</strong> abre el buscador en una ventana grande.</li>
+      <li><strong>Muévete entre acordes.</strong> Las flechas saltan al inicio del acorde anterior o del siguiente para trabajar cada cambio.</li>
+      <li><strong>Escucha la guitarra aislada.</strong> Desde el plan Basic, la canción se separa en 6 canales. Con el botón <strong>S</strong> del canal <strong>Instrumento de cuerda</strong> oirás esa parte sin el resto. Más detalles en la guía para <a href="/es/blog/como-quitar-un-instrumento-de-una-cancion">quitar un instrumento de una canción</a>.</li>
+    </ol>
+
+    <h2 id="s4">¿Cómo se lee el diagrama de acordes?</h2>
+
+    <p>Se lee en horizontal, como si tuvieras la guitarra de frente, con cuatro reglas:</p>
+
+    <ul>
+      <li><strong>Cuerdas:</strong> la línea superior es la sexta (mi grave) y la inferior, la primera (mi agudo).</li>
+      <li><strong>Cejuela a la derecha:</strong> los trastes avanzan de derecha a izquierda, numerados encima del diagrama.</li>
+      <li><strong>Símbolos:</strong> el punto relleno es el traste que pisas; el círculo vacío, cuerda al aire; y ×, cuerda que no se toca.</li>
+      <li><strong>Cejilla:</strong> una barra sobre varias cuerdas indica que las pisas a la vez con el índice.</li>
+    </ul>
+
+    <p>La aplicación muestra <strong>una forma por acorde</strong>; las demás posiciones del mástil te toca explorarlas. En los acordes de séptima verás <strong>G7</strong> o <strong>Am7</strong>, pero el diagrama da la forma básica de <strong>G</strong> o <strong>Am</strong>: la séptima la añades tú. Confirma cada diagrama de oído, tocando sobre la canción. Una advertencia: en la versión disponible al publicar este artículo, los diagramas de F y Fm se dibujan mal. Para esos dos acordes usa estas formas: F es 1-3-3-2-1-1 y Fm es 1-3-3-1-1-1, con los trastes contados de la sexta cuerda a la primera.</p>
+
+    <img src="/assets/blog/sarkinin-gitar-akorlarini-bulma-1.jpg" alt="Primer plano de una mano izquierda formando un acorde en el mástil de una guitarra acústica, con la pantalla de un portátil desenfocada detrás" width="1600" height="900" loading="lazy">
+
+    <h2 id="s5">¿Cómo se calculan los acordes con capo?</h2>
+
+    <p><strong>Baja cada acorde tantos semitonos como indique el traste donde colocas el capo.</strong> El resultado es la forma que debes tocar. La detección da el acorde que <strong>suena</strong>, no la forma que pisa el guitarrista: con capo en el traste 2, una forma de D suena como E, y eso verás en pantalla.</p>
+
+    <p>La aplicación usa letras: A = la, B = si, C = do, D = re, E = mi, F = fa, G = sol.</p>
+
+    <table style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
+      <thead><tr><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Acorde en pantalla</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Capo 1</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Capo 2</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Capo 3</th></tr></thead>
+      <tbody>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>A#</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">A</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">G#</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">G</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>F</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">E</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">D#</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">D</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Gm</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">F#m</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Fm</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Em</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>D#</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">D</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">C#</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">C</td></tr>
+      </tbody>
+    </table>
+
+    <p>Aquí lo más cómodo es el capo 3: en lugar de hacer cejilla en A#, F, Gm y D#, tocas las formas abiertas de G, D, Em y C. Las notas aparecen con sostenidos; A# y Bb suenan igual, como D# y Eb.</p>
+
+    <p>También puedes prescindir del capo: <a href="/es/blog/como-cambiar-el-tono-de-una-cancion">cambiar el tono</a> está disponible desde el plan Basic. El nombre del acorde pasa a la nueva tonalidad; guíate por él. En la versión actual el diagrama sigue mostrando la forma del tono original, así que elige tú la forma que corresponde al nuevo nombre.</p>
+
+    <h2 id="s6">¿Cómo simplificar los acordes difíciles?</h2>
+
+    <p>Empieza con una versión sencilla y pasa a la forma completa cuando la mano se acostumbre. Los números indican el traste, de la sexta cuerda a la primera: 0 es cuerda al aire y x, cuerda que no suena.</p>
+
+    <table style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
+      <thead><tr><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Acorde</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Forma completa</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Opción fácil</th></tr></thead>
+      <tbody>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>F</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">1-3-3-2-1-1</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Fmaj7: x-x-3-2-1-0</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Bm</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">x-2-4-4-3-2</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Bm7: x-2-0-2-0-2</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>C#m</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">x-4-6-6-5-4</td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Forma de Am con capo 4: x-0-2-2-1-0</td></tr>
+      </tbody>
+    </table>
+
+    <p>Estas opciones alteran un poco el color del acorde; si no te convence, vuelve a la forma completa.</p>
+
+    <h2 id="s7">¿Cuándo puede fallar la detección automática?</h2>
+
+    <p>Ningún buscador acierta siempre; escucha con más atención en estos casos:</p>
+
+    <ul>
+      <li><strong>Mucha distorsión o mezclas densas:</strong> los armónicos y otros instrumentos dificultan la lectura.</li>
+      <li><strong>Tipos de acorde:</strong> VoxoMix nombra acordes mayores, menores, 7, maj7 y m7. Sus, dim o add9 pueden aparecer como el acorde más cercano.</li>
+      <li><strong>Bajos distintos de la raíz:</strong> un C/G puede mostrarse como C. Aísla el canal del bajo para oír la diferencia.</li>
+      <li><strong>Cambios rápidos:</strong> los acordes muy breves pueden pasar desapercibidos. Ralentiza el fragmento.</li>
+    </ul>
+
+    <h2 id="s8">¿Cómo encajar los acordes en la canción?</h2>
+
+    <p>Con práctica dirigida: prueba este plan de 20 minutos.</p>
+
+    <ol>
+      <li><strong>5 minutos, formas:</strong> con la música parada, pisa cada acorde y comprueba que todas las cuerdas suenan limpias.</li>
+      <li><strong>5 minutos, el cambio difícil:</strong> elige los dos acordes que más te cuestan. Activa <strong>Bucle</strong> y marca el fragmento con <strong>A: Inicio</strong> y <strong>B: Final</strong>. Más detalles en la <a href="/es/blog/como-repetir-una-parte-de-una-cancion-en-bucle">guía del bucle A–B</a>.</li>
+      <li><strong>5 minutos, tempo lento:</strong> lleva la velocidad a 0,7 aproximadamente. Rasguea cada acorde una vez por compás, añade el ritmo y acelera poco a poco.</li>
+      <li><strong>5 minutos, a tocar de verdad:</strong> silencia el canal <strong>Instrumento de cuerda</strong> con <strong>M</strong> y ocupa el lugar de la guitarra original.</li>
+    </ol>
+
+    <img src="/assets/blog/sarkinin-gitar-akorlarini-bulma-2.jpg" alt="Guitarra acústica con un capo en el mástil sobre una mesa de madera, junto a unos auriculares, un cuaderno en blanco y un lápiz" width="1600" height="900" loading="lazy">
+
+    <h2 id="s9">¿Qué incluye cada plan?</h2>
+
+    <p>Los diagramas de guitarra están en Student y Producer. Precios consultados en la web de VoxoMix el 23 de noviembre de 2026.</p>
+
+    <table style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
+      <thead><tr><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Plan</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Lo importante para practicar guitarra</th></tr></thead>
+      <tbody>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Free ($0)</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">2 canciones al mes, hasta 4 minutos, 4 canales, Buscador de acordes para piano, BPM y metrónomo. Sin diagramas de guitarra; la guitarra queda en el canal Otros instrumentos.</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Basic ($2.99/mes)</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">10 canciones al mes, hasta 5 minutos, 6 canales, bucle A–B, cambio de tono y transcripción de letras. Sin diagramas de guitarra.</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Student ($8.99/mes)</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">50 canciones al mes, hasta 7 minutos, <strong>diagramas de acordes de guitarra</strong>, afinador, hojas de acordes en PDF y canal de grabación.</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Producer ($13.99/mes)</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Canciones ilimitadas, todo lo de Student, WAV sin pérdida, exportación por lotes y MIDI.</td></tr>
+      </tbody>
+    </table>
+
+    <p>El pago anual tiene un 20 % de descuento. Puedes probar la vista de guitarra con la prueba de 14 días de Producer: requiere tarjeta y, si no cancelas, pasa a Producer el día 14. Puedes cancelar cuando quieras.</p>
+
+    <h2 id="faq">Preguntas frecuentes</h2>
+
+    <h3>¿Cuál es la forma más fácil de sacar los acordes de guitarra de una canción?</h3>
+    <p>Ábrela en una aplicación que detecte acordes, sigue el nombre y la digitación y confirma de oído las partes difíciles, ralentizadas.</p>
+    <h3>¿Por dónde empiezo a sacar acordes de guitarra de oído?</h3>
+    <p>Por la nota del bajo. Búscala en las cuerdas graves y prueba su acorde mayor y su menor. Mejor con un tema lento y de pocos acordes.</p>
+    <h3>¿Por qué los acordes de la pantalla no coinciden con los de internet?</h3>
+    <p>Suele deberse al capo: la detección da el acorde que suena y un cifrado de internet puede indicar las formas con capo. Si todo difiere un semitono, quizá la grabación tenga otra afinación.</p>
+    <h3>¿VoxoMix genera tablaturas de guitarra?</h3>
+    <p>No. Muestra el nombre del acorde y su digitación, pero no crea tablaturas de solos ni riffs. Esos puedes sacarlos de oído, aislando y ralentizando la guitarra.</p>
+    <h3>¿El plan Free incluye diagramas de guitarra?</h3>
+    <p>No. La vista de guitarra está en Student y Producer, y puedes probarla con la prueba de 14 días de Producer. El plan Free incluye el Buscador de acordes para piano.</p>
+    <h3>¿Mi canción sale de mi equipo?</h3>
+    <p>No. La separación y el análisis se hacen en tu Mac (Apple Silicon) o tu PC con Windows 10/11, sin subir la canción. Se necesita internet para el primer inicio de sesión y la verificación de la licencia, y el modelo de letras se descarga una vez, al usar la transcripción por primera vez.</p>
+
+    <h2>Conclusión</h2>
+
+<p>Todo se reduce a tres preguntas: <strong>cuál es la nota del bajo</strong>, <strong>si el acorde es mayor o menor</strong> y <strong>dónde lo vas a tocar</strong>. La detección automática te allana las dos primeras y el diagrama orienta la tercera; el capo y las formas sencillas adaptan el tema a tus manos.</p>
+
+    <p>Esta semana, elige una canción con pocos acordes y sigue el plan de 20 minutos.</p>
+
+    <div class="cta-box">
+      <p>Descarga VoxoMix y prueba gratis 14 días con Producer los acordes de guitarra, la separación de pistas, la ralentización y el bucle.</p>
+      <a href="/es/#download" class="btn-primary">Descargar gratis</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+          <img src="/assets/logo.png" alt="VoxoMix" style="width:32px;height:32px;">
+          VoxoMix
+        </div>
+        <p>App de separación de pistas con IA para músicos.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Producto</h4>
+        <a href="/es/#features" data-i18n="nav.features">Funciones</a>
+        <a href="/es/#plans" data-i18n="footer.pricing">Precios</a>
+        <a href="/es/blog">Blog</a>
+        <a href="/es/hakkimizda" data-i18n="nav.about">Nosotros</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <a href="/es/kullanim-sartlari">Términos de uso</a>
+        <a href="/es/gizlilik">Política de privacidad</a>
+        <a href="/es/teslimat-iade">Entrega y devoluciones</a>
+        <a href="/es/mesafeli-satis">Contrato de venta a distancia</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=15"></script>
+</body>
+</html>
