@@ -11,10 +11,21 @@ EX0, EY0, EX1, EY1 = 260, 66, 1744, 978
 
 im = Image.open(KAYNAK).convert('RGBA')
 zemin = Image.new('RGBA', im.size, (12, 12, 15, 255)); zemin.alpha_composite(im); im = zemin.convert('RGB')
-panel = im.getpixel((200, 960))                       # pencere zemin rengi
-X0, X1 = 80, 2144
-ust = im.crop((X0, 40, X1, 885))                       # başlık, zaman çizelgesi, Tempo/Vokal/Davul/Bas
-alt = im.crop((X0, 1772, X1, 2336))                    # Akor bulucu, Metronom, Ton + Sözler
+# Pencere zemin rengi. ESKİDEN sabit (200,960) pikselinden okunuyordu; yeni arayüzde
+# o nokta telli enstrümanın YEŞİL dalga formuna denk geldi ve maketin içi yeşile boyandı.
+# Artık panellerin altındaki boş şeridin ortanca rengi alınıyor — düzen değişse de boş kalır.
+def _zemin(img):
+    serit = img.crop((0, img.height - 30, img.width, img.height - 6))
+    px = list(serit.getdata())
+    px.sort(key=lambda c: c[0] + c[1] + c[2])
+    return px[len(px) // 2]
+panel = _zemin(im)
+# 24.11.2026: yeni arayüzle app-screenshot 2208×2356 → 2208×2479 oldu ve satırlar
+# daha dar (içerik x 151..2027). Kırpma noktaları CDP ile ölçülen gerçek kutulardan
+# yeniden hesaplandı; eski değerler (80/2144, y 40-885 ve 1772-2336) yanlış yere düşüyordu.
+X0, X1 = 110, 2068
+ust = im.crop((X0, 40, X1, 930))                       # başlık, zaman çizelgesi, Tempo/Vokal/Davul/Bas
+alt = im.crop((X0, 1850, X1, 2445))                    # Akor bulucu, Metronom, Ton + Sözler
 cubuk = 64                                            # pencere çubuğu (trafik ışıkları)
 icerik_h = cubuk + ust.height + 18 + alt.height
 EW, EH = EX1 - EX0, EY1 - EY0
