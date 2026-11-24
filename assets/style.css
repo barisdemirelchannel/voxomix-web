@@ -453,6 +453,9 @@ div[style*="text-align:center"]:has(> .section-label) h2 { letter-spacing: -0.04
   text-transform: none; padding-bottom: 16px; margin-bottom: 20px; border-bottom: 1px solid var(--hair);
 }
 .plan-price { font-size: 46px; font-weight: 700; letter-spacing: -0.045em; line-height: 1.05; margin-bottom: 4px; }
+/* 24.11.2026 öğrenci indirimi: eski fiyat çizili (30.06.2027 sonuna kadar; i18n.js kaldırır) */
+s.eski-fiyat { color: var(--muted); text-decoration-thickness: 2px; font-weight: 600; }
+.plan-price s.eski-fiyat { font-size: 22px; letter-spacing: -0.01em; margin-right: 10px; vertical-align: 0.4em; }
 .plan-price span { font-size: 18px; font-weight: 600; color: var(--text); letter-spacing: -0.02em; }
 .plan-period { font-size: 13px; color: var(--muted); margin-bottom: 22px; }
 

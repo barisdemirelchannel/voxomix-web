@@ -185,7 +185,7 @@ VoxoMix dört farklı plan sunar. Yıllık abonelikte **%20 indirim** uygulanır
 | Student | $8,99/ay | 50 | 7 dk | Gitar akor + PDF çıktı |
 | Producer | $13,99/ay | Sınırsız | Sınırsız | WAV + MIDI + toplu çıktı |
 
-**Producer planını 14 gün ücretsiz deneyebilirsiniz.** Uygulamayı indirin, kart bilginizi girin ve 14. günde otomatik olarak Producer planına geçiş gerçekleşir. İstediğiniz zaman iptal edebilirsiniz.
+**Producer planını 7 gün ücretsiz deneyebilirsiniz.** Uygulamayı indirin, kart bilginizi girin ve 7. günde otomatik olarak Producer planına geçiş gerçekleşir. İstediğiniz zaman iptal edebilirsiniz.
 
 Tüm ödemeler **iyzico** altyapısı üzerinden 256-bit SSL şifrelemesiyle gerçekleştirilir; kart bilgileriniz sunucularda saklanmaz.
 

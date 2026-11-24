@@ -24,9 +24,9 @@
 ## Pricing
 - Free: $0 — 2 songs/month, 4-channel separation, chord finder (piano)
 - Basic: $2.99/mo — 10 songs/month, 6-channel, lyrics, transpose, MP3 export
-- Student: $8.99/mo — 50 songs/month, chords (piano+guitar), tuner, PDF export
+- Student: $5.99/mo (student discount, regular $8.99) — 50 songs/month, chords (piano+guitar), tuner, PDF export
 - Producer: $13.99/mo — unlimited songs, lossless WAV, MIDI, batch export, all features
-- 14-day free Producer trial. Cancel anytime.
+- 7-day free Producer trial. Cancel anytime.
 
 ## Best for (use cases)
 - Practicing an instrument by isolating or muting parts of any song, then recording yourself in place of the muted part
