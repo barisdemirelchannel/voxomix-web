@@ -879,3 +879,47 @@ body [data-vx-consent-reset] { border-radius: 999px; border-color: var(--hair); 
    logonun 14 px altındaydı; 28 px'lik kilitte "o" ≈ 20 px olduğu için kural
    çiğneniyordu (ölçümle yakalandı). 24 px pay bırakıyoruz. */
 .footer-brand .nav-logo + p { margin-top: 24px; }
+
+/* ── Marka bölümü: işaret + ad (24.11.2026) ───────────────────────────────
+   Barış'ın logo sunumundaki düzen: solda büyük uygulama ikonu, sağda etiket +
+   başlık + metin + yatay kilit. Sunumdaki taslak metni (tur anlatımı) siteye
+   uygun değil; yerine markanın kendi hikâyesi var — dilimli V zaten
+   uygulamanın yaptığı işi anlatıyor (kılavuz s.2 "bir şarkı, altı kanal").
+   İkon kılavuz s.5'e göre: aydınlık sayfada krem çeşit, koyuda asıl koyu çeşit.
+   Tema seçen kuralların hepsi img + sınıf (eşit özgüllük) — sırayla çözülsün. */
+.brand-band { max-width: 1148px; margin: 0 auto; padding: 0 24px 96px; }
+.brand-grid {
+  display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 76px); align-items: center;
+}
+.brand-art img { width: 100%; max-width: 380px; display: block; margin: 0 auto;
+  filter: drop-shadow(0 26px 60px rgba(var(--shadow-rgb), .35)); }
+.brand-art img.ikon-light { display: block; }
+.brand-art img.ikon-dark { display: none; }
+:root[data-theme="dark"] .brand-art img.ikon-light { display: none; }
+:root[data-theme="dark"] .brand-art img.ikon-dark { display: block; }
+
+.brand-pill {
+  display: inline-block; background: var(--accent-soft); color: var(--accent);
+  font-size: 12px; font-weight: 700; letter-spacing: .14em;
+  padding: 7px 14px; border-radius: 999px; margin-bottom: 22px;
+}
+.brand-text h2 {
+  font-size: clamp(30px, 4.4vw, 52px); font-weight: 800; line-height: 1.08;
+  letter-spacing: -0.035em; margin: 0 0 20px;
+}
+.brand-text p {
+  font-size: 17px; color: var(--muted); line-height: 1.7; margin: 0 0 32px; max-width: 56ch;
+}
+.brand-lockup img { height: 50px; width: auto; }
+.brand-lockup img.brand-light { display: block; }
+.brand-lockup img.brand-dark { display: none; }
+:root[data-theme="dark"] .brand-lockup img.brand-light { display: none; }
+:root[data-theme="dark"] .brand-lockup img.brand-dark { display: block; }
+
+@media (max-width: 860px) {
+  .brand-grid { grid-template-columns: 1fr; gap: 34px; }
+  .brand-art img { max-width: 240px; }
+  .brand-text { text-align: left; }
+  .brand-lockup img { height: 42px; }
+}

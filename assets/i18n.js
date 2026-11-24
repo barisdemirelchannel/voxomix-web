@@ -49,6 +49,9 @@ const translations = {
     'showcase.record.desc': 'Kendi çalışını şarkının üstüne kaydet. Kulaklıktan kendini duyarak takip et, bitince geri dinle; beğenmezsen sil ve yeniden dene.',
 
     'plans.label': 'Fiyatlandırma',
+    'brand.label': 'MARKA',
+    'brand.h2': 'Bir şarkı, altı kanal',
+    'brand.p': 'VoxoMix\'in V\'si, uygulamanın altı kanal rengine dilimlendi: vokal, davul, bas, telli, tuşlu ve diğer. Dilimler hafifçe yana kaymış — kanallar birbirinden ayrılıyor. Yani simge, uygulamanın yaptığı işin kendisi.',
     'plans.h2': 'Sana Uygun Planı Seç',
     'plans.taxNote': 'Fiyatlar ABD doları cinsindendir. Geçerli KDV/satış vergisi ödeme sayfasında hesaplanır; vergiler dâhil toplam tutarı onaylamadan önce görürsünüz.',
     'nav.theme': 'Aydınlık/koyu tema',
@@ -224,6 +227,9 @@ const translations = {
     'showcase.record.desc': 'Record your own take over the song. Monitor yourself through headphones as you go, listen back when you are done, then delete it and try again if you want.',
 
     'plans.label': 'Pricing',
+    'brand.label': 'BRAND',
+    'brand.h2': 'One song, six channels',
+    'brand.p': 'The V in VoxoMix is sliced into the app\'s six channel colours: vocals, drums, bass, strings, keys and other. The slices sit slightly apart — the channels are coming free of one another. The mark is simply what the app does.',
     'plans.h2': 'Choose Your Plan',
     'plans.taxNote': 'Prices are in US dollars. Any applicable VAT or sales tax is calculated at checkout — you see the total including taxes before you confirm.',
     'nav.theme': 'Light/dark theme',
@@ -399,6 +405,9 @@ const translations = {
     'showcase.record.desc': 'Graba tu propia toma sobre la canción. Escúchate por los auriculares mientras tocas, reprodúcela al terminar y, si no te convence, bórrala y vuelve a intentarlo.',
 
     'plans.label': 'Precios',
+    'brand.label': 'MARCA',
+    'brand.h2': 'Una canción, seis pistas',
+    'brand.p': 'La V de VoxoMix está cortada en los seis colores de pista de la app: voz, batería, bajo, cuerdas, teclas y otros. Las porciones quedan ligeramente desplazadas: las pistas se separan entre sí. La marca es, sencillamente, lo que hace la app.',
     'plans.h2': 'Elige tu plan',
     'plans.taxNote': 'Los precios están en dólares estadounidenses. El IVA o impuesto sobre ventas aplicable se calcula en el pago: verás el total con impuestos antes de confirmar.',
     'nav.theme': 'Tema claro/oscuro',
@@ -574,6 +583,9 @@ const translations = {
     'showcase.record.desc': 'Enregistrez votre propre prise par-dessus la chanson. Suivez-vous au casque pendant que vous jouez, réécoutez à la fin, puis supprimez et recommencez si vous voulez.',
 
     'plans.label': 'Tarifs',
+    'brand.label': 'MARQUE',
+    'brand.h2': 'Une chanson, six pistes',
+    'brand.p': 'Le V de VoxoMix est découpé dans les six couleurs de pistes de l\'application : voix, batterie, basse, cordes, claviers et autres. Les tranches sont légèrement décalées : les pistes se détachent les unes des autres. Le symbole, c\'est tout simplement ce que fait l\'application.',
     'plans.h2': 'Choisissez votre offre',
     'plans.taxNote': 'Les prix sont en dollars américains. La TVA ou taxe de vente applicable est calculée au moment du paiement : vous voyez le total taxes comprises avant de confirmer.',
     'nav.theme': 'Thème clair/sombre',
@@ -749,6 +761,9 @@ const translations = {
     'showcase.record.desc': 'Nimm deinen eigenen Take über den Song auf. Hör dich dabei über Kopfhörer mit, spiel es danach ab und lösche es einfach, wenn du es noch einmal versuchen willst.',
 
     'plans.label': 'Preise',
+    'brand.label': 'MARKE',
+    'brand.h2': 'Ein Song, sechs Spuren',
+    'brand.p': 'Das V in VoxoMix ist in die sechs Spurfarben der App geschnitten: Gesang, Schlagzeug, Bass, Saiten, Tasten und Sonstiges. Die Scheiben sind leicht versetzt — die Spuren lösen sich voneinander. Das Zeichen ist schlicht das, was die App tut.',
     'plans.h2': 'Wähle deinen Tarif',
     'plans.taxNote': 'Die Preise verstehen sich in US-Dollar. Die geltende Mehrwertsteuer wird beim Bezahlvorgang berechnet — du siehst den Gesamtbetrag inklusive Steuern, bevor du bestätigst.',
     'nav.theme': 'Helles/dunkles Design',
@@ -924,6 +939,9 @@ const translations = {
     'showcase.record.desc': 'Registra la tua esecuzione sopra la canzone. Ascoltati in cuffia mentre suoni, riascolta alla fine e, se non ti convince, cancella e riprova.',
 
     'plans.label': 'Prezzi',
+    'brand.label': 'MARCHIO',
+    'brand.h2': 'Una canzone, sei tracce',
+    'brand.p': 'La V di VoxoMix è tagliata nei sei colori delle tracce dell\'app: voce, batteria, basso, corde, tasti e altro. Le fette sono leggermente sfalsate: le tracce si staccano l\'una dall\'altra. Il simbolo è semplicemente ciò che fa l\'app.',
     'plans.h2': 'Scegli il tuo piano',
     'plans.taxNote': 'I prezzi sono in dollari statunitensi. L\'IVA o l\'imposta sulle vendite applicabile viene calcolata al momento del pagamento: vedi il totale con le imposte prima di confermare.',
     'nav.theme': 'Tema chiaro/scuro',
