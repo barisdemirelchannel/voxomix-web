@@ -53,7 +53,7 @@ const translations = {
     'plans.taxNote': 'Fiyatlar ABD doları cinsindendir. Geçerli KDV/satış vergisi ödeme sayfasında hesaplanır; vergiler dâhil toplam tutarı onaylamadan önce görürsünüz.',
     'nav.theme': 'Aydınlık/koyu tema',
     'trial.title': 'Producer\'ı 14 Gün Ücretsiz Dene',
-    'trial.desc': 'Tüm Producer özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Producer\'a geçer, istediğin an iptal edebilirsin.',
+    'trial.desc': 'Tüm Producer özellikleri 14 gün boyunca ücretsiz. Uygulamayı indir, kart bilgini gir — 14. günde otomatik Producer\'a geçer; ilk 48 saatten sonra istediğin an iptal edebilirsin.',
     'trial.btn': 'Ücretsiz İndir ve Başla',
     'plan.pro.trial': '14 gün ücretsiz deneme',
 
