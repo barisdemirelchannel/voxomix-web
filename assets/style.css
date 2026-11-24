@@ -36,6 +36,7 @@
   --text-rgb: 23,21,15;
   --accent-rgb: 108,74,224;
   --shadow-rgb: 23,21,15;
+  --indirim: #0e7f40;        /* indirimli fiyat yeşili — beyazda 5.1:1 */
   --pill: #17150f;            /* birincil düğme dolgusu: aydınlıkta koyu */
   --pill-ink: #faf8f4;
   --pill-hi: #000000;
@@ -86,6 +87,7 @@
   --text-rgb: 242,239,232;
   --accent-rgb: 139,108,255;
   --shadow-rgb: 0,0,0;
+  --indirim: #4fd06a;
   --pill: #f2ede1;
   --pill-ink: #0b0b0c;
   --pill-hi: #ffffff;
@@ -314,7 +316,10 @@ nav {
 .btn-secondary:hover { border-color: var(--text); background: rgba(var(--text-rgb),.05); color: var(--text); opacity: 1; }
 
 /* reklam filmleri: mor gölge yerine sade çerçeve (sayfa içi <style>'ı geçmek için daha güçlü seçici) */
-body .vx-reels video { border-radius: 12px; border: 1px solid var(--hair); box-shadow: 0 24px 60px rgba(var(--shadow-rgb),.35); background: var(--shot-bg); }
+body .vx-reels video { border-radius: 12px; border: 0;
+  /* 25.11: 0 24px 60px/.35 gölge aydınlık temada videonun arkasında gri bir kutu gibi
+     görünüyordu; vitrin görselleriyle aynı, içeri çekilmiş (-22px) gölgeye alındı. */
+  box-shadow: 0 18px 40px -22px rgba(var(--shadow-rgb),.45); background: var(--shot-bg); }
 
 /* BÖLÜM — sola hizalı başlık, etiketin önünde kanal şeridi */
 .section {
@@ -463,6 +468,9 @@ div[style*="text-align:center"]:has(> .section-label) h2 { letter-spacing: -0.04
 s.eski-fiyat { color: var(--muted); text-decoration-thickness: 2px; font-weight: 600; }
 .plan-price s.eski-fiyat { font-size: 22px; letter-spacing: -0.01em; margin-right: 10px; vertical-align: 0.4em; }
 .plan-price span { font-size: 18px; font-weight: 600; color: var(--text); letter-spacing: -0.02em; }
+/* İndirim sürerken yeni fiyat yeşil. 30.06.2027'de i18n.js <s>'i kaldırır,
+   :has() sayesinde yeşil de kendiliğinden gider. */
+#price-student:has(s.eski-fiyat), #price-student:has(s.eski-fiyat) span { color: var(--indirim); }
 .plan-period { font-size: 13px; color: var(--muted); margin-bottom: 22px; }
 
 .plan-features { list-style: none; margin-bottom: 28px; text-align: left; flex: 1; }
