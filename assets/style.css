@@ -855,3 +855,21 @@ body [data-vx-consent-reset] { border-radius: 999px; border-color: var(--hair); 
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 @media (max-width: 1024px) { .theme-toggle { margin-left: auto; margin-right: 10px; } }
+
+/* ── Marka kilidi (nav + altbilgi) ───────────────────────────────────────────
+   24.11: eski 32 px'lik uygulama ikonu + sitenin kendi yazı tipiyle "VoxoMix"
+   metni vardı. Artık marka kılavuzundaki yatay kilit (dilimli V + Red Hat
+   Display Black) tek görsel olarak giriyor; metin düğümü kaldırıldı.
+   Kılavuz "32 px altında 4 dilimli işaret" dediği için küçük çeşit kullanılıyor.
+   İki çeşit de DOM'da; hangisinin görüneceğine tema karar verir (JS yok). */
+/* Üç kuralın da özgüllüğü aynı (img + 2 sınıf) — hangisinin kazanacağına SIRA
+   karar versin. İlk yazışta gizleme kuralı ".nav-logo .brand-dark" idi; görsel
+   seçicisi olan "img.brand-mark { display:block }" onu eziyordu ve aydınlık
+   temada iki logo birden görünüyordu. */
+.nav-logo img.brand-mark { width: auto; height: 26px; }
+.nav-logo img.brand-light { display: block; }
+.nav-logo img.brand-dark { display: none; }
+:root[data-theme="dark"] .nav-logo img.brand-light { display: none; }
+:root[data-theme="dark"] .nav-logo img.brand-dark { display: block; }
+.footer-brand .nav-logo img.brand-mark { height: 28px; }
+@media (max-width: 420px) { .nav-logo img.brand-mark { height: 23px; } }
