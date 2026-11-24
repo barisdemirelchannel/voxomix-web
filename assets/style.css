@@ -892,7 +892,12 @@ body [data-vx-consent-reset] { border-radius: 999px; border-color: var(--hair); 
   display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
   gap: clamp(28px, 5vw, 76px); align-items: center;
 }
-.brand-art img { width: 100%; max-width: 380px; display: block; margin: 0 auto;
+/* height:auto ŞART — HTML'de width/height özniteliği var ve yalnız width
+   verilince tarayıcı yüksekliği öznitelikten (512px) alıyor; aspect-ratio
+   ancak yükseklik auto iken çalışıyor. Bu kuralsız kare ikon 380×512 çizilip
+   dikeye esniyordu (Barış yakaladı; genişliği ölçen otomatik denetim kaçırdı,
+   artık ORAN da ölçülüyor). */
+.brand-art img { width: 100%; height: auto; max-width: 380px; display: block; margin: 0 auto;
   filter: drop-shadow(0 26px 60px rgba(var(--shadow-rgb), .35)); }
 .brand-art img.ikon-light { display: block; }
 .brand-art img.ikon-dark { display: none; }
