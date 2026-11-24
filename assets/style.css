@@ -873,3 +873,9 @@ body [data-vx-consent-reset] { border-radius: 999px; border-color: var(--hair); 
 :root[data-theme="dark"] .nav-logo img.brand-dark { display: block; }
 .footer-brand .nav-logo img.brand-mark { height: 28px; }
 @media (max-width: 420px) { .nav-logo img.brand-mark { height: 23px; } }
+
+/* Koruma alanı (marka kılavuzu s.3): logonun her yanında en az "o" harfinin
+   yüksekliği kadar boşluk kalır, içine yazı girmez. Altbilgide slogan metni
+   logonun 14 px altındaydı; 28 px'lik kilitte "o" ≈ 20 px olduğu için kural
+   çiğneniyordu (ölçümle yakalandı). 24 px pay bırakıyoruz. */
+.footer-brand .nav-logo + p { margin-top: 24px; }

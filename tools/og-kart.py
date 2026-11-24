@@ -15,17 +15,23 @@ from PIL import Image
 WEB = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 W, H = 1200, 630
 
-# Site koyu temasının zemini (--bg #08080a) ile üst tarafta hafif açılma
-TOP, BOTTOM = (18, 18, 26), (8, 8, 10)
+# Marka kılavuzu s.6 "Koyu zemin (ikon)": #24202F → #110F16 (yukarıdan aşağı).
+# İlk yazışta sitenin kendi koyu zeminini (#12121A → #08080A) kullanmıştım; kılavuzun
+# değerleri bunlar, ikon tuvaliyle de aynı olsun diye değiştirildi.
+TOP, BOTTOM = (0x24, 0x20, 0x2F), (0x11, 0x0F, 0x16)
 
-# style.css'teki --kanal ile aynı diziliş: renk aralıkları yüzde olarak
+# MARKA KILAVUZU s.2/s.6 kanal renkleri (koyu zemin değerleri) — sitenin kendi
+# --kanal değişkeni DEĞİL. İlk yazışta style.css'ten almıştım; iki fark vardı:
+#  · tonlar birkaç birim kayıktı (ör. bas site #1FC8B0, kılavuz #22C9B8)
+#  · 6. renk olarak kayıt kırmızısı (#F0546A) giriyordu; kılavuzun altıncısı
+#    "Diğer" moru (#A99BDB). Kırmızı marka çalışmasında bilerek çıkarılmıştı.
 KANAL = [
-    ((139, 108, 255), 0.00, 0.14),   # --st-vokal
-    ((61, 139, 255), 0.17, 0.31),    # --st-davul
-    ((31, 200, 176), 0.34, 0.48),    # --st-bas
-    ((79, 208, 106), 0.51, 0.65),    # --st-tel
-    ((245, 165, 36), 0.68, 0.82),    # --st-klavye
-    ((240, 84, 106), 0.85, 1.00),    # --st-kayit
+    ((0x8B, 0x6C, 0xFF), 0.00, 0.14),   # Vokal
+    ((0x3F, 0x8C, 0xFF), 0.17, 0.31),   # Davul
+    ((0x22, 0xC9, 0xB8), 0.34, 0.48),   # Bas
+    ((0x5C, 0xD1, 0x7A), 0.51, 0.65),   # Telli
+    ((0xF3, 0xA7, 0x3F), 0.68, 0.82),   # Tuşlu
+    ((0xA9, 0x9B, 0xDB), 0.85, 1.00),   # Diğer
 ]
 
 def main():

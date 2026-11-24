@@ -35,9 +35,12 @@ BLOK = re.compile(
 # Eşleşmeyen nav-logo bloğu kalırsa sessizce geçmesin diye ayrı tarama
 HERHANGI = re.compile(r'<(a|div)\b[^>]*class="nav-logo"[^>]*>.*?</\1>', re.S)
 
-IKON = ('<link rel="icon" href="/assets/favicon.ico" sizes="32x32">\n'
-        '  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">\n'
-        '  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">\n'
+# Marka kılavuzu sayfa 11'deki blok BİREBİR — yollar kökten, favicon.ico 48x48
+# (dosya 16/32/48 içeriyor). İlk yazışta /assets/ ve sizes="32x32" yazmıştım; ikisi de
+# kılavuza aykırıydı.
+IKON = ('<link rel="icon" href="/favicon.ico" sizes="48x48">\n'
+        '  <link rel="icon" href="/favicon.svg" type="image/svg+xml">\n'
+        '  <link rel="apple-touch-icon" href="/apple-touch-icon.png">\n'
         '  <link rel="manifest" href="/site.webmanifest">')
 IKON_RE = re.compile(r'\s*<link rel="icon"[^>]*>\s*<link rel="icon"[^>]*>\s*'
                      r'<link rel="apple-touch-icon"[^>]*>\s*<link rel="manifest"[^>]*>', re.S)
