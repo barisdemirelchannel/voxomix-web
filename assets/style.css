@@ -898,7 +898,13 @@ body [data-vx-consent-reset] { border-radius: 999px; border-color: var(--hair); 
    dikeye esniyordu (Barış yakaladı; genişliği ölçen otomatik denetim kaçırdı,
    artık ORAN da ölçülüyor). */
 .brand-art img { width: 100%; height: auto; max-width: 380px; display: block; margin: 0 auto;
-  filter: drop-shadow(0 26px 60px rgba(var(--shadow-rgb), .35)); }
+  transition: filter .25s ease; }
+/* Gölge YALNIZ görsel yüklendikten sonra. Sebep: drop-shadow, PNG çözülmeden
+   önce öğenin KARE kutusuna basılıyordu; sayfa yenilenince logonun arkasından
+   kare bir kutu çıkıp kayboluyordu (Barış bildirdi). İkon macOS squircle'ı
+   olduğu için border-radius'lu box-shadow ile taklit edilemiyor (y=0'da opak
+   alan 512'lik tuvalde x=131'den başlıyor), bu yüzden drop-shadow korundu. */
+.brand-art img.yuklendi { filter: drop-shadow(0 26px 60px rgba(var(--shadow-rgb), .35)); }
 .brand-art img.ikon-light { display: block; }
 .brand-art img.ikon-dark { display: none; }
 :root[data-theme="dark"] .brand-art img.ikon-light { display: none; }
