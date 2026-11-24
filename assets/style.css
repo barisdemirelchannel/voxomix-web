@@ -205,7 +205,13 @@ nav {
 
 /* HERO — sola hizalı; arkada logodaki dalga çubuklarından türetilmiş silik bir desen */
 .hero {
-  min-height: 78vh;
+  /* 25.11: min-height yalnız 78vh idi. Hero'nun doğal yüksekliği ~900px olduğu
+     için bu değer ancak UZUN pencerelerde (vh > ~1150) bağlıyordu; bağladığında
+     da align-items:center yüzünden artan boşluk güven satırının ALTINA biniyor
+     ve marka bölümüyle arası 64px'ten ~190px'e çıkıyordu (Barış bildirdi; benim
+     1440×900 ekranımda görünmüyordu). Üst sınır konarak boşluk pencere
+     yüksekliğinden bağımsız hale getirildi. */
+  min-height: min(78vh, 860px);
   display: flex; align-items: center; justify-content: flex-start;
   text-align: left;
   max-width: 1148px; margin: 0 auto;
@@ -882,3 +888,65 @@ body [data-vx-consent-reset] { border-radius: 999px; border-color: var(--hair); 
    logonun 14 px altındaydı; 28 px'lik kilitte "o" ≈ 20 px olduğu için kural
    çiğneniyordu (ölçümle yakalandı). 24 px pay bırakıyoruz. */
 .footer-brand .nav-logo + p { margin-top: 24px; }
+
+/* ── Marka bölümü: işaret + ad (24.11.2026) ───────────────────────────────
+   Barış'ın logo sunumundaki düzen: solda büyük uygulama ikonu, sağda etiket +
+   başlık + metin + yatay kilit. Sunumdaki taslak metni (tur anlatımı) siteye
+   uygun değil; yerine markanın kendi hikâyesi var — dilimli V zaten
+   uygulamanın yaptığı işi anlatıyor (kılavuz s.2 "bir şarkı, altı kanal").
+   İkon kılavuz s.5'e göre: aydınlık sayfada krem çeşit, koyuda asıl koyu çeşit.
+   Tema seçen kuralların hepsi img + sınıf (eşit özgüllük) — sırayla çözülsün. */
+/* Üst ve alt boşluk eşit: hero'dan gelen 64px'e 32px eklenip 96px'e tamamlanıyor. */
+.brand-band { max-width: 1148px; margin: 0 auto; padding: 32px 24px 96px; }
+.brand-grid {
+  display: grid; grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 76px); align-items: center;
+}
+/* height:auto ŞART — HTML'de width/height özniteliği var ve yalnız width
+   verilince tarayıcı yüksekliği öznitelikten (512px) alıyor; aspect-ratio
+   ancak yükseklik auto iken çalışıyor. Bu kuralsız kare ikon 380×512 çizilip
+   dikeye esniyordu (Barış yakaladı; genişliği ölçen otomatik denetim kaçırdı,
+   artık ORAN da ölçülüyor). */
+.brand-art img { width: 100%; height: auto; max-width: 380px; display: block; margin: 0 auto;
+  transition: filter .25s ease; }
+/* Gölge YALNIZ görsel yüklendikten sonra. Sebep: drop-shadow, PNG çözülmeden
+   önce öğenin KARE kutusuna basılıyordu; sayfa yenilenince logonun arkasından
+   kare bir kutu çıkıp kayboluyordu (Barış bildirdi). İkon macOS squircle'ı
+   olduğu için border-radius'lu box-shadow ile taklit edilemiyor (y=0'da opak
+   alan 512'lik tuvalde x=131'den başlıyor), bu yüzden drop-shadow korundu. */
+.brand-art img.yuklendi { filter: drop-shadow(0 26px 60px rgba(var(--shadow-rgb), .35)); }
+.brand-art img.ikon-light { display: block; }
+.brand-art img.ikon-dark { display: none; }
+:root[data-theme="dark"] .brand-art img.ikon-light { display: none; }
+:root[data-theme="dark"] .brand-art img.ikon-dark { display: block; }
+
+.brand-pill {
+  display: inline-block; background: var(--accent-soft); color: var(--accent);
+  font-size: 12px; font-weight: 700; letter-spacing: .14em;
+  padding: 7px 14px; border-radius: 999px; margin-bottom: 22px;
+}
+.brand-text h2 {
+  font-size: clamp(30px, 4.4vw, 52px); font-weight: 800; line-height: 1.08;
+  letter-spacing: -0.035em; margin: 0 0 20px;
+}
+.brand-text p {
+  font-size: 17px; color: var(--muted); line-height: 1.7; margin: 0 0 32px; max-width: 56ch;
+}
+.brand-lockup img { height: 50px; width: auto; }
+.brand-lockup img.brand-light { display: block; }
+.brand-lockup img.brand-dark { display: none; }
+:root[data-theme="dark"] .brand-lockup img.brand-light { display: none; }
+:root[data-theme="dark"] .brand-lockup img.brand-dark { display: block; }
+
+/* ≤768px'te hero'nun alt boşluğu 64 → 48'e düşüyor; üst boşluk yine 96 olsun
+   diye marka bölümünün üstü 48 yapılıyor. Bu kural TABAN kuraldan SONRA gelmeli:
+   .brand-band taban kuralı padding kısayolu kullanıyor ve aynı özgüllükte, yani
+   önce yazılsaydı kaybederdi (ilk denememde öyle olmuştu). */
+@media (max-width: 768px) { .brand-band { padding-top: 48px; } }
+
+@media (max-width: 860px) {
+  .brand-grid { grid-template-columns: 1fr; gap: 34px; }
+  .brand-art img { max-width: 240px; }
+  .brand-text { text-align: left; }
+  .brand-lockup img { height: 42px; }
+}
