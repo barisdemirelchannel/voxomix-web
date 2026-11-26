@@ -22,6 +22,7 @@ URL kalıbı: TR = `https://voxomix.com/blog/<tr>` · diğerleri = `https://voxo
 | Şarkının sözlerini çıkarma (söz dökümü + akorlar) | sarkinin-sozlerini-cikarma | how-to-transcribe-the-lyrics-of-a-song | como-sacar-la-letra-de-una-cancion | transcrire-les-paroles-dune-chanson | songtext-eines-songs-transkribieren | trascrivere-il-testo-di-una-canzone |
 | Kanal ayırma programı nasıl seçilir (5 soru + deneme planı) | kanal-ayirma-programi-nasil-secilir | how-to-choose-a-stem-splitter | como-elegir-un-programa-para-separar-pistas | choisir-un-logiciel-de-separation-de-pistes | stem-splitter-software-auswaehlen | scegliere-un-programma-per-separare-le-tracce |
 | Şarkının gitar akorlarını bulma (kulak + diyagram + kapo) | sarkinin-gitar-akorlarini-bulma | how-to-find-the-guitar-chords-of-a-song | como-sacar-los-acordes-de-guitarra-de-una-cancion | trouver-les-accords-guitare-dune-chanson | gitarrenakkorde-eines-songs-herausfinden | trovare-gli-accordi-per-chitarra-di-una-canzone |
+| Şarkının üzerine kendi sesini kaydetme (kayıt kanalı + gecikme) | sarkinin-uzerine-ses-kaydetme | how-to-record-your-voice-over-a-song | como-grabar-tu-voz-sobre-una-cancion | senregistrer-sur-une-chanson | eigene-stimme-ueber-einen-song-aufnehmen | registrare-la-voce-su-una-canzone |
 
 ## og:locale
 tr→tr_TR · en→en_US · es→es_ES · fr→fr_FR · de→de_DE · it→it_IT

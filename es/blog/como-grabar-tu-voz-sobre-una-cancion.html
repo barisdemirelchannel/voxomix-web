@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <script>/*tema*/(function(){var r=document.documentElement,D="dark",K="voxomix_theme";function paint(d){var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d?"#08080a":"#faf8f4";}try{if(localStorage.getItem(K)===D){r.setAttribute("data-theme",D);}}catch(e){}paint(r.getAttribute("data-theme")===D);document.addEventListener("click",function(e){var b=e.target&&e.target.closest?e.target.closest("#theme-toggle"):null;if(!b)return;var dark=r.getAttribute("data-theme")===D;if(dark){r.removeAttribute("data-theme");}else{r.setAttribute("data-theme",D);}try{localStorage.setItem(K,dark?"light":D);}catch(x){}paint(!dark);});})();</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cómo grabar tu voz sobre una canción, paso a paso — VoxoMix</title>
+  <meta name="description" content="Cómo grabar tu voz sobre una canción: quita la voz original, ponte auriculares, mide la latencia una vez, escucha la toma en sincronía y descarga tu pista.">
+  <meta name="keywords" content="cómo grabar mi voz sobre una canción, grabar voz sobre una pista, grabar mi voz encima de una canción, grabar canciones en casa, corregir latencia al grabar, grabar con auriculares">
+  <link rel="canonical" href="https://voxomix.com/es/blog/como-grabar-tu-voz-sobre-una-cancion">
+  <link rel="alternate" hreflang="tr" href="https://voxomix.com/blog/sarkinin-uzerine-ses-kaydetme">
+  <link rel="alternate" hreflang="en" href="https://voxomix.com/en/blog/how-to-record-your-voice-over-a-song">
+  <link rel="alternate" hreflang="es" href="https://voxomix.com/es/blog/como-grabar-tu-voz-sobre-una-cancion">
+  <link rel="alternate" hreflang="fr" href="https://voxomix.com/fr/blog/senregistrer-sur-une-chanson">
+  <link rel="alternate" hreflang="de" href="https://voxomix.com/de/blog/eigene-stimme-ueber-einen-song-aufnehmen">
+  <link rel="alternate" hreflang="it" href="https://voxomix.com/it/blog/registrare-la-voce-su-una-canzone">
+  <link rel="alternate" hreflang="x-default" href="https://voxomix.com/blog/sarkinin-uzerine-ses-kaydetme">
+  <meta name="theme-color" content="#faf8f4">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="VoxoMix">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://voxomix.com/es/blog/como-grabar-tu-voz-sobre-una-cancion">
+  <meta property="og:title" content="Cómo grabar tu voz sobre una canción, paso a paso">
+  <meta property="og:description" content="Silencia la voz, ponte auriculares, mide la latencia y graba. El paso a paso para grabar tu voz sobre una canción en perfecta sincronía.">
+  <meta property="og:image" content="https://voxomix.com/assets/blog/sarkinin-uzerine-ses-kaydetme-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="article:published_time" content="2026-11-26">
+  <meta property="article:modified_time" content="2026-11-26">
+  <meta property="article:author" content="VoxoMix">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cómo grabar tu voz sobre una canción, paso a paso">
+  <meta name="twitter:description" content="Silencia la voz, ponte auriculares, mide la latencia y graba. El paso a paso para grabar tu voz sobre una canción en perfecta sincronía.">
+  <meta name="twitter:image" content="https://voxomix.com/assets/blog/sarkinin-uzerine-ses-kaydetme-og.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "Cómo grabar tu voz sobre una canción, paso a paso",
+        "description": "Cómo grabar tu voz sobre una canción: quita la voz original, ponte auriculares, mide la latencia una vez, escucha la toma en sincronía y descarga tu pista.",
+        "image": "https://voxomix.com/assets/blog/sarkinin-uzerine-ses-kaydetme-og.png",
+        "datePublished": "2026-11-26",
+        "dateModified": "2026-11-26",
+        "inLanguage": "es",
+        "author": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "url": "https://voxomix.com/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "VoxoMix",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://voxomix.com/icon-512.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://voxomix.com/es/blog/como-grabar-tu-voz-sobre-una-cancion"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://voxomix.com/es/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://voxomix.com/es/blog"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Grabar tu voz sobre una canción",
+            "item": "https://voxomix.com/es/blog/como-grabar-tu-voz-sobre-una-cancion"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cuál es la forma más fácil de grabar mi voz sobre una canción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En una aplicación que separe la canción en pistas, silencia la voz, ponte auriculares, mide una vez la latencia del micrófono y graba mientras suena la canción. Escucha tu toma junto con la canción y, si hace falta, vuelve a grabar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Por qué mi grabación va por detrás de la canción?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hasta que el sonido del micrófono llega al ordenador se produce un pequeño retardo. Una calibración que mide ese retardo una vez y adelanta la grabación esa misma cantidad corrige el desfase. Repite la medición si cambias de micrófono o de interfaz de audio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo grabar sin auriculares?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes, pero la canción que sale por los altavoces también entra en el micrófono y en la grabación suena como un eco. Para una toma limpia, usa auriculares cerrados. Eso sí, en VoxoMix la medición de latencia se hace con los altavoces y el micrófono, no con auriculares."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El canal Grabar de VoxoMix está en el plan gratuito?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. El canal Grabar está disponible en los planes Student y Producer. En el plan gratuito puedes silenciar la voz y cantar con la canción; además, puedes probar el canal Grabar con la prueba de Producer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Puedo llevar mi grabación a otro programa de música?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Descargas el canal Grabar como un archivo independiente; dura lo mismo que la canción y está alineado con su inicio. Si lo arrancas desde el mismo punto que las pistas de la base, se mantiene sincronizado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Mi canción o mi grabación se suben a algún servidor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. La separación y la grabación se hacen en tu ordenador Mac (Apple Silicon) o Windows 10/11, y tus archivos no se suben. Necesitas internet para el primer inicio de sesión y la verificación de la licencia; además, la primera vez que usas la transcripción de letras, el modelo se descarga una vez."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .breadcrumb { max-width: 820px; margin: 0 auto; padding: 20px 32px 0; font-size: 13px; color: var(--muted); }
+    .breadcrumb a { color: var(--muted); }
+    .breadcrumb a:hover { color: var(--text); }
+    .legal-content h3 { font-size: 16px; margin: 22px 0 8px; color: var(--text); font-weight: 700; }
+    .legal-content img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 12px; margin: 22px 0 6px; display: block; }
+    .legal-content blockquote {
+      margin: 20px 0; padding: 14px 18px; border-left: 3px solid var(--accent);
+      background: var(--surface2); border-radius: 0 10px 10px 0; color: var(--muted); font-size: 15px; line-height: 1.7;
+    }
+    .legal-content strong { color: var(--text); }
+    .post-meta { color: var(--muted); font-size: 13px; margin-bottom: 6px; }
+    .toc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 24px 0 28px; }
+    .toc strong { display: block; color: var(--text); margin-bottom: 10px; font-size: 15px; }
+    .toc ul { list-style: none; padding-left: 0; margin: 0; columns: 2; column-gap: 28px; }
+    .toc li { margin-bottom: 8px; break-inside: avoid; }
+    .toc a { color: var(--muted); font-size: 14px; }
+    .toc a:hover { color: var(--accent); }
+    .cta-box {
+      margin: 34px 0 8px; padding: 24px 26px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(0,184,148,0.10));
+      border: 1px solid var(--border); border-radius: 16px;
+    }
+    .cta-box p { color: var(--text) !important; font-size: 16px; margin-bottom: 14px; }
+    .cta-box .btn-primary { display: inline-block; }
+    @media (max-width: 640px) { .toc ul { columns: 1; } .breadcrumb { padding: 16px 20px 0; } }
+  </style>
+  <script defer src="/assets/analytics.js?v=4"></script>
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<nav>
+  <a href="/es/" class="nav-logo">
+    <img class="brand-mark brand-light" src="/assets/logo-yatay.svg" alt="VoxoMix" width="111" height="26">
+    <img class="brand-mark brand-dark" src="/assets/logo-yatay-koyu.svg" alt="VoxoMix" width="111" height="26">
+  </a>
+  <div class="nav-links">
+    <a href="/es/#features" data-i18n="nav.features">Funciones</a>
+    <a href="/es/#plans" data-i18n="nav.plans">Planes</a>
+    <a href="/es/blog">Blog</a>
+    <a href="/es/hakkimizda" data-i18n="nav.about">Nosotros</a>
+  </div>
+  <a href="https://voxomix.com/blog/sarkinin-uzerine-ses-kaydetme" class="nav-lang" hreflang="tr" onclick="try{localStorage.setItem('voxomix_site_lang','tr')}catch(e){}">TR</a>
+  <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Tema" data-i18n-aria="nav.theme">
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+  <a href="/es/#download" class="nav-cta" data-i18n="nav.cta">Prueba Producer gratis 7 días</a>
+</nav>
+
+<div class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/es/">Inicio</a> › <a href="/es/blog">Blog</a> › <span>Grabar tu voz sobre una canción</span>
+</div>
+
+<div class="page-header">
+  <h1>Cómo grabar tu voz sobre una canción, paso a paso</h1>
+  <p>Paso a paso: de silenciar la voz original y medir la latencia a escuchar tu toma y descargar el archivo</p>
+</div>
+
+<div class="section" style="padding-top:0">
+  <article class="legal-content">
+    <div class="post-meta">Publicado: 26 de noviembre de 2026 · Lectura: ~7 min</div>
+
+<p><strong>Respuesta corta:</strong> para grabar tu voz sobre una canción, primero <strong>silencia la voz</strong> original y luego <strong>ponte auriculares</strong> para que la canción no se cuele en el micrófono. <strong>Mide la latencia</strong> de tu micrófono <strong>una vez</strong> y después graba mientras suena la canción. Escucha tu toma junto con la canción; si no te convence, bórrala y vuelve a intentarlo. Puedes hacer estos cuatro pasos en una sola pantalla, sin tener que aprender un programa de edición de audio.</p>
+
+    <p>Este artículo es para quienes quieren mejorar cantando o tocando a base de escucharse. Si alguna vez intentaste grabar voz sobre una pista con el móvil, ya conoces los problemas: la canción se mezcla con la grabación, tu voz se queda atrás o la base y la toma no arrancan a la vez. A continuación explicamos la causa y la solución de cada uno de estos problemas, y luego te enseñamos el mismo proceso paso a paso en VoxoMix. VoxoMix es nuestra aplicación; también te diremos con claridad qué paso está en qué plan.</p>
+
+    <img src="/assets/blog/sarkinin-uzerine-ses-kaydetme-kapak.jpg" alt="Joven con auriculares cantando frente a un micrófono de mesa en una habitación con luz cálida, junto a una interfaz de audio y un portátil con ondas de sonido de colores" width="1600" height="900">
+
+    <div class="toc">
+      <strong>Contenido</strong>
+      <ul>
+        <li><a href="#s1">Lo que necesitas: ordenador, micrófono, auriculares y la canción</a></li>
+        <li><a href="#s2">¿Por qué hay que silenciar la voz de la canción?</a></li>
+        <li><a href="#s3">¿Por qué usar auriculares al grabar?</a></li>
+        <li><a href="#s4">¿Por qué la grabación se queda detrás de la canción?</a></li>
+        <li><a href="#s5">¿Cómo se graba sobre una canción en VoxoMix?</a></li>
+        <li><a href="#s6">¿Cómo escuchar y mejorar tu toma?</a></li>
+        <li><a href="#s7">¿Cómo guardar la grabación como archivo?</a></li>
+        <li><a href="#s8">Funciones de grabación según el plan</a></li>
+        <li><a href="#faq">Preguntas frecuentes</a></li>
+      </ul>
+    </div>
+
+    <h2 id="s1">Lo que necesitas: ordenador, micrófono, auriculares y la canción</h2>
+
+    <p>Para empezar no hace falta un estudio caro. Te bastan cuatro cosas:</p>
+
+    <ul>
+      <li><strong>Ordenador:</strong> un Mac con chip Apple Silicon (serie M) o un PC con Windows 10/11.</li>
+      <li><strong>Micrófono:</strong> el micrófono integrado del ordenador sirve; un micrófono USB o uno conectado a una interfaz de audio te dará un sonido más limpio.</li>
+      <li><strong>Auriculares:</strong> lo ideal son unos auriculares cerrados que cubran toda la oreja. Los abiertos dejan escapar el sonido.</li>
+      <li><strong>El archivo de audio de la canción:</strong> un MP3, un WAV o similar. Tiene que ser una grabación tuya o una canción que tengas derecho a usar.</li>
+    </ul>
+
+    <h2 id="s2">¿Por qué hay que silenciar la voz de la canción?</h2>
+
+    <p>Si cantas encima con la voz del cantante sonando, se oyen dos voces a la vez. Al escucharte, cuesta distinguir en qué nota te desafinas. Con la voz silenciada solo oyes la base, y en la grabación lo único que destaca es tu voz.</p>
+
+    <p>Para eso tienes que separar la canción en pistas: voz, batería, bajo y el resto de instrumentos. Explicamos cómo funciona la separación en el artículo sobre <a href="/es/blog/como-quitar-la-voz-de-una-cancion">cómo quitar la voz de una canción</a>. Si solo quieres cantar y practicar sin grabar, te basta con la guía para <a href="/es/blog/como-hacer-un-karaoke-de-cualquier-cancion">hacer un karaoke de cualquier canción</a>. Este artículo va un paso más allá: grabar tu voz y escucharla.</p>
+
+    <p>Un consejo para tus primeros intentos: en lugar de silenciar la voz original del todo, déjala muy baja. Sigues oyendo la melodía, pero tu voz queda por encima. Cuando te sientas seguro, quítala por completo.</p>
+
+    <h2 id="s3">¿Por qué usar auriculares al grabar?</h2>
+
+    <p>Si reproduces la canción por los altavoces mientras grabas, el micrófono también la capta. En la grabación aparece una segunda copia de la base, ligeramente retrasada. Al escuchar la toma junto con la canción, esa copia suena como un eco o como un sonido embarrado.</p>
+
+    <p>Los auriculares resuelven el problema: la canción solo llega a tus oídos y el micrófono solo te oye a ti. No subas demasiado el volumen de los auriculares; a volumen alto, incluso unos cerrados pueden filtrar algo de sonido.</p>
+
+    <p>Luego está el tema de oírte a ti mismo. Al cantar con auriculares te oyes poco y, sin darte cuenta, empiezas a gritar o a desafinar. Por eso las buenas aplicaciones de grabación te devuelven tu propia voz a los auriculares; a esto se le llama <strong>monitorización</strong>. Despegar un poco un auricular de la oreja también es una solución de toda la vida.</p>
+
+    <h2 id="s4">¿Por qué la grabación se queda detrás de la canción?</h2>
+
+    <p>Toda grabación hecha en un ordenador tiene un pequeño retardo. El sonido del micrófono se convierte a digital, el sistema operativo lo retiene en búferes y después llega al programa de grabación. Aunque ese tiempo es corto, tu oído puede percibirlo como «mi voz va un poco por detrás».</p>
+
+    <p>Por eso una grabación puede sonar un poco por detrás de la base. La solución es medir el retardo una vez y adelantar la grabación exactamente esa cantidad. Esto se llama <strong>calibración de latencia</strong>. Si cambias de interfaz de audio, de micrófono o de ordenador, hay que repetir la medición.</p>
+
+    <h2 id="s5">¿Cómo se graba sobre una canción en VoxoMix?</h2>
+
+    <p>VoxoMix separa la canción en pistas en tu propio ordenador; la canción no se sube a ningún servidor. Debajo de las pistas separadas aparece además el canal <strong>Grabar</strong>. Estos son los pasos:</p>
+
+    <ol>
+      <li><strong>Añade la canción y sepárala.</strong> Arrastra el archivo a la aplicación; cuando termine la separación, verás las pistas una debajo de otra.</li>
+      <li><strong>Silencia la voz.</strong> Pulsa el botón <strong>M</strong> (silenciar) de la pista de voz o baja su volumen.</li>
+      <li><strong>Mide la latencia una vez.</strong> Con el icono del reloj del canal Grabar, abre la ventana <strong>Corregir latencia</strong>, elige el micrófono que vas a usar y pulsa el botón <strong>Medir latencia</strong>. Haz esta medición <strong>con los altavoces y el micrófono</strong>, no con auriculares. Al terminar la medición, tu grabación se alinea automáticamente.</li>
+      <li><strong>Ponte los auriculares.</strong> Si quieres, activa la opción <strong>Escucharte mientras grabas (auriculares)</strong>; oirás tu voz junto con la canción en los auriculares.</li>
+      <li><strong>Graba.</strong> Pulsa el botón <strong>●</strong> del canal Grabar y canta sobre la canción. Cuando acabes, detén la grabación.</li>
+    </ol>
+
+    <p>Si el tono de la canción no le va a tu voz, antes de grabar <a href="/es/blog/como-cambiar-el-tono-de-una-cancion">cambia el tono de la canción</a>. Si prefieres practicar primero una parte difícil más despacio, <a href="/es/blog/ralentizar-cancion-sin-cambiar-el-tono">ralentiza la canción sin cambiar el tono</a>.</p>
+
+    <img src="/assets/blog/sarkinin-uzerine-ses-kaydetme-1.jpg" alt="Micrófono de estudio en su soporte, auriculares cerrados y una pequeña interfaz de audio sobre una mesa de madera, con un portátil con ondas de sonido detrás" width="1600" height="900" loading="lazy">
+
+    <h2 id="s6">¿Cómo escuchar y mejorar tu toma?</h2>
+
+    <p>Cuando detienes la grabación, el canal Grabar se comporta como cualquier otra pista. Al reproducir la canción desde el principio, tu voz suena a la vez que la base. Puedes subir o bajar su volumen, silenciarla con <strong>M</strong> o escucharla sola.</p>
+
+    <p>Mientras escuchas, fíjate en tres cosas:</p>
+
+    <ul>
+      <li><strong>Afinación:</strong> apunta en qué notas te desafinas. Las notas largas y los saltos grandes suelen ser los que más cuestan.</li>
+      <li><strong>Tiempo:</strong> ¿entras tarde o te adelantas? Deja la pista de voz original a volumen bajo y compárate con ella.</li>
+      <li><strong>Respiración:</strong> si tu voz se cae al final de las frases, cambia los puntos donde respiras.</li>
+    </ul>
+
+    <p>Cada canción guarda una sola grabación. Si vuelves a grabar, la aplicación te lo pregunta primero y después sustituye la toma anterior por la nueva. Puedes borrar una toma que no te guste con el botón de la papelera. Para una parte complicada, practícala antes varias veces <a href="/es/blog/como-repetir-una-parte-de-una-cancion-en-bucle">repitiéndola en bucle</a> y después haz la toma completa.</p>
+
+    <p>El canal Grabar no es solo para cantantes. Con los mismos pasos puedes grabar tu guitarra, tu violín o tu saxofón sobre la canción. Primero silencia la pista de tu instrumento y luego toca tú en su lugar.</p>
+
+    <img src="/assets/blog/sarkinin-uzerine-ses-kaydetme-2.jpg" alt="Joven músico con los auriculares al cuello escuchando su toma en el portátil y apuntando notas en un cuaderno, con un micrófono sobre la mesa" width="1600" height="900" loading="lazy">
+
+    <h2 id="s7">¿Cómo guardar la grabación como archivo?</h2>
+
+    <p>Con el botón de descarga del canal Grabar obtienes tu voz como un archivo independiente. El archivo dura lo mismo que la canción y está alineado con su inicio. Es decir, si en otro programa de música lo arrancas desde el mismo punto que las pistas de la base, se mantiene sincronizado.</p>
+
+    <p>El formato depende de tu plan: en el plan Student obtienes MP3, y en el plan Producer también puedes obtener WAV sin pérdida. La exportación por lotes de Producer descarga todas las pistas de una vez; si has hecho una grabación, el canal Grabar también entra en el paquete.</p>
+
+    <p>Un recordatorio: puedes escuchar tu grabación para ti. Si quieres publicar en internet una grabación hecha sobre la canción de otra persona, necesitas el permiso del titular de los derechos de esa canción.</p>
+
+    <h2 id="s8">Funciones de grabación según el plan</h2>
+
+    <table style="width:100%;border-collapse:collapse;margin:18px 0;font-size:15px">
+      <thead><tr><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Plan</th><th style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Lo importante para grabar sobre una canción</th></tr></thead>
+      <tbody>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Free</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">2 canciones al mes, hasta 4 minutos, separación en 4 pistas; puedes silenciar la voz y cantar con la canción. Sin canal Grabar.</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Basic</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">10 canciones al mes, 6 pistas, cambio de tono, transcripción de letras, salida en MP3. Sin canal Grabar.</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Student</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">50 canciones al mes, hasta 7 minutos; <strong>canal Grabar</strong>, monitorización con auriculares, medición de latencia, salida en MP3.</td></tr>
+        <tr><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top"><strong>Producer</strong></td><td style="border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top">Canciones ilimitadas; todo lo de Student, WAV sin pérdida y exportación por lotes.</td></tr>
+      </tbody>
+    </table>
+
+    <p>Los precios actuales y las condiciones de la prueba están en la <a href="/es/#plans">sección de planes</a>. También puedes probar el canal Grabar con la prueba de Producer; la prueba requiere tarjeta y, al terminar el periodo, pasa automáticamente al plan de pago.</p>
+
+    <h2 id="faq">Preguntas frecuentes</h2>
+
+    <h3>¿Cuál es la forma más fácil de grabar mi voz sobre una canción?</h3>
+    <p>En una aplicación que separe la canción en pistas, silencia la voz, ponte auriculares, mide una vez la latencia del micrófono y graba mientras suena la canción. Escucha tu toma junto con la canción y, si hace falta, vuelve a grabar.</p>
+    <h3>¿Por qué mi grabación va por detrás de la canción?</h3>
+    <p>Hasta que el sonido del micrófono llega al ordenador se produce un pequeño retardo. Una calibración que mide ese retardo una vez y adelanta la grabación esa misma cantidad corrige el desfase. Repite la medición si cambias de micrófono o de interfaz de audio.</p>
+    <h3>¿Puedo grabar sin auriculares?</h3>
+    <p>Puedes, pero la canción que sale por los altavoces también entra en el micrófono y en la grabación suena como un eco. Para una toma limpia, usa auriculares cerrados. Eso sí, en VoxoMix la medición de latencia se hace con los altavoces y el micrófono, no con auriculares.</p>
+    <h3>¿El canal Grabar de VoxoMix está en el plan gratuito?</h3>
+    <p>No. El canal Grabar está disponible en los planes Student y Producer. En el plan gratuito puedes silenciar la voz y cantar con la canción; además, puedes probar el canal Grabar con la prueba de Producer.</p>
+    <h3>¿Puedo llevar mi grabación a otro programa de música?</h3>
+    <p>Sí. Descargas el canal Grabar como un archivo independiente; dura lo mismo que la canción y está alineado con su inicio. Si lo arrancas desde el mismo punto que las pistas de la base, se mantiene sincronizado.</p>
+    <h3>¿Mi canción o mi grabación se suben a algún servidor?</h3>
+    <p>No. La separación y la grabación se hacen en tu ordenador Mac (Apple Silicon) o Windows 10/11, y tus archivos no se suben. Necesitas internet para el primer inicio de sesión y la verificación de la licencia; además, la primera vez que usas la transcripción de letras, el modelo se descarga una vez.</p>
+
+    <h2>Conclusión</h2>
+
+<p>Una grabación limpia sobre una canción se reduce a cuatro pasos: <strong>silencia la voz</strong>, <strong>ponte auriculares</strong>, <strong>mide la latencia una vez</strong> y <strong>graba y escucha</strong>. Los auriculares evitan que la canción se cuele en la grabación. La medición de latencia coloca tu voz en el mismo instante que la base. Y escuchar tu propia toma te muestra en qué notas y en qué entradas te cuesta más.</p>
+
+    <p>Esta semana elige una canción que te guste y graba el mismo estribillo tres veces. Compara la tercera toma con la primera; notarás la diferencia por ti mismo.</p>
+
+    <div class="cta-box">
+      <p>Descarga VoxoMix: separa la canción en tu propio ordenador, silencia la voz y prueba gratis el canal Grabar con la prueba de Producer.</p>
+      <a href="/es/#download" class="btn-primary">Descarga gratis</a>
+    </div>
+
+  </article>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:18px;">
+    <img class="brand-mark brand-light" src="/assets/logo-yatay.svg" alt="VoxoMix" width="111" height="26">
+    <img class="brand-mark brand-dark" src="/assets/logo-yatay-koyu.svg" alt="VoxoMix" width="111" height="26">
+  </div>
+        <p>App de separación de pistas con IA para músicos.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.product">Producto</h4>
+        <a href="/es/#features" data-i18n="nav.features">Funciones</a>
+        <a href="/es/#plans" data-i18n="footer.pricing">Precios</a>
+        <a href="/es/blog">Blog</a>
+        <a href="/es/hakkimizda" data-i18n="nav.about">Nosotros</a>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.legal">Legal</h4>
+        <a href="/es/kullanim-sartlari">Términos de uso</a>
+        <a href="/es/gizlilik">Política de privacidad</a>
+        <a href="/es/teslimat-iade">Entrega y devoluciones</a>
+        <a href="/es/mesafeli-satis">Contrato de venta a distancia</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 VoxoMix. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js?v=20"></script>
+</body>
+</html>
